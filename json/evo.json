@@ -247,7 +247,8 @@
             "pokemon": "pichu"
         },
         "next": {
-            "pokemon": "raichu"
+            "pokemon": "raichu",
+            "type": "ignore-forms"
         }
     },
     "26": {
@@ -529,7 +530,12 @@
                 "persian",
                 "perrserker"
             ],
-            "type": "meowth"
+            "type": "irregular",
+            "map": {
+                "1": 1,
+                "2": 2,
+                "3": 1
+            }
         }
     },
     "53": {
@@ -812,15 +818,20 @@
                 "slowbro",
                 "slowking"
             ],
-            "type": "multiple"
+            "type": "irregular-multiple",
+            "map": {
+                "1": [1, 1],
+                "2": [3, 2]
+            }
         }
     },
     "80": {
         "pokemon": "slowbro",
-        "forms": 2,
+        "forms": 3,
         "previous": {
             "pokemon": "slowpoke",
-            "type": "parallel"
+            "type": "shifted",
+            "shift": -1
         },
         "next": {
             "pokemon": ""
@@ -2025,7 +2036,7 @@
         "pokemon": "slowking",
         "forms": 2,
         "previous": {
-            "pokemon": "slowbro",
+            "pokemon": "slowpoke",
             "type": "parallel"
         },
         "next": {
@@ -7354,7 +7365,7 @@
             "pokemon": "litten"
         },
         "next": {
-            "pokemon": ""
+            "pokemon": "incineroar"
         }
     },
     "727": {
