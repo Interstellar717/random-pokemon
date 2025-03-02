@@ -585,13 +585,15 @@ function evolution(n) {
     if (n === -1 && previous) {
         if (data.previous.type === "parallel") {
             set_pokemon(previous, get_form())
+        } else if (data.previous.type === "shifted") {
+            set_pokemon(previous, get_form() + data.previous.shift)
         } else {
             set_pokemon(previous, data.previous.form || 1)
         }
     }
     if (n === 1 && next) {
         if (typeof next === "string") {
-            if (get_current() != "pikachu") {
+            if (data.next.type != "ignore-forms") {
                 set_pokemon(data.next.pokemon, get_form())
             } else set_pokemon(data.next.pokemon)
         } else {
@@ -601,15 +603,17 @@ function evolution(n) {
             } else if (data.next.type === "regional") {
                 var form = get_form()
                 next[form - 1] && set_pokemon(next[form - 1])
-            } else if (data.next.type === "meowth") {
-                if (get_form() < 3) set_pokemon("persian", get_form())
-                else set_pokemon('perrserker')
+            } else if (data.next.type === "irregular") {
+                set_pokemon(next[get_form() - 1], data.next.map[get_form()])
+            } else if (data.next.type === "irregular-multiple") {
+                set_multiple_pokemon(next, data.next.map[get_form()])
+                form_buttons(0)
             }
         }
     }
 }
 
-function set_multiple_pokemon(arr) {
+function set_multiple_pokemon(arr, forms) {
     let HTML = ``;
     for (let i = 0; i < arr.length; i++) {
         let n = Math.ceil(arr.length / 3);
@@ -641,8 +645,8 @@ function set_multiple_pokemon(arr) {
         qs('div#info h1').textContent = capitalize(arr.join(', '))
 
     for (let p in arr) {
-        qsa('.pkmn')[p].src = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${zeroes(x.nameToNo[arr[p]])}.png`;
-        qsa('.pkmn')[p].addEventListener('click', () => set_pokemon(arr[p]));
+        qsa('.pkmn')[p].src = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${zeroes(x.nameToNo[arr[p]])}${forms[p] > 1 ? "_f"+forms[p] : ""}.png`;
+        qsa('.pkmn')[p].addEventListener('click', () => set_pokemon(arr[p], forms ? forms[p] : 1));
     }
 
 }
