@@ -1,0 +1,33 @@
+html{
+    font-family: cursive;
+    /*background-color: rgb(192, 192, 192);*/
+    background-image: url('https://wallpaperswide.com/download/spring_mountain_landscape-wallpaper-3840x2160.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position-y: -80px;
+}
+img{
+    border-color:rgb(25, 137, 0);
+    background-color: rgb(255, 255, 255);
+}
+#help{
+    background-color: rgb(25, 137, 0);
+    border-color: rgb(34, 160, 5);
+}
+
+.function{
+    background-color: hsl(109, 94%, 32%);
+    color:white;
+    border-color:rgb(25, 137, 0);
+}
+.function:hover{
+    background-color: hsl(109, 94%, 37%);
+    color:white;
+    border-color:rgb(25, 137, 0);
+}
+.function:active{
+    background-color: hsl(109, 94%, 42%);
+    color:white;
+    border-color:rgb(25, 137, 0);
+}
