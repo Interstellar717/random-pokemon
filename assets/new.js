@@ -526,7 +526,7 @@ function set_pokemon(dex, form = 1, show_type = false) {
 
     qs('div#info h1').textContent = name + " #" + x.nameToNo[name.toLowerCase()] // + (show_type ? "... but it's " + type + " type!" : "");
 
-    toLog(name, show_type ? type : null, dex);
+    // toLog(name, show_type ? type : null, dex);
 
     qs('#form-bar').innerHTML = "",
         dex = parseInt(dex)
