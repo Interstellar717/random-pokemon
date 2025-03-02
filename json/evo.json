@@ -2192,7 +2192,8 @@
             "pokemon": ""
         },
         "next": {
-            "pokemon": "weavile"
+            "pokemon": ["weavile", "sneasler"],
+            "type": "regional"
         }
     },
     "216": {
@@ -4687,7 +4688,8 @@
         "pokemon": "weavile",
         "forms": 1,
         "previous": {
-            "pokemon": "sneasel"
+            "pokemon": "sneasel",
+            "type": "regional"
         },
         "next": {
             "pokemon": ""
