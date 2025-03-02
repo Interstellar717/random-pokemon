@@ -727,7 +727,7 @@ function msg(str, time = 0) {
 
     if (str == false) return (qs('.msg').style.transform = "");
 
-    qs('.msg').style.transform = "translateX(0px)";
+    qs('.msg').style.transform = "translateX(-20px)";
     qs('.msg span').textContent = str;
 
     time && setTimeout(() => {
