@@ -1256,7 +1256,8 @@
             "pokemon": ""
         },
         "next": {
-            "pokemon": "scizor"
+            "pokemon": ["scizor", "kleavor"],
+            "type": "multiple"
         }
     },
     "124": {
