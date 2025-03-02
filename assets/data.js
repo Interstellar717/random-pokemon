@@ -37,7 +37,7 @@ getJSON().then(data => x = data).then(() => {
 document.addEventListener("DOMContentLoaded", function () {
 
     if (qsa('link').length - 4 === 1025) {
-        msg("All base form images loaded", 5000);
+        msg("Extra form images failed to preload", 5000);
     }
 
 });
