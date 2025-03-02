@@ -13,6 +13,8 @@ var click_listeners = {
     "#activator": random_pokemon,
     "#evo": () => evolution(1),
     "#prevo": () => evolution(-1),
+    "#inc-dex": () => dex_num(1),
+    "#dec-dex": () => dex_num(-1),
     "#shiny": shiny,
     "#rand-mult": () => random_multiple(prompt('How Many Pokemon? Currently works up to 9')),
     "#toggle-sidebar": toggle_sidebar,
@@ -103,13 +105,11 @@ addEventListener('keydown', (e) => {
         }
         break;
         case 'ArrowDown': {
-            get_current().split(',').length == 1 &&
-                set_pokemon(x.nameToNo[get_current()] + 1)
+            dex_num(1)
         }
         break;
         case 'ArrowUp': {
-            get_current().split(',').length == 1 &&
-                set_pokemon(x.nameToNo[get_current()] - 1)
+            dex_num(-1)
         }
         break;
         case 'R': {
@@ -733,4 +733,9 @@ function msg(str, time = 0) {
     time && setTimeout(() => {
         qs('.msg').style.transform = ""
     }, time)
+}
+
+function dex_num(n) {
+    get_current().split(',').length == 1 &&
+        set_pokemon(x.nameToNo[get_current()] + n)
 }
