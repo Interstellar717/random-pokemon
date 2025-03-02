@@ -7205,7 +7205,7 @@
     },
     "712": {
         "pokemon": "bergmite",
-        "forms": 2,
+        "forms": 1,
         "previous": {
             "pokemon": ""
         },
@@ -7218,7 +7218,7 @@
         "forms": 2,
         "previous": {
             "pokemon": "bergmite",
-            "type": "parallel"
+            "type": "regional"
         },
         "next": {
             "pokemon": ""
