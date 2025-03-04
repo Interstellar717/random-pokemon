@@ -75,86 +75,86 @@ addEventListener('keydown', (e) => {
         case '`': {
             toggle_sidebar()
         }
-        break;
+            break;
         case 'Q': {
             help()
         }
-        break;
+            break;
         case 'S': {
             showLog()
         }
-        break;
+            break;
         case 'C': {
             clearLog()
         }
-        break;
+            break;
         case 'X': {
             random_multiple(prompt('How Many Pokemon? Currently works up to 9'))
         }
-        break;
+            break;
         case 'T': {
             typeChange()
         }
-        break;
+            break;
         case 'ArrowRight': {
             evolution(1)
         }
-        break;
+            break;
         case 'ArrowLeft': {
             evolution(-1)
         }
-        break;
+            break;
         case 'ArrowDown': {
             dex_num(1)
         }
-        break;
+            break;
         case 'ArrowUp': {
             dex_num(-1)
         }
-        break;
+            break;
         case 'R': {
             random_pokemon()
         }
-        break;
+            break;
         case 'E': {
             custom()
         }
-        break;
+            break;
         case 'F1': {
             e.preventDefault()
             spotlight(1)
         }
-        break;
+            break;
         case 'F2': {
             e.preventDefault()
             spotlight(2)
         }
-        break;
+            break;
         case 'F3': {
             e.preventDefault()
             spotlight(3)
         }
-        break;
+            break;
         case 'F4': {
             e.preventDefault()
             spotlight(4)
         }
-        break;
+            break;
         case 'F5': {
             e.preventDefault()
             spotlight(5)
         }
-        break;
+            break;
         case 'F6': {
             e.preventDefault()
             spotlight(6)
         }
-        break;
+            break;
         case 'F7': {
             e.preventDefault()
             spotlight(7)
         }
-        break;
+            break;
         case 'F8': {
             e.preventDefault()
             spotlight(8)
@@ -162,39 +162,39 @@ addEventListener('keydown', (e) => {
         case '1': {
             spotlight(1)
         }
-        break;
+            break;
         case '2': {
             spotlight(2)
         }
-        break;
+            break;
         case '3': {
             spotlight(3)
         }
-        break;
+            break;
         case '4': {
             spotlight(4)
         }
-        break;
+            break;
         case '5': {
             spotlight(5)
         }
-        break;
+            break;
         case '6': {
             spotlight(6)
         }
-        break;
+            break;
         case '7': {
             spotlight(7)
         }
-        break;
+            break;
         case '8': {
             spotlight(8)
         }
-        break;
+            break;
         case "Z": {
             shiny()
         }
-        break;
+            break;
     }
 });
 
@@ -256,9 +256,9 @@ function zeroes(n, name = "", place = 3) {
 
     if (n == undefined) {
         var scores = [{
-                name: "",
-                score: 1e-1
-            }],
+            name: "",
+            score: 1e-1
+        }],
             semi_compatible = [],
             failed = [];
         for (const key of Object.keys(x.nameToNo)) {
@@ -291,7 +291,7 @@ function zeroes(n, name = "", place = 3) {
             scores.forEach(e => {
                 contestants.push(capitalize(e.name))
             })
-            insert = "\n\nDid you mean " + contestants.join(', or ') + `?` + (contestants.length > 3 ? `\n\nAll had ${parseInt(scores[0].score*1000)/1000}% accuracy.` : "")
+            insert = "\n\nDid you mean " + contestants.join(', or ') + `?` + (contestants.length > 3 ? `\n\nAll had ${parseInt(scores[0].score * 1000) / 1000}% accuracy.` : "")
         }
         console.log(scores)
         alert(`error: bad pokemon name "${name}". ${insert || ""}`);
@@ -613,7 +613,7 @@ function evolution(n) {
     }
 }
 
-function set_multiple_pokemon(arr, forms) {
+function set_multiple_pokemon(arr, forms = "") {
     let HTML = ``;
     for (let i = 0; i < arr.length; i++) {
         let n = Math.ceil(arr.length / 3);
@@ -624,17 +624,17 @@ function set_multiple_pokemon(arr, forms) {
                 n = "335px",
                     m = "125px"
             }
-            break;
+                break;
             case 2: {
                 n = "190px",
                     m = "85px"
             }
-            break;
+                break;
             case 3: {
                 n = "135px",
                     m = "60px"
             }
-            break;
+                break;
         } //${Math.sqrt((650*650)/(arr.length*1.15)) - 45}
         qs('#image-container').style.marginTop = m;
         HTML += `<img id="pkmn" class="pkmn" draggable="false" style="width:${n};">`
@@ -645,7 +645,7 @@ function set_multiple_pokemon(arr, forms) {
         qs('div#info h1').textContent = capitalize(arr.join(', '))
 
     for (let p in arr) {
-        qsa('.pkmn')[p].src = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${zeroes(x.nameToNo[arr[p]])}${forms[p] > 1 ? "_f"+forms[p] : ""}.png`;
+        qsa('.pkmn')[p].src = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${zeroes(x.nameToNo[arr[p]])}${forms[p] > 1 ? "_f" + forms[p] : ""}.png`;
         qsa('.pkmn')[p].addEventListener('click', () => set_pokemon(arr[p], forms ? forms[p] : 1));
     }
 
@@ -664,11 +664,11 @@ function shiny() {
         case false: {
             img.src = `https://db.pokemongohub.net/images/pokemon-home-renders/Shiny/poke_capture_${zeroes(x.nameToNo[get_current()], null, 4)}_000_mf_n_00000000_f_r.png`
         }
-        break;
+            break;
         case true: {
             set_pokemon(get_current())
         }
-        break;
+            break;
     }
 }
 
