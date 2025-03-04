@@ -820,8 +820,14 @@
             ],
             "type": "irregular-multiple",
             "map": {
-                "1": [1, 1],
-                "2": [3, 2]
+                "1": [
+                    1,
+                    1
+                ],
+                "2": [
+                    3,
+                    2
+                ]
             }
         }
     },
@@ -1256,7 +1262,10 @@
             "pokemon": "mime jr."
         },
         "next": {
-            "pokemon": ["", "mr. rime"],
+            "pokemon": [
+                "",
+                "mr. rime"
+            ],
             "type": "regional"
         }
     },
@@ -1267,7 +1276,10 @@
             "pokemon": ""
         },
         "next": {
-            "pokemon": ["scizor", "kleavor"],
+            "pokemon": [
+                "scizor",
+                "kleavor"
+            ],
             "type": "multiple"
         }
     },
@@ -1988,7 +2000,10 @@
             "pokemon": ""
         },
         "next": {
-            "pokemon": ["quagsire", "clodsire"],
+            "pokemon": [
+                "quagsire",
+                "clodsire"
+            ],
             "type": "regional"
         }
     },
@@ -2204,7 +2219,10 @@
             "pokemon": ""
         },
         "next": {
-            "pokemon": ["weavile", "sneasler"],
+            "pokemon": [
+                "weavile",
+                "sneasler"
+            ],
             "type": "regional"
         }
     },
@@ -10464,7 +10482,8 @@
         "slowbro": 80,
         "magnemite": 81,
         "magneton": 82,
-        "farfetch\"d": 83,
+        "farfetch'd": 83,
+        "farfetchd": 83,
         "doduo": 84,
         "dodrio": 85,
         "seel": 86,
@@ -11254,7 +11273,8 @@
         "obstagoon": 862,
         "perrserker": 863,
         "cursola": 864,
-        "sirfetch\"d": 865,
+        "sirfetch'd": 865,
+        "sirfetchd": 865,
         "mr. rime": 866,
         "mr rime": 866,
         "mrrime": 866,
