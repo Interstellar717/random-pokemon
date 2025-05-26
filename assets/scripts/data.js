@@ -168,5 +168,6 @@ function getSeason() {
     return season;
 }
 
-var season = getSeason();
-document.getElementsByTagName('head')[0].innerHTML += '<link rel="stylesheet" href="assets/styles/' + season + ' Theme.css">';
+// var season = getSeason();
+// document.getElementsByTagName('head')[0].innerHTML += '<link rel="stylesheet" href="assets/styles/' + season + ' Theme.css">';
+document.getElementsByTagName('head')[0].innerHTML += '<link rel="stylesheet" href="assets/styles/Jirachi Theme.css">';
