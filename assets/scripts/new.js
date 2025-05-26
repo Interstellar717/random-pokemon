@@ -16,7 +16,8 @@ var click_listeners = {
     "#shiny": shiny,
     "#rand-mult": () => random_multiple(prompt('How Many Pokemon? Currently works up to 9')),
     "#toggle-sidebar": toggle_sidebar,
-    ".msg button": () => msg(false)
+    ".msg button": () => msg(false),
+    "#img-bkg": toggleImgBkg
 }
 
 for (let [key, value] of Object.entries(click_listeners)) {
@@ -86,22 +87,106 @@ addEventListener('keydown', (e) => {
             help()
         }
             break;
-        case 'S': {
-            showLog()
+        case 'W': {
+            toggleImgBkg()
         }
             break;
-        case 'C': {
-            clearLog()
+        case 'E': {
+            showSearch(100)
         }
             break;
-        case 'X': {
-            random_multiple(prompt('How Many Pokemon? Currently works up to 9'))
+        case 'R': {
+            random_pokemon()
         }
             break;
         case 'T': {
             typeChange()
         }
             break;
+        case 'Y': {
+
+        }
+            break;
+        case 'U': {
+
+        }
+            break;
+        case 'I': {
+
+        }
+            break;
+        case 'O': {
+
+        }
+            break;
+        case 'P': {
+
+        }
+            break;
+        case 'A': {
+
+        }
+            break;
+        case 'S': {
+            showLog()
+        } break;
+        case 'D': {
+
+        }
+            break;
+        case 'F': {
+
+        }
+            break;
+        case 'G': {
+
+        }
+            break;
+        case 'H': {
+
+        }
+            break;
+        case 'J': {
+
+        }
+            break;
+        case 'K': {
+
+        }
+            break;
+        case 'L': {
+
+        }
+            break;
+        case "Z": {
+            shiny()
+        }
+            break;
+        case 'X': {
+            random_multiple(prompt('How Many Pokemon? Currently works up to 9'))
+        }
+            break;
+        case 'C': {
+            clearLog()
+        }
+            break;
+        case 'V': {
+
+        }
+            break;
+        case 'B': {
+
+        }
+            break;
+        case 'N': {
+
+        }
+            break;
+        case 'M': {
+
+        }
+            break;
+
         case 'ArrowRight': {
             evolution(1)
         }
@@ -116,15 +201,6 @@ addEventListener('keydown', (e) => {
             break;
         case 'ArrowUp': {
             dex_num(-1)
-        }
-            break;
-        case 'R': {
-            random_pokemon()
-        }
-            break;
-        case 'E': {
-            // custom()
-            showSearch(100)
         }
             break;
         case 'F1': {
@@ -198,10 +274,7 @@ addEventListener('keydown', (e) => {
             spotlight(8)
         }
             break;
-        case "Z": {
-            shiny()
-        }
-            break;
+
     }
 });
 
@@ -440,6 +513,8 @@ function set_pokemon(dex, form = 1, show_type = false) {
     name = capitalize(name)
     type = typeGen();
 
+
+    qs('div#info').style.display = "";
     qs('div#info h1').textContent = name + " #" + x.nameToNo[name.toLowerCase()] // + (show_type ? "... but it's " + type + " type!" : "");
 
     // toLog(name, show_type ? type : null, dex);
@@ -638,14 +713,16 @@ function toggle_sidebar() {
 
     if (!enabled) {
         s.style.transform = 'translateX(0px)';
-        ts.style.color = "white";
-        ts.style.border = "solid white 1px";
+        // ts.style.color = "white";
+        // ts.style.border = "solid white 1px";
+        ts.classList.add('invert');
 
         enabled = true
     } else {
         s.style.transform = ''
-        ts.style.color = "black";
-        ts.style.border = "solid black 1px";
+        // ts.style.color = "black";
+        // ts.style.border = "solid black 1px";
+        ts.classList.remove('invert');
 
         enabled = false
     }
@@ -667,4 +744,14 @@ function msg(str, time = 0) {
 function dex_num(n) {
     get_current().split(',').length == 1 &&
         set_pokemon(x.nameToNo[get_current()] + n)
+}
+
+function toggleImgBkg() {
+    if (qs('#pkmn').style.backgroundColor == "white") {
+        qs('#pkmn').style.backgroundColor = "";
+        qs('#pkmn').style.borderColor = "";
+    } else {
+        qs('#pkmn').style.backgroundColor = "white";
+        qs('#pkmn').style.borderColor = "#81eddf";
+    }
 }
