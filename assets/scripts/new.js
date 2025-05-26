@@ -450,7 +450,7 @@ function set_pokemon(dex, form = 1, show_type = false) {
 
     form_buttons(x[dex].forms);
 
-    qsa('.form-button')[form_num - 1].click();
+    qs('.form-button') && qsa('.form-button')[form_num - 1].click();
 
 }
 
