@@ -3,7 +3,10 @@
     src: url('/pokemon/assets/fonts/msr.woff2');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@font-face {
+    font-family: Afacad Flux;
+    src: url('/pokemon/assets/fonts/AfacadFlux-Regular.ttf');
+}
 
 html {
     background-color: rgb(192, 192, 192);
