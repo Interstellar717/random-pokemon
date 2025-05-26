@@ -1,0 +1,47 @@
+html {
+    /*background-color: rgb(192, 192, 192);*/
+    background-image: url('https://pm1.aminoapps.com/7683/f1fcbd00e56db98e02a626eae33b15a0b4381098r1-2048-1536v2_hq.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 115%;
+    background-position-x: -230px;
+    background-position-y: -260px;
+}
+
+img {
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
+#help {
+    background-color: hsl(169.47deg 58.76% 19.02%);
+    border-color: #81eddf;
+}
+
+.function {
+    background-color: hsl(320.57deg 67.74% 69.61%);
+    color: white;
+    border-color: rgb(206 163 206);
+}
+
+.function:hover {
+    /* hsl(199, 65%, 49%) */
+    background-color: hsl(320.57deg 67.74% 74.61%);
+    color: white;
+    border-color: rgb(206 163 206);
+}
+
+.function:active {
+    background-color: hsl(320.57deg 67.74% 79.61%);
+    color: white;
+    border-color: rgb(206 163 206);
+}
+
+button#toggle-sidebar {
+    border: solid white 1px;
+    color: white;
+}
+
+button#toggle-sidebar.invert {
+    filter: none;
+}

@@ -1,11 +1,11 @@
 @font-face {
     font-family: MSR;
-    src: url('/pokemon/assets/fonts/msr.woff2');
+    src: url('/assets/fonts/msr.woff2');
 }
 
 @font-face {
     font-family: Afacad Flux;
-    src: url('/pokemon/assets/fonts/AfacadFlux-Regular.ttf');
+    src: url('/assets/fonts/AfacadFlux-Regular.ttf');
 }
 
 html {
@@ -42,6 +42,7 @@ img {
     background-color: rgb(255, 255, 255);
     visibility: visible;
     border-radius: 25px;
+    transition: 1s all;
 }
 
 #pkmn {
@@ -366,4 +367,8 @@ div#info h1 {
 .result:hover,
 .result.hovered {
     background-color: rgb(240, 240, 240);
+}
+
+.invert {
+    filter: invert(1);
 }
