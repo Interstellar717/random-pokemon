@@ -168,7 +168,8 @@ addEventListener('keydown', (e) => {
         }
             break;
         case 'X': {
-            random_multiple(prompt('How Many Pokemon? Currently works up to 9'))
+            // random_multiple(prompt('How Many Pokemon? Currently works up to 9'))
+            random_multiple(3)
         }
             break;
         case 'C': {
