@@ -2,6 +2,9 @@ sessionStorage.setItem('hasChangedType', 'false');
 
 var selected_result = -1;
 
+var centerbar = true;
+
+
 var click_listeners = {
     "#help": help,
     "#custom": /* custom */showSearch,
@@ -13,11 +16,12 @@ var click_listeners = {
     "#prevo": () => evolution(-1),
     "#inc-dex": () => dex_num(1),
     "#dec-dex": () => dex_num(-1),
-    "#shiny": shiny,
+    // "#shiny": shiny,
     "#rand-mult": () => random_multiple(prompt('How Many Pokemon? Currently works up to 9')),
     "#toggle-sidebar": toggle_sidebar,
     ".msg button": () => msg(false),
-    "#img-bkg": toggleImgBkg
+    "#img-bkg": toggleImgBkg,
+    "#close-center-bar": closeCenterBar
 }
 
 for (let [key, value] of Object.entries(click_listeners)) {
@@ -336,7 +340,7 @@ function special(c) {
 }
 
 function imageFormat() {
-    const reset = () => {
+    /* const reset = () => {
         var source = qs('#pkmn').src;
         qs('#pkmn').src = '';
         qs('#pkmn').src = source;
@@ -352,7 +356,7 @@ function imageFormat() {
         setTimeout(function () {
             reset()
         }, 1000);
-    }
+    } */
 }
 
 function typeChange() {
@@ -361,10 +365,14 @@ function typeChange() {
 
             sessionStorage.setItem('hasChangedType', 'true');
 
-            var dex = localStorage.getItem('dex');
+            // var dex = localStorage.getItem('dex');
+            // var name = x[parseInt(dex)].pokemon;
+
+            var name = get_current();
+            var dex = x.nameToNo[name];
             var type = typeGen();
-            var name = x[parseInt(dex)].pokemon;
-            name = capitalize(name)
+
+            name && (name = capitalize(name));
 
             qs("div#info h1").innerHTML = name + "... but it's " + type + " type!";
             toLog(name, type, dex);
@@ -476,7 +484,7 @@ function spotlight(n) {
         end = (n == 1 ? '.png' : `_f${n}.png`);
     if (img.src.split('_').length > 1) source = img.src.split('_')[0] + end;
     else source = img.src.split('.png')[0] + end;
-    img.src = '';
+    // img.src = '';
     img.src = source;
     h1.textContent = (fname != "Base" ? fname + " " : "") + capitalize(get_current()) + " #" + x.nameToNo[get_current()]
 }
@@ -515,6 +523,8 @@ function set_pokemon(dex, form = 1, show_type = false) {
 
 
     qs('div#info').style.display = "";
+    qs('div#image-container').style.transform = "translateY(0vh)";
+
     qs('div#info h1').textContent = name + " #" + x.nameToNo[name.toLowerCase()] // + (show_type ? "... but it's " + type + " type!" : "");
 
     // toLog(name, show_type ? type : null, dex);
@@ -526,6 +536,8 @@ function set_pokemon(dex, form = 1, show_type = false) {
     form_buttons(x[dex].forms);
 
     qs('.form-button') && qsa('.form-button')[form_num - 1].click();
+
+    centerbar && closeCenterBar();
 
 }
 
@@ -566,7 +578,9 @@ const
         // return qs('div#info h1').textContent.split(' #')[0].toLocaleLowerCase()
 
         // parseInt() to get rid of preceding zeroes
-        return x[parseInt(qs('#pkmn').src.split('.png')[0].split('/full/')[1].split("_")[0])].pokemon;
+        var res = x[parseInt(qs('#pkmn').src.split('.png')[0]?.split('/full/')[1]?.split("_")[0])]?.pokemon;
+        !res && msg('No Pokémon generated!', 1000);
+        return res;
     },
     get_form = () => {
         return parseInt(qs('#pkmn').src.split('.png')[0].split('full/')[1].split('_f')[1]) || 1
@@ -648,6 +662,13 @@ function set_multiple_pokemon(arr, forms = "") {
         qsa('.pkmn')[p].src = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${zeroes(x.nameToNo[arr[p]])}${forms[p] > 1 ? "_f" + forms[p] : ""}.png`;
         qsa('.pkmn')[p].addEventListener('click', () => set_pokemon(arr[p], forms ? forms[p] : 1));
     }
+
+    qs('div#info').style.display = "";
+    qs('div#image-container').style.transform = "translateY(0vh)";
+
+
+    centerbar && closeCenterBar();
+
 
 }
 
@@ -742,16 +763,30 @@ function msg(str, time = 0) {
 }
 
 function dex_num(n) {
-    get_current().split(',').length == 1 &&
+    get_current()?.split(',')?.length == 1 &&
         set_pokemon(x.nameToNo[get_current()] + n)
 }
 
 function toggleImgBkg() {
+
+    if (!get_current()) return false;
+
     if (qs('#pkmn').style.backgroundColor == "white") {
         qs('#pkmn').style.backgroundColor = "";
-        qs('#pkmn').style.borderColor = "";
+        qs('#pkmn').style.border = "";
     } else {
+        qs('#pkmn').style.border = "solid #81eddf 3px";
         qs('#pkmn').style.backgroundColor = "white";
-        qs('#pkmn').style.borderColor = "#81eddf";
     }
+}
+
+function closeCenterBar() {
+    qs('#sidebar').style = "text-align: center; transform: translateX(0%); width: 100%; font-size: 16px; padding-right: 35%;";
+    qs('#close-center-bar').style.display = "none";
+
+    qs('#toggle-sidebar').style.transform = "";
+
+    setTimeout(() => qs('#sidebar').style = "font-size: 16px; padding-right: 35%;", 600);
+
+    centerbar = false;
 }
