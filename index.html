@@ -17,11 +17,10 @@
 		src="https://media3.giphy.com/media/9PekRRQ0WlrRVwynAk/200w.gif?cid=6c09b95273brx7m1yfjowsv5j0j86z8oyc72vgq9y6ubdawo&ep=v1_gifs_search&rid=200w.gif&ct=s"> -->
 
 	<div style="text-align:center;">
+		<!-- https://www.pokemon.com/static-assets/app/static3/img/og-default-image.jpeg -->
 
-
-		<div id="image-container" class="imgBtn">
-			<img id="pkmn" src="https://www.pokemon.com/static-assets/app/static3/img/og-default-image.jpeg"
-				draggable="false">
+		<div id="image-container" class="imgBtn" style="transform: translateY(-100%);">
+			<img id="pkmn" src="" draggable="false">
 		</div>
 
 		<div id="form-bar"></div>
@@ -51,17 +50,18 @@
 
 		<div id="sidebar-new" style="transform: translateX(-300px);">
 
-			<div id="sidebar">
+			<div id="sidebar"
+				style="text-align: center; transform: translateX(calc(50vh + 150px + 300px)); width: 200%; font-size: 22px; padding-right: 0%;">
 				<button class="function" id="help">Tutorial</button>
 				<h2 class="label-header">Random</h2>
 				<button class="function" id="activator">Random Pokémon</button>
-				<br>
+				<!-- <br> -->
 				<button class="function" id="rand-mult">Random Multiple</button>
-				<br>
+				<!-- <br> -->
 				<h2 class="label-header">Log</h2>
 				<button class="function" id="showLog">Show</button>
 				<button class="function" id="clearLog">Clear</button>
-				<br>
+				<!-- <br> -->
 				<h2 class="label-header">Evolution</h2>
 				<button class="function msr" id="prevo">arrow_left</button>
 				<button class="function msr" id="evo">arrow_right</button>
@@ -70,18 +70,20 @@
 				<button class="function" id="inc-dex">Next</button>
 				<h2 class="label-header">Other</h2>
 				<button class="function" id="custom">Search Pokémon</button>
-				<br>
+				<!-- <br> -->
 				<button class="function" id="typeChange">Type Change</button>
-				<br>
-				<button class="function" id="shiny">Shiny</button>
-				<br>
+				<!-- <br> -->
+				<!-- <button class="function" id="shiny">Shiny</button> -->
+				<!-- <br> -->
 				<button class="function" id="img-bkg">Image Bkg Toggle</button>
+
+				<button id="close-center-bar" class="msr function">close</button>
 			</div>
 		</div>
-		<button id="toggle-sidebar">MENU</button>
+		<button id="toggle-sidebar" style="transform: translateX(-75px);">MENU</button>
 
 		<div class="search-column">
-			<input type="text" class="search-bar">
+			<input type="text" class="search-bar" placeholder="Enter Pokémon name query...">
 			<div class="results"></div>
 		</div>
 </body>
