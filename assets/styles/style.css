@@ -1,11 +1,11 @@
 @font-face {
     font-family: MSR;
-    src: url('/pokemon/assets/fonts/msr.woff2');
+    src: url('/assets/fonts/msr.woff2');
 }
 
 @font-face {
     font-family: Afacad Flux;
-    src: url('/pokemon/assets/fonts/AfacadFlux-Regular.ttf');
+    src: url('/assets/fonts/AfacadFlux-Regular.ttf');
 }
 
 html {
@@ -36,17 +36,16 @@ button.imgBtn {
 
 img {
     width: 265px;
-    border-color: rgb(118, 164, 0);
-    border-width: 5px;
-    border-style: solid;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     visibility: visible;
     border-radius: 25px;
-    transition: 1s all;
+    transition: 0.5s all;
 }
 
 #pkmn {
     width: clamp(200px, 600px, 75vh);
+    aspect-ratio: 1 / 1;
+    border: solid transparent 3px;
 }
 
 #extraForms1 {
@@ -82,7 +81,8 @@ img {
     color: white;
     font-style: bold;
     font-family: Afacad Flux;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: inherit;
     /* height: 35px; */
     border-radius: 10px;
     border-color: rgb(118, 164, 0);
@@ -116,7 +116,7 @@ img {
 #logContainer,
 .search-column {
     text-align: left;
-    width: 300px;
+    width: 425px;
     height: 100%;
     overflow-y: scroll;
     position: absolute;
@@ -165,6 +165,7 @@ border-width:3px;
 }*/
 #form-bar {
     height: 45px;
+    font-size: 16px;
 }
 
 #loading {
@@ -215,6 +216,7 @@ border-width:3px;
 
 #image-container {
     margin-top: 1.5%;
+    transition: 0.5s all;
 }
 
 #image-container.multiple {
@@ -230,6 +232,7 @@ border-width:3px;
 #sidebar {
     text-align: left;
     transition: 0.5s all;
+    padding-right: 35%;
 }
 
 div#sidebar-new {
@@ -261,6 +264,7 @@ button#toggle-sidebar {
     color: black;
     transition: 0.5s all;
     user-select: none;
+    cursor: pointer;
 }
 
 .label-header {
@@ -268,7 +272,8 @@ button#toggle-sidebar {
     font-family: Afacad Flux;
     padding-left: 5px;
     margin: 4px 0;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: inherit;
 }
 
 div#info {
@@ -277,6 +282,7 @@ div#info {
     width: fit-content;
     padding: 10px;
     margin: auto;
+    font-size: 16px;
 }
 
 div#info h1 {
@@ -342,9 +348,12 @@ div#info h1 {
 }
 
 .search-bar {
-    height: 3%;
-    width: 90%;
+    width: calc(100% - 6px * 4 - 3px);
     border: solid black 0.1px;
+    font-size: 15px;
+    margin: 6px;
+    padding: 6px;
+    border-radius: 4px;
 }
 
 .results {
@@ -371,4 +380,12 @@ div#info h1 {
 
 .invert {
     filter: invert(1);
+}
+
+#close-center-bar {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+
+    display: none; /* temporary unless I really don't want it on there */
 }
