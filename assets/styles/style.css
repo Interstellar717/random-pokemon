@@ -8,6 +8,10 @@
     src: url('/pokemon/assets/fonts/AfacadFlux-Regular.ttf');
 }
 
+* {
+    transition: 0.5s all;
+}
+
 html {
     background-color: rgb(192, 192, 192);
     background-image: url();
@@ -276,7 +280,7 @@ button#toggle-sidebar {
     font-size: inherit;
 }
 
-div#info {
+div#name-num {
     background: linear-gradient(45deg, black, transparent);
     border-radius: 20px;
     width: fit-content;
@@ -285,7 +289,7 @@ div#info {
     font-size: 16px;
 }
 
-div#info h1 {
+div#name-num h1 {
     margin: 0;
 }
 
@@ -371,6 +375,7 @@ div#info h1 {
     cursor: pointer;
     padding: 5px;
     font-size: 15px;
+    font-family: 'Afacad Flux';
 }
 
 .result:hover,
@@ -387,5 +392,42 @@ div#info h1 {
     top: -10px;
     right: -10px;
 
-    display: none; /* temporary unless I really don't want it on there */
+    display: none;
+    /* temporary unless I really don't want it on there */
+}
+
+div#info {
+    width: 300px;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: left;
+    color: white;
+    font-family: 'Afacad Flux';
+    display: none;
+    transform: translateY(150%);
+}
+
+div#info span:not(.type) {
+    display: block;
+    font-size: 23px;
+}
+
+h1#info-name {
+    margin-top: 0;
+    font-size: 27px;
+}
+
+#info-next {
+    min-height: 3em;
+}
+
+#info-num {
+    position: absolute;
+    top: 30px;
+    right: 30px;
 }
