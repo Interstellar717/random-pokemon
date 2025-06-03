@@ -62,10 +62,15 @@ function zeroes(n, name = "", place = 3) {
     return changed;
 }
 //update capitalize later
-function capitalize(str) {
-    var sections = str.toString().split(' ');
-    res = "",
+function capitalize(str, def) {
+    if (!str) return def
+
+
+    var sections = str.toString().split(' '),
+        res = "",
         count = 0;
+
+
 
     sections.forEach(e => {
         count++
