@@ -78,6 +78,12 @@
             "Fire",
             "Flying"
         ],
+        "form_types": {
+            "2": [
+                "fire",
+                "dragon"
+            ]
+        },
         "forms": 4,
         "fnames": {
             "1": "Base",
@@ -273,6 +279,12 @@
         "type": [
             "Normal"
         ],
+        "form_types": {
+            "2": [
+                "normal",
+                "dark"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -290,6 +302,12 @@
         "type": [
             "Normal"
         ],
+        "form_types": {
+            "2": [
+                "normal",
+                "dark"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -380,6 +398,12 @@
         "type": [
             "Electric"
         ],
+        "form_types": {
+            "2": [
+                "electric",
+                "psychic"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -397,6 +421,12 @@
         "type": [
             "Ground"
         ],
+        "form_types": {
+            "2": [
+                "ice",
+                "steel"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -414,6 +444,12 @@
         "type": [
             "Ground"
         ],
+        "form_types": {
+            "2": [
+                "ice",
+                "steel"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -538,6 +574,11 @@
         "type": [
             "Fire"
         ],
+        "form_types": {
+            "2": [
+                "ice"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -555,6 +596,12 @@
         "type": [
             "Fire"
         ],
+        "form_types": {
+            "2": [
+                "ice",
+                "fairy"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -731,6 +778,12 @@
         "type": [
             "Ground"
         ],
+        "form_types": {
+            "2": [
+                "ground",
+                "steel"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -748,6 +801,12 @@
         "type": [
             "Ground"
         ],
+        "form_types": {
+            "2": [
+                "ground",
+                "steel"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -766,6 +825,14 @@
         "type": [
             "Normal"
         ],
+        "form_types": {
+            "2": [
+                "dark"
+            ],
+            "3": [
+                "steel"
+            ]
+        },
         "forms": 4,
         "fnames": {
             "1": "Kantonian",
@@ -797,6 +864,11 @@
         "type": [
             "Normal"
         ],
+        "form_types": {
+            "2": [
+                "dark"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Base",
@@ -867,6 +939,12 @@
         "type": [
             "Fire"
         ],
+        "form_types": {
+            "2": [
+                "fire",
+                "rock"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -884,6 +962,12 @@
         "type": [
             "Fire"
         ],
+        "form_types": {
+            "2": [
+                "fire",
+                "rock"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -1103,6 +1187,12 @@
             "Rock",
             "Ground"
         ],
+        "form_types": {
+            "2": [
+                "rock",
+                "electric"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -1121,6 +1211,12 @@
             "Rock",
             "Ground"
         ],
+        "form_types": {
+            "2": [
+                "rock",
+                "electric"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -1140,6 +1236,12 @@
             "Rock",
             "Ground"
         ],
+        "form_types": {
+            "2": [
+                "rock",
+                "electric"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -1158,6 +1260,11 @@
         "type": [
             "Fire"
         ],
+        "form_types": {
+            "2": [
+                "psychic"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -1175,6 +1282,12 @@
         "type": [
             "Fire"
         ],
+        "form_types": {
+            "2": [
+                "psychic",
+                "fairy"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -1194,6 +1307,12 @@
             "Water",
             "Psychic"
         ],
+        "form_types": {
+            "2": [
+                "poison",
+                "psychic"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -1226,6 +1345,12 @@
             "Water",
             "Psychic"
         ],
+        "form_types": {
+            "2": [
+                "poison",
+                "psychic"
+            ]
+        },
         "forms": 3,
         "fnames": {
             "1": "Kantonian",
@@ -1275,6 +1400,11 @@
             "Normal",
             "Flying"
         ],
+        "form_types": {
+            "2": [
+                "fighting"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -1347,6 +1477,12 @@
         "type": [
             "Poison"
         ],
+        "form_types": {
+            "2": [
+                "poison",
+                "dark"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -1364,6 +1500,12 @@
         "type": [
             "Poison"
         ],
+        "form_types": {
+            "2": [
+                "poison",
+                "dark"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -1526,6 +1668,12 @@
         "type": [
             "Electric"
         ],
+        "form_types": {
+            "2": [
+                "electric",
+                "grass"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -1543,6 +1691,12 @@
         "type": [
             "Electric"
         ],
+        "form_types": {
+            "2": [
+                "electric",
+                "grass"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -1576,6 +1730,12 @@
             "Grass",
             "Psychic"
         ],
+        "form_types": {
+            "2": [
+                "grass",
+                "dragon"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -1606,6 +1766,12 @@
         "type": [
             "Ground"
         ],
+        "form_types": {
+            "2": [
+                "fire",
+                "ghost"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -1675,6 +1841,12 @@
         "type": [
             "Poison"
         ],
+        "form_types": {
+            "2": [
+                "poison",
+                "fairy"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -1843,6 +2015,12 @@
             "Psychic",
             "Fairy"
         ],
+        "form_types": {
+            "2": [
+                "ice",
+                "psychic"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -1922,6 +2100,12 @@
         "type": [
             "Bug"
         ],
+        "form_types": {
+            "2": [
+                "bug",
+                "flying"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Base",
@@ -1939,12 +2123,25 @@
         "type": [
             "Normal"
         ],
+        "form_types": {
+            "2": [
+                "fighting"
+            ],
+            "3": [
+                "fighting",
+                "fire"
+            ],
+            "4": [
+                "fighting",
+                "water"
+            ]
+        },
         "forms": 4,
         "fnames": {
             "1": "Kantonian",
-            "2": "Hisuian Combat",
-            "3": "Hisuian Blaze",
-            "4": "Hisuian Aqua"
+            "2": "Paldean Combat",
+            "3": "Paldean Blaze",
+            "4": "Paldean Aqua"
         },
         "previous": {
             "pokemon": ""
@@ -1972,6 +2169,12 @@
             "Water",
             "Flying"
         ],
+        "form_types": {
+            "2": [
+                "water",
+                "dark"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Base",
@@ -2191,6 +2394,12 @@
             "Ice",
             "Flying"
         ],
+        "form_types": {
+            "2": [
+                "psychic",
+                "flying"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -2209,6 +2418,12 @@
             "Electric",
             "Flying"
         ],
+        "form_types": {
+            "2": [
+                "fighting",
+                "flying"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -2227,6 +2442,12 @@
             "Fire",
             "Flying"
         ],
+        "form_types": {
+            "2": [
+                "dark",
+                "flying"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kantonian",
@@ -2284,6 +2505,12 @@
         "type": [
             "Psychic"
         ],
+        "form_types": {
+            "2": [
+                "psychic",
+                "fighting"
+            ]
+        },
         "forms": 3,
         "fnames": {
             "1": "Base",
@@ -2380,6 +2607,12 @@
         "type": [
             "Fire"
         ],
+        "form_types": {
+            "2": [
+                "fire",
+                "ghost"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Johtonian",
@@ -2709,6 +2942,12 @@
         "type": [
             "Electric"
         ],
+        "form_types": {
+            "2": [
+                "electric",
+                "dragon"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Base",
@@ -2890,10 +3129,16 @@
             "Water",
             "Ground"
         ],
+        "form_types": {
+            "2": [
+                "poison",
+                "ground"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Johtonian",
-            "2": "Hisuian"
+            "2": "Paldean"
         },
         "previous": {
             "pokemon": ""
@@ -2966,6 +3211,12 @@
             "Water",
             "Psychic"
         ],
+        "form_types": {
+            "2": [
+                "poison",
+                "psychic"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Johtonian",
@@ -3136,6 +3387,12 @@
             "Water",
             "Poison"
         ],
+        "form_types": {
+            "2": [
+                "poison",
+                "dark"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Johtonian",
@@ -3208,6 +3465,12 @@
             "Dark",
             "Ice"
         ],
+        "form_types": {
+            "2": [
+                "fighting",
+                "poison"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Johtonian",
@@ -3311,6 +3574,11 @@
             "Water",
             "Rock"
         ],
+        "form_types": {
+            "2": [
+                "ghost"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Johtonian",
@@ -3761,6 +4029,12 @@
         "type": [
             "Grass"
         ],
+        "form_types": {
+            "2": [
+                "grass",
+                "dragon"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Base",
@@ -3894,6 +4168,12 @@
         "type": [
             "Normal"
         ],
+        "form_types": {
+            "2": [
+                "normal",
+                "dark"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Hoennian",
@@ -3911,6 +4191,12 @@
         "type": [
             "Normal"
         ],
+        "form_types": {
+            "2": [
+                "normal",
+                "dark"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Hoennian",
@@ -4516,6 +4802,11 @@
             "Steel",
             "Rock"
         ],
+        "form_types": {
+            "2": [
+                "steel"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Base",
@@ -4914,6 +5205,12 @@
             "Dragon",
             "Flying"
         ],
+        "form_types": {
+            "2": [
+                "dragon",
+                "fairy"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Base",
@@ -5617,6 +5914,12 @@
         "type": [
             "Ground"
         ],
+        "form_types": {
+            "2": [
+                "ground",
+                "fire"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Base",
@@ -6254,6 +6557,12 @@
         "type": [
             "Normal"
         ],
+        "form_types": {
+            "2": [
+                "normal",
+                "fighting"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Base",
@@ -6968,6 +7277,28 @@
             "Electric",
             "Ghost"
         ],
+        "form_types": {
+            "2": [
+                "electric",
+                "fire"
+            ],
+            "3": [
+                "electric",
+                "water"
+            ],
+            "4": [
+                "electric",
+                "ice"
+            ],
+            "5": [
+                "electric",
+                "flying"
+            ],
+            "6": [
+                "electric",
+                "grass"
+            ]
+        },
         "forms": 6,
         "fnames": {
             "1": "Base",
@@ -7161,6 +7492,12 @@
         "type": [
             "Grass"
         ],
+        "form_types": {
+            "2": [
+                "grass",
+                "flying"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Land",
@@ -7311,6 +7648,12 @@
         "type": [
             "Water"
         ],
+        "form_types": {
+            "2": [
+                "water",
+                "dark"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Unovan",
@@ -7687,9 +8030,14 @@
     "531": {
         "pokemon": "audino",
         "type": [
-            "Normal",
-            "Fairy"
+            "Normal"
         ],
+        "form_types": {
+            "2": [
+                "normal",
+                "fairy"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Base",
@@ -7875,7 +8223,7 @@
             "pokemon": "venipede"
         },
         "next": {
-            "pokemon": "whirlipede"
+            "pokemon": "scolipede"
         }
     },
     "545": {
@@ -8016,6 +8364,11 @@
         "type": [
             "Fire"
         ],
+        "form_types": {
+            "2": [
+                "ice"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Unovan",
@@ -8033,6 +8386,11 @@
         "type": [
             "Fire"
         ],
+        "form_types": {
+            "2": [
+                "ice"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Unovan",
@@ -8134,6 +8492,12 @@
         "type": [
             "Ghost"
         ],
+        "form_types": {
+            "2": [
+                "ghost",
+                "ground"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Unovan",
@@ -8254,6 +8618,12 @@
         "type": [
             "Dark"
         ],
+        "form_types": {
+            "2": [
+                "normal",
+                "ghost"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Unovan",
@@ -8271,6 +8641,12 @@
         "type": [
             "Dark"
         ],
+        "form_types": {
+            "2": [
+                "normal",
+                "ghost"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Unovan",
@@ -9060,6 +9436,12 @@
             "Normal",
             "Flying"
         ],
+        "form_types": {
+            "2": [
+                "psychic",
+                "flying"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Unovan",
@@ -9369,6 +9751,12 @@
             "Normal",
             "Psychic"
         ],
+        "form_types": {
+            "2": [
+                "normal",
+                "fighting"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Aria",
@@ -10163,6 +10551,12 @@
         "type": [
             "Dragon"
         ],
+        "form_types": {
+            "2": [
+                "dragon",
+                "steel"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kalosian",
@@ -10180,6 +10574,12 @@
         "type": [
             "Dragon"
         ],
+        "form_types": {
+            "2": [
+                "dragon",
+                "steel"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kalosian",
@@ -10281,6 +10681,12 @@
         "type": [
             "Ice"
         ],
+        "form_types": {
+            "2": [
+                "rock",
+                "ice"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Kalosian",
@@ -10392,6 +10798,12 @@
             "Psychic",
             "Ghost"
         ],
+        "form_types": {
+            "2": [
+                "psychic",
+                "dark"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Confined",
@@ -10452,6 +10864,12 @@
             "Grass",
             "Ghost"
         ],
+        "form_types": {
+            "2": [
+                "grass",
+                "fighting"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Alolan",
@@ -10686,6 +11104,20 @@
             "Fire",
             "Flying"
         ],
+        "form_types": {
+            "2": [
+                "electric",
+                "flying"
+            ],
+            "3": [
+                "psychic",
+                "flying"
+            ],
+            "4": [
+                "ghost",
+                "flying"
+            ]
+        },
         "forms": 4,
         "fnames": {
             "1": "Baile",
@@ -11516,6 +11948,20 @@
         "type": [
             "Psychic"
         ],
+        "form_types": {
+            "2": [
+                "steel",
+                "psychic"
+            ],
+            "3": [
+                "ghost",
+                "psychic"
+            ],
+            "4": [
+                "dragon",
+                "psychic"
+            ]
+        },
         "forms": 4,
         "fnames": {
             "1": "Base",
@@ -12799,9 +13245,14 @@
     "888": {
         "pokemon": "zacian",
         "type": [
-            "Fairy",
-            "Steel"
+            "Fairy"
         ],
+        "form_types": {
+            "2": [
+                "fairy",
+                "steel"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Base",
@@ -12817,9 +13268,14 @@
     "889": {
         "pokemon": "zamazenta",
         "type": [
-            "Fighting",
-            "Steel"
+            "Fighting"
         ],
+        "form_types": {
+            "2": [
+                "fighting",
+                "steel"
+            ]
+        },
         "forms": 2,
         "fnames": {
             "1": "Base",
@@ -12863,12 +13319,24 @@
         "pokemon": "urshifu",
         "type": [
             "Fighting",
-            "Water"
+            "Dark"
         ],
-        "forms": 2,
+        "form_types": {
+            "2": [
+                "fighting",
+                "water"
+            ],
+            "4": [
+                "fighting",
+                "water"
+            ]
+        },
+        "forms": 3,
         "fnames": {
             "1": "Single Strike",
-            "2": "Rapid Strike"
+            "2": "Rapid Strike",
+            "3": "Gigantamax Single Strike",
+            "4": "Gigantamax Rapid Strike"
         },
         "previous": {
             "pokemon": "kubfu"
@@ -12949,6 +13417,16 @@
             "Psychic",
             "Grass"
         ],
+        "form_types": {
+            "2": [
+                "psychic",
+                "ice"
+            ],
+            "3": [
+                "psychic",
+                "ghost"
+            ]
+        },
         "forms": 3,
         "fnames": {
             "1": "Base",
@@ -14633,6 +15111,20 @@
         "type": [
             "Grass"
         ],
+        "form_types": {
+            "2": [
+                "grass",
+                "water"
+            ],
+            "3": [
+                "grass",
+                "fire"
+            ],
+            "4": [
+                "grass",
+                "rock"
+            ]
+        },
         "forms": 4,
         "fnames": {
             "1": "Teal Mask",
