@@ -4,7 +4,7 @@ const qsa = (e) => document.querySelectorAll(e);
 
 function zeroes(n, name = "", place = 3) {
 
-    if (n == undefined) {
+    /* if (n == undefined) {
         var scores = [{
             name: "",
             score: 1e-1
@@ -47,7 +47,8 @@ function zeroes(n, name = "", place = 3) {
         alert(`error: bad pokemon name "${name}". ${insert || ""}`);
 
         return 201;
-    }
+    } */
+
 
     var input = n.toString(),
         changed,
