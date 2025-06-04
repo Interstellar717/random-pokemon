@@ -543,31 +543,15 @@ function set_pokemon(dex, form = 1, show_type = false) {
 
     // + (show_type ? "... but it's " + type + " type!" : "");
     // qs('div#name-num').style.display = "";
+    qs('div#name-num').style.display = "none";
+    qs('div#name-num').style.textContent = "";
     // qs('div#name-num h1').textContent = name + " #" + x.nameToNo[name.toLowerCase()];
 
 
     qs('#info').style.display = "block";
     setTimeout(() => qs('#info').style.transform = "translateY(0%)", 10);
 
-    qs('#info-name').innerHTML = name + " #" + x.nameToNo[name.toLowerCase()];
-    qs('#info-gen').innerHTML = "<b>Generation " + gen(x.nameToNo[name.toLowerCase()]) + "</b>";
-
-
-    var type = x[x.nameToNo[name.toLowerCase()]].type;
-    !type && (type = ["null", "null"]);
-    qs('#info-type').innerHTML = "<b>Type: </b>" + `<span class="type">${type[0]}</span> ${type[1] ? "/" : ""} <span class="type">${type[1] || ""}</span>`;
-
-
-    qs('#info-forms').innerHTML = "<b>Forms: </b>" + x[x.nameToNo[name.toLowerCase()]].forms;
-    qs('#info-prev').innerHTML = "<b>Prevolution: </b>" + capitalize(x[x.nameToNo[name.toLowerCase()]].previous.pokemon, "none");
-
-    var next = x[x.nameToNo[name.toLowerCase()]].next.pokemon;
-    if (typeof next == "string")
-        next = capitalize(x[x.nameToNo[name.toLowerCase()]].next.pokemon, "none");
-    else if (typeof next == "object")
-        next = capitalize(x[x.nameToNo[name.toLowerCase()]].next.pokemon.join(', '), "none");
-
-    qs('#info-next').innerHTML = "<b>Evolution: </b>" + next;
+    infoBox(parseInt(dex));
 
 
     // toLog(name, show_type ? type : null, dex);
@@ -697,13 +681,14 @@ function set_multiple_pokemon(arr, forms = "") {
         HTML += `<img id="pkmn" class="pkmn" draggable="false" style="width:${n};">`
         if (i % 3 === 2) HTML += `<br>`
     }
-    qs('#image-container').innerHTML = HTML,
-        qs('#image-container').classList.add('multiple'),
-        qs('div#name-num h1').textContent = capitalize(arr.join(', '))
+    qs('#image-container').innerHTML = HTML;
+    qs('#image-container').classList.add('multiple');
+    qs('div#name-num h1').textContent = capitalize(arr.join(', '));
 
     for (let p in arr) {
         qsa('.pkmn')[p].src = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${zeroes(x.nameToNo[arr[p]])}${forms[p] > 1 ? "_f" + forms[p] : ""}.png`;
         qsa('.pkmn')[p].addEventListener('click', () => set_pokemon(arr[p], forms ? forms[p] : 1));
+        qsa('.pkmn')[p].title = infoBox(x.nameToNo[arr[p]], false).text
     }
 
     qs('div#name-num').style.display = "";
@@ -861,3 +846,40 @@ const gen = n => {
     }
 }
 
+
+
+function infoBox(n, set = true) {
+    var name = x[parseInt(n)].pokemon;
+
+    var type = x[x.nameToNo[name.toLowerCase()]].type;
+    !type && (type = ["null", "null"]);
+
+    var next = x[x.nameToNo[name.toLowerCase()]].next.pokemon;
+    if (typeof next == "string")
+        next = capitalize(x[x.nameToNo[name.toLowerCase()]].next.pokemon, "none");
+    else if (typeof next == "object")
+        next = capitalize(x[x.nameToNo[name.toLowerCase()]].next.pokemon.join(', '), "none");
+
+    var html = `<div id="info" style="display: block; transform: translateY(0%);">
+			<h1 id="info-name">${capitalize(name) + " #" + x.nameToNo[name.toLowerCase()]}</h1>
+			<span id="info-gen"><b>${"<b>Generation " + gen(x.nameToNo[name.toLowerCase()]) + "</b>"}</b></span>
+			<span id="info-type">${"<b>Type: </b>" + `<span class="type">${type[0]}</span> ${type[1] ? "/" : ""} <span class="type">${type[1] || ""}</span>`}</span>
+			<span id="info-forms"><b>Forms: </b>${x[x.nameToNo[name.toLowerCase()]].forms}</span>
+			<span id="info-prev"><b>Prevolution: </b>${capitalize(x[x.nameToNo[name.toLowerCase()]].previous.pokemon, "none")}</span>
+			<span id="info-next"><b>Evolution: </b>${next}</span>
+		</div>`;
+    var text = `${capitalize(name) + " #" + x.nameToNo[name.toLowerCase()]}\n${"Generation " + gen(x.nameToNo[name.toLowerCase()])}\n${"Type: " + `${type[0]} ${type[1] ? "/" : ""} ${type[1] || ""}`}\n${"Forms: " + x[x.nameToNo[name.toLowerCase()]].forms}\n${"Prevolution: " + capitalize(x[x.nameToNo[name.toLowerCase()]].previous.pokemon, "none")}\n${"Next: " + next}`;
+
+
+    if (set) {
+        qs('#info').style.display = "block";
+        qs('#info').outerHTML = html;
+    }
+    else {
+        qs('#info').style.display = "none";
+        qs('#info').innerHTML = "";
+    }
+
+
+    return { html, text }
+}
