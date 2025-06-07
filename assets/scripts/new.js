@@ -520,7 +520,9 @@ function get_form_name(name, n) {
 function random_pokemon() {
 
     var dex = Math.floor(Math.random() * 1011);
-    set_pokemon(dex, 1, /*true*/ false)
+    var form = 1;
+    // form = Math.floor(Math.random() * x[dex].forms) + 1;
+    set_pokemon(dex, form, /*true*/ false)
 }
 
 function set_pokemon(dex, form = 1, show_type = false) {
@@ -903,13 +905,13 @@ function infoBox(n, form = 1, set = true) {
     var type;
     if (form == 1) {
         type = x[x.nameToNo[name.toLowerCase()]].type;
-    } else if (x[x.nameToNo[name.toLowerCase()]].form_types) {
+    } else if (x[x.nameToNo[name.toLowerCase()]].form_types[form]) {
         type = x[x.nameToNo[name.toLowerCase()]].form_types[form.toString()]
     } else {
         type = x[x.nameToNo[name.toLowerCase()]].type;
     }
 
-    !type && (type = ["null", "null"]);
+    console.log(type);
 
     var next = x[x.nameToNo[name.toLowerCase()]].next.pokemon;
     if (typeof next == "string")
@@ -950,4 +952,37 @@ function infoBox(n, form = 1, set = true) {
 
 
     return { html, text }
+}
+
+function getByTags(q, b = true) {
+    const res = [];
+
+    if (typeof q == "string") {
+        q = [q]
+    }
+
+    for (let i of Object.keys(x)) {
+        if (parseInt(i)) {
+            var match = true;
+
+            for (let j of q) {
+                if (b === true) {
+                    if (!x[i].tags.includes(j)) {
+                        match = false;
+                    }
+                } else if (b === false) {
+                    if (x[i].tags.includes(j)) {
+                        match = false;
+                    }
+                }
+            }
+
+            if (match) {
+                res.push(x[i].pokemon)
+            }
+
+        }
+    }
+
+    return res
 }
