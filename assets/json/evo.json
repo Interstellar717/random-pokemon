@@ -1,6 +1,9 @@
 {
     "1": {
         "pokemon": "bulbasaur",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "grass",
             "poison"
@@ -15,6 +18,9 @@
     },
     "2": {
         "pokemon": "ivysaur",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "grass",
             "poison"
@@ -29,6 +35,9 @@
     },
     "3": {
         "pokemon": "venusaur",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "grass",
             "poison"
@@ -48,6 +57,9 @@
     },
     "4": {
         "pokemon": "charmander",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "fire"
         ],
@@ -61,6 +73,9 @@
     },
     "5": {
         "pokemon": "charmeleon",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -74,6 +89,9 @@
     },
     "6": {
         "pokemon": "charizard",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire",
             "Flying"
@@ -100,6 +118,9 @@
     },
     "7": {
         "pokemon": "squirtle",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -113,6 +134,9 @@
     },
     "8": {
         "pokemon": "wartortle",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -126,6 +150,9 @@
     },
     "9": {
         "pokemon": "blastoise",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -144,6 +171,9 @@
     },
     "10": {
         "pokemon": "caterpie",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug"
         ],
@@ -157,6 +187,9 @@
     },
     "11": {
         "pokemon": "metapod",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Bug"
         ],
@@ -170,6 +203,9 @@
     },
     "12": {
         "pokemon": "butterfree",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Flying"
@@ -188,6 +224,9 @@
     },
     "13": {
         "pokemon": "weedle",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug",
             "Poison"
@@ -202,6 +241,9 @@
     },
     "14": {
         "pokemon": "kakuna",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Bug",
             "Poison"
@@ -216,6 +258,9 @@
     },
     "15": {
         "pokemon": "beedrill",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Poison"
@@ -234,6 +279,9 @@
     },
     "16": {
         "pokemon": "pidgey",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -248,6 +296,9 @@
     },
     "17": {
         "pokemon": "pidgeotto",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -262,6 +313,9 @@
     },
     "18": {
         "pokemon": "pidgeot",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -276,6 +330,9 @@
     },
     "19": {
         "pokemon": "rattata",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -299,6 +356,9 @@
     },
     "20": {
         "pokemon": "raticate",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -323,6 +383,9 @@
     },
     "21": {
         "pokemon": "spearow",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -337,6 +400,9 @@
     },
     "22": {
         "pokemon": "fearow",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -351,6 +417,9 @@
     },
     "23": {
         "pokemon": "ekans",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Poison"
         ],
@@ -364,6 +433,9 @@
     },
     "24": {
         "pokemon": "arbok",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Poison"
         ],
@@ -377,6 +449,9 @@
     },
     "25": {
         "pokemon": "pikachu",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -395,6 +470,9 @@
     },
     "26": {
         "pokemon": "raichu",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -418,6 +496,9 @@
     },
     "27": {
         "pokemon": "sandshrew",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ground"
         ],
@@ -441,6 +522,9 @@
     },
     "28": {
         "pokemon": "sandslash",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ground"
         ],
@@ -465,6 +549,9 @@
     },
     "29": {
         "pokemon": "nidoran♀",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Poison"
         ],
@@ -478,6 +565,9 @@
     },
     "30": {
         "pokemon": "nidorina",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Poison"
         ],
@@ -491,6 +581,9 @@
     },
     "31": {
         "pokemon": "nidoqueen",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Poison",
             "Ground"
@@ -505,6 +598,9 @@
     },
     "32": {
         "pokemon": "nidoran♂",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Poison"
         ],
@@ -518,6 +614,9 @@
     },
     "33": {
         "pokemon": "nidorino",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Poison"
         ],
@@ -531,6 +630,9 @@
     },
     "34": {
         "pokemon": "nidoking",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Poison",
             "Ground"
@@ -545,6 +647,9 @@
     },
     "35": {
         "pokemon": "clefairy",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Fairy"
         ],
@@ -558,6 +663,9 @@
     },
     "36": {
         "pokemon": "clefable",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fairy"
         ],
@@ -571,6 +679,9 @@
     },
     "37": {
         "pokemon": "vulpix",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -593,6 +704,9 @@
     },
     "38": {
         "pokemon": "ninetales",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -617,6 +731,9 @@
     },
     "39": {
         "pokemon": "jigglypuff",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Normal",
             "Fairy"
@@ -631,6 +748,9 @@
     },
     "40": {
         "pokemon": "wigglytuff",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal",
             "Fairy"
@@ -645,6 +765,9 @@
     },
     "41": {
         "pokemon": "zubat",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Poison",
             "Flying"
@@ -659,6 +782,9 @@
     },
     "42": {
         "pokemon": "golbat",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Poison",
             "Flying"
@@ -673,6 +799,9 @@
     },
     "43": {
         "pokemon": "oddish",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass",
             "Poison"
@@ -687,6 +816,9 @@
     },
     "44": {
         "pokemon": "gloom",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Grass",
             "Poison"
@@ -705,6 +837,9 @@
     },
     "45": {
         "pokemon": "vileplume",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Poison"
@@ -719,6 +854,9 @@
     },
     "46": {
         "pokemon": "paras",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug",
             "Grass"
@@ -733,6 +871,9 @@
     },
     "47": {
         "pokemon": "parasect",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Grass"
@@ -747,6 +888,9 @@
     },
     "48": {
         "pokemon": "venonat",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug",
             "Poison"
@@ -761,6 +905,9 @@
     },
     "49": {
         "pokemon": "venomoth",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Poison"
@@ -775,6 +922,9 @@
     },
     "50": {
         "pokemon": "diglett",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ground"
         ],
@@ -798,6 +948,9 @@
     },
     "51": {
         "pokemon": "dugtrio",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ground"
         ],
@@ -822,6 +975,9 @@
     },
     "52": {
         "pokemon": "meowth",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -861,6 +1017,9 @@
     },
     "53": {
         "pokemon": "persian",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -884,6 +1043,9 @@
     },
     "54": {
         "pokemon": "psyduck",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -897,6 +1059,9 @@
     },
     "55": {
         "pokemon": "golduck",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -910,6 +1075,9 @@
     },
     "56": {
         "pokemon": "mankey",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -923,6 +1091,9 @@
     },
     "57": {
         "pokemon": "primeape",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -936,6 +1107,9 @@
     },
     "58": {
         "pokemon": "growlithe",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -959,6 +1133,9 @@
     },
     "59": {
         "pokemon": "arcanine",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -983,6 +1160,9 @@
     },
     "60": {
         "pokemon": "poliwag",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -996,6 +1176,9 @@
     },
     "61": {
         "pokemon": "poliwhirl",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -1013,6 +1196,9 @@
     },
     "62": {
         "pokemon": "poliwrath",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Fighting"
@@ -1027,6 +1213,9 @@
     },
     "63": {
         "pokemon": "abra",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -1040,6 +1229,9 @@
     },
     "64": {
         "pokemon": "kadabra",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -1053,6 +1245,9 @@
     },
     "65": {
         "pokemon": "alakazam",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -1070,6 +1265,9 @@
     },
     "66": {
         "pokemon": "machop",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -1083,6 +1281,9 @@
     },
     "67": {
         "pokemon": "machoke",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -1096,6 +1297,9 @@
     },
     "68": {
         "pokemon": "machamp",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -1113,6 +1317,9 @@
     },
     "69": {
         "pokemon": "bellsprout",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass",
             "Poison"
@@ -1127,6 +1334,9 @@
     },
     "70": {
         "pokemon": "weepinbell",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Grass",
             "Poison"
@@ -1141,6 +1351,9 @@
     },
     "71": {
         "pokemon": "victreebel",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Poison"
@@ -1155,6 +1368,9 @@
     },
     "72": {
         "pokemon": "tentacool",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water",
             "Poison"
@@ -1169,6 +1385,9 @@
     },
     "73": {
         "pokemon": "tentacruel",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Poison"
@@ -1183,6 +1402,9 @@
     },
     "74": {
         "pokemon": "geodude",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock",
             "Ground"
@@ -1207,6 +1429,9 @@
     },
     "75": {
         "pokemon": "graveler",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Rock",
             "Ground"
@@ -1232,6 +1457,9 @@
     },
     "76": {
         "pokemon": "golem",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock",
             "Ground"
@@ -1257,6 +1485,9 @@
     },
     "77": {
         "pokemon": "ponyta",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -1279,6 +1510,9 @@
     },
     "78": {
         "pokemon": "rapidash",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -1303,6 +1537,9 @@
     },
     "79": {
         "pokemon": "slowpoke",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water",
             "Psychic"
@@ -1341,12 +1578,15 @@
     },
     "80": {
         "pokemon": "slowbro",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Psychic"
         ],
         "form_types": {
-            "2": [
+            "3": [
                 "poison",
                 "psychic"
             ]
@@ -1354,8 +1594,8 @@
         "forms": 3,
         "fnames": {
             "1": "Kantonian",
-            "2": "Galarian",
-            "3": "Mega"
+            "2": "Mega",
+            "3": "Galarian"
         },
         "previous": {
             "pokemon": "slowpoke",
@@ -1368,6 +1608,9 @@
     },
     "81": {
         "pokemon": "magnemite",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Electric",
             "Steel"
@@ -1382,6 +1625,9 @@
     },
     "82": {
         "pokemon": "magneton",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Electric",
             "Steel"
@@ -1396,6 +1642,9 @@
     },
     "83": {
         "pokemon": "farfetch'd",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -1414,11 +1663,15 @@
             "pokemon": ""
         },
         "next": {
-            "pokemon": "sirfetch'd"
+            "pokemon": ["", "sirfetch'd"],
+            "type": "regional"
         }
     },
     "84": {
         "pokemon": "doduo",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -1433,6 +1686,9 @@
     },
     "85": {
         "pokemon": "dodrio",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -1447,6 +1703,9 @@
     },
     "86": {
         "pokemon": "seel",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -1460,6 +1719,9 @@
     },
     "87": {
         "pokemon": "dewgong",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Ice"
@@ -1474,6 +1736,9 @@
     },
     "88": {
         "pokemon": "grimer",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Poison"
         ],
@@ -1497,6 +1762,9 @@
     },
     "89": {
         "pokemon": "muk",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Poison"
         ],
@@ -1521,6 +1789,9 @@
     },
     "90": {
         "pokemon": "shellder",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -1534,6 +1805,9 @@
     },
     "91": {
         "pokemon": "cloyster",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Ice"
@@ -1548,6 +1822,9 @@
     },
     "92": {
         "pokemon": "gastly",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ghost",
             "Poison"
@@ -1562,6 +1839,9 @@
     },
     "93": {
         "pokemon": "haunter",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Ghost",
             "Poison"
@@ -1576,6 +1856,9 @@
     },
     "94": {
         "pokemon": "gengar",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ghost",
             "Poison"
@@ -1595,6 +1878,9 @@
     },
     "95": {
         "pokemon": "onix",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock",
             "Ground"
@@ -1609,6 +1895,9 @@
     },
     "96": {
         "pokemon": "drowzee",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -1622,6 +1911,9 @@
     },
     "97": {
         "pokemon": "hypno",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -1635,6 +1927,9 @@
     },
     "98": {
         "pokemon": "krabby",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -1648,6 +1943,9 @@
     },
     "99": {
         "pokemon": "kingler",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -1665,6 +1963,9 @@
     },
     "100": {
         "pokemon": "voltorb",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -1688,6 +1989,9 @@
     },
     "101": {
         "pokemon": "electrode",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -1712,6 +2016,9 @@
     },
     "102": {
         "pokemon": "exeggcute",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass",
             "Psychic"
@@ -1726,6 +2033,9 @@
     },
     "103": {
         "pokemon": "exeggutor",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Psychic"
@@ -1750,6 +2060,9 @@
     },
     "104": {
         "pokemon": "cubone",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ground"
         ],
@@ -1763,6 +2076,9 @@
     },
     "105": {
         "pokemon": "marowak",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ground"
         ],
@@ -1786,6 +2102,9 @@
     },
     "106": {
         "pokemon": "hitmonlee",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -1799,6 +2118,9 @@
     },
     "107": {
         "pokemon": "hitmonchan",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -1812,6 +2134,9 @@
     },
     "108": {
         "pokemon": "lickitung",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -1825,6 +2150,9 @@
     },
     "109": {
         "pokemon": "koffing",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Poison"
         ],
@@ -1838,6 +2166,9 @@
     },
     "110": {
         "pokemon": "weezing",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Poison"
         ],
@@ -1861,6 +2192,9 @@
     },
     "111": {
         "pokemon": "rhyhorn",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ground",
             "Rock"
@@ -1875,6 +2209,9 @@
     },
     "112": {
         "pokemon": "rhydon",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Ground",
             "Rock"
@@ -1889,6 +2226,9 @@
     },
     "113": {
         "pokemon": "chansey",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -1902,6 +2242,9 @@
     },
     "114": {
         "pokemon": "tangela",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -1915,6 +2258,9 @@
     },
     "115": {
         "pokemon": "kangaskhan",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal"
         ],
@@ -1932,6 +2278,9 @@
     },
     "116": {
         "pokemon": "horsea",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -1945,6 +2294,9 @@
     },
     "117": {
         "pokemon": "seadra",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -1958,6 +2310,9 @@
     },
     "118": {
         "pokemon": "goldeen",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -1971,6 +2326,9 @@
     },
     "119": {
         "pokemon": "seaking",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -1984,6 +2342,9 @@
     },
     "120": {
         "pokemon": "staryu",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -1997,6 +2358,9 @@
     },
     "121": {
         "pokemon": "starmie",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Psychic"
@@ -2011,6 +2375,9 @@
     },
     "122": {
         "pokemon": "mr. mime",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Psychic",
             "Fairy"
@@ -2039,6 +2406,9 @@
     },
     "123": {
         "pokemon": "scyther",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug",
             "Flying"
@@ -2057,6 +2427,9 @@
     },
     "124": {
         "pokemon": "jynx",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ice",
             "Psychic"
@@ -2071,6 +2444,9 @@
     },
     "125": {
         "pokemon": "electabuzz",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -2084,6 +2460,9 @@
     },
     "126": {
         "pokemon": "magmar",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -2097,6 +2476,9 @@
     },
     "127": {
         "pokemon": "pinsir",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Bug"
         ],
@@ -2120,6 +2502,9 @@
     },
     "128": {
         "pokemon": "tauros",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal"
         ],
@@ -2152,6 +2537,9 @@
     },
     "129": {
         "pokemon": "magikarp",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -2165,6 +2553,9 @@
     },
     "130": {
         "pokemon": "gyarados",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Flying"
@@ -2189,6 +2580,9 @@
     },
     "131": {
         "pokemon": "lapras",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water",
             "Ice"
@@ -2207,6 +2601,9 @@
     },
     "132": {
         "pokemon": "ditto",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal"
         ],
@@ -2220,6 +2617,9 @@
     },
     "133": {
         "pokemon": "eevee",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -2247,6 +2647,9 @@
     },
     "134": {
         "pokemon": "vaporeon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -2260,6 +2663,9 @@
     },
     "135": {
         "pokemon": "jolteon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -2273,6 +2679,9 @@
     },
     "136": {
         "pokemon": "flareon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -2286,6 +2695,9 @@
     },
     "137": {
         "pokemon": "porygon",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -2299,6 +2711,9 @@
     },
     "138": {
         "pokemon": "omanyte",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock",
             "Water"
@@ -2313,6 +2728,9 @@
     },
     "139": {
         "pokemon": "omastar",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock",
             "Water"
@@ -2327,6 +2745,9 @@
     },
     "140": {
         "pokemon": "kabuto",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock",
             "Water"
@@ -2341,6 +2762,9 @@
     },
     "141": {
         "pokemon": "kabutops",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock",
             "Water"
@@ -2355,6 +2779,9 @@
     },
     "142": {
         "pokemon": "aerodactyl",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Rock",
             "Flying"
@@ -2373,6 +2800,9 @@
     },
     "143": {
         "pokemon": "snorlax",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -2390,6 +2820,9 @@
     },
     "144": {
         "pokemon": "articuno",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Ice",
             "Flying"
@@ -2414,6 +2847,9 @@
     },
     "145": {
         "pokemon": "zapdos",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Electric",
             "Flying"
@@ -2438,6 +2874,9 @@
     },
     "146": {
         "pokemon": "moltres",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fire",
             "Flying"
@@ -2462,6 +2901,9 @@
     },
     "147": {
         "pokemon": "dratini",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dragon"
         ],
@@ -2475,6 +2917,9 @@
     },
     "148": {
         "pokemon": "dragonair",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Dragon"
         ],
@@ -2488,6 +2933,9 @@
     },
     "149": {
         "pokemon": "dragonite",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dragon",
             "Flying"
@@ -2502,6 +2950,9 @@
     },
     "150": {
         "pokemon": "mewtwo",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Psychic"
         ],
@@ -2526,6 +2977,9 @@
     },
     "151": {
         "pokemon": "mew",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Psychic"
         ],
@@ -2539,6 +2993,9 @@
     },
     "152": {
         "pokemon": "chikorita",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -2552,6 +3009,9 @@
     },
     "153": {
         "pokemon": "bayleef",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -2565,6 +3025,9 @@
     },
     "154": {
         "pokemon": "meganium",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -2578,6 +3041,9 @@
     },
     "155": {
         "pokemon": "cyndaquil",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -2591,6 +3057,9 @@
     },
     "156": {
         "pokemon": "quilava",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -2604,6 +3073,9 @@
     },
     "157": {
         "pokemon": "typhlosion",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -2627,6 +3099,9 @@
     },
     "158": {
         "pokemon": "totodile",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -2640,6 +3115,9 @@
     },
     "159": {
         "pokemon": "croconaw",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -2653,6 +3131,9 @@
     },
     "160": {
         "pokemon": "feraligatr",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -2666,6 +3147,9 @@
     },
     "161": {
         "pokemon": "sentret",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -2679,6 +3163,9 @@
     },
     "162": {
         "pokemon": "furret",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -2692,6 +3179,9 @@
     },
     "163": {
         "pokemon": "hoothoot",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -2706,6 +3196,9 @@
     },
     "164": {
         "pokemon": "noctowl",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -2720,6 +3213,9 @@
     },
     "165": {
         "pokemon": "ledyba",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug",
             "Flying"
@@ -2734,6 +3230,9 @@
     },
     "166": {
         "pokemon": "ledian",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Flying"
@@ -2748,6 +3247,9 @@
     },
     "167": {
         "pokemon": "spinarak",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug",
             "Poison"
@@ -2762,6 +3264,9 @@
     },
     "168": {
         "pokemon": "ariados",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Poison"
@@ -2776,6 +3281,9 @@
     },
     "169": {
         "pokemon": "crobat",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Poison",
             "Flying"
@@ -2790,6 +3298,9 @@
     },
     "170": {
         "pokemon": "chinchou",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water",
             "Electric"
@@ -2804,6 +3315,9 @@
     },
     "171": {
         "pokemon": "lanturn",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Electric"
@@ -2818,6 +3332,9 @@
     },
     "172": {
         "pokemon": "pichu",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -2831,6 +3348,9 @@
     },
     "173": {
         "pokemon": "cleffa",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fairy"
         ],
@@ -2844,6 +3364,9 @@
     },
     "174": {
         "pokemon": "igglybuff",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Fairy"
@@ -2858,6 +3381,9 @@
     },
     "175": {
         "pokemon": "togepi",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fairy"
         ],
@@ -2871,6 +3397,9 @@
     },
     "176": {
         "pokemon": "togetic",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Fairy",
             "Flying"
@@ -2885,6 +3414,9 @@
     },
     "177": {
         "pokemon": "natu",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Psychic",
             "Flying"
@@ -2899,6 +3431,9 @@
     },
     "178": {
         "pokemon": "xatu",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Psychic",
             "Flying"
@@ -2913,6 +3448,9 @@
     },
     "179": {
         "pokemon": "mareep",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -2926,6 +3464,9 @@
     },
     "180": {
         "pokemon": "flaaffy",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -2939,6 +3480,9 @@
     },
     "181": {
         "pokemon": "ampharos",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -2962,6 +3506,9 @@
     },
     "182": {
         "pokemon": "bellossom",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -2975,6 +3522,9 @@
     },
     "183": {
         "pokemon": "marill",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Water",
             "Fairy"
@@ -2989,6 +3539,9 @@
     },
     "184": {
         "pokemon": "azumarill",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Fairy"
@@ -3003,6 +3556,9 @@
     },
     "185": {
         "pokemon": "sudowoodo",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock"
         ],
@@ -3016,6 +3572,9 @@
     },
     "186": {
         "pokemon": "politoed",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Fairy"
@@ -3030,6 +3589,9 @@
     },
     "187": {
         "pokemon": "hoppip",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass",
             "Flying"
@@ -3044,6 +3606,9 @@
     },
     "188": {
         "pokemon": "skiploom",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Grass",
             "Flying"
@@ -3058,6 +3623,9 @@
     },
     "189": {
         "pokemon": "jumpluff",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Flying"
@@ -3072,6 +3640,9 @@
     },
     "190": {
         "pokemon": "aipom",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -3085,6 +3656,9 @@
     },
     "191": {
         "pokemon": "sunkern",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -3098,6 +3672,9 @@
     },
     "192": {
         "pokemon": "sunflora",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -3111,6 +3688,9 @@
     },
     "193": {
         "pokemon": "yanma",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug",
             "Flying"
@@ -3125,6 +3705,9 @@
     },
     "194": {
         "pokemon": "wooper",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water",
             "Ground"
@@ -3153,6 +3736,9 @@
     },
     "195": {
         "pokemon": "quagsire",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Ground"
@@ -3167,6 +3753,9 @@
     },
     "196": {
         "pokemon": "espeon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -3180,6 +3769,9 @@
     },
     "197": {
         "pokemon": "umbreon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dark"
         ],
@@ -3193,6 +3785,9 @@
     },
     "198": {
         "pokemon": "murkrow",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dark",
             "Flying"
@@ -3207,6 +3802,9 @@
     },
     "199": {
         "pokemon": "slowking",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Psychic"
@@ -3232,6 +3830,9 @@
     },
     "200": {
         "pokemon": "misdreavus",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ghost"
         ],
@@ -3245,6 +3846,9 @@
     },
     "201": {
         "pokemon": "unown",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Psychic"
         ],
@@ -3258,6 +3862,9 @@
     },
     "202": {
         "pokemon": "wobbuffet",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -3271,6 +3878,9 @@
     },
     "203": {
         "pokemon": "girafarig",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Psychic"
@@ -3285,6 +3895,9 @@
     },
     "204": {
         "pokemon": "pineco",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug"
         ],
@@ -3298,6 +3911,9 @@
     },
     "205": {
         "pokemon": "forretress",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Steel"
@@ -3312,6 +3928,9 @@
     },
     "206": {
         "pokemon": "dunsparce",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -3325,6 +3944,9 @@
     },
     "207": {
         "pokemon": "gligar",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ground",
             "Flying"
@@ -3339,6 +3961,9 @@
     },
     "208": {
         "pokemon": "steelix",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Steel",
             "Ground"
@@ -3357,6 +3982,9 @@
     },
     "209": {
         "pokemon": "snubbull",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fairy"
         ],
@@ -3370,6 +3998,9 @@
     },
     "210": {
         "pokemon": "granbull",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fairy"
         ],
@@ -3383,6 +4014,9 @@
     },
     "211": {
         "pokemon": "qwilfish",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water",
             "Poison"
@@ -3411,6 +4045,9 @@
     },
     "212": {
         "pokemon": "scizor",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Steel"
@@ -3429,6 +4066,9 @@
     },
     "213": {
         "pokemon": "shuckle",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Bug",
             "Rock"
@@ -3443,6 +4083,9 @@
     },
     "214": {
         "pokemon": "heracross",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Bug",
             "Fighting"
@@ -3461,6 +4104,9 @@
     },
     "215": {
         "pokemon": "sneasel",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dark",
             "Ice"
@@ -3489,6 +4135,9 @@
     },
     "216": {
         "pokemon": "teddiursa",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -3502,6 +4151,9 @@
     },
     "217": {
         "pokemon": "ursaring",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -3515,6 +4167,9 @@
     },
     "218": {
         "pokemon": "slugma",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -3528,6 +4183,9 @@
     },
     "219": {
         "pokemon": "magcargo",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire",
             "Rock"
@@ -3542,6 +4200,9 @@
     },
     "220": {
         "pokemon": "swinub",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ice",
             "Ground"
@@ -3556,6 +4217,9 @@
     },
     "221": {
         "pokemon": "piloswine",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Ice",
             "Ground"
@@ -3570,6 +4234,9 @@
     },
     "222": {
         "pokemon": "corsola",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water",
             "Rock"
@@ -3597,6 +4264,9 @@
     },
     "223": {
         "pokemon": "remoraid",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -3610,6 +4280,9 @@
     },
     "224": {
         "pokemon": "octillery",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -3623,6 +4296,9 @@
     },
     "225": {
         "pokemon": "delibird",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Ice",
             "Flying"
@@ -3637,6 +4313,9 @@
     },
     "226": {
         "pokemon": "mantine",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Flying"
@@ -3651,6 +4330,9 @@
     },
     "227": {
         "pokemon": "skarmory",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Steel",
             "Flying"
@@ -3665,6 +4347,9 @@
     },
     "228": {
         "pokemon": "houndour",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dark",
             "Fire"
@@ -3679,6 +4364,9 @@
     },
     "229": {
         "pokemon": "houndoom",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dark",
             "Fire"
@@ -3697,6 +4385,9 @@
     },
     "230": {
         "pokemon": "kingdra",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Dragon"
@@ -3711,6 +4402,9 @@
     },
     "231": {
         "pokemon": "phanpy",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ground"
         ],
@@ -3724,6 +4418,9 @@
     },
     "232": {
         "pokemon": "donphan",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ground"
         ],
@@ -3737,6 +4434,9 @@
     },
     "233": {
         "pokemon": "porygon2",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -3750,6 +4450,9 @@
     },
     "234": {
         "pokemon": "stantler",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -3763,6 +4466,9 @@
     },
     "235": {
         "pokemon": "smeargle",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal"
         ],
@@ -3776,6 +4482,9 @@
     },
     "236": {
         "pokemon": "tyrogue",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -3794,6 +4503,9 @@
     },
     "237": {
         "pokemon": "hitmontop",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -3807,6 +4519,9 @@
     },
     "238": {
         "pokemon": "smoochum",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ice",
             "Psychic"
@@ -3821,6 +4536,9 @@
     },
     "239": {
         "pokemon": "elekid",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -3834,6 +4552,9 @@
     },
     "240": {
         "pokemon": "magby",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -3847,6 +4568,9 @@
     },
     "241": {
         "pokemon": "miltank",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal"
         ],
@@ -3860,6 +4584,9 @@
     },
     "242": {
         "pokemon": "blissey",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -3873,6 +4600,9 @@
     },
     "243": {
         "pokemon": "raikou",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Electric"
         ],
@@ -3886,6 +4616,9 @@
     },
     "244": {
         "pokemon": "entei",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fire"
         ],
@@ -3899,6 +4632,9 @@
     },
     "245": {
         "pokemon": "suicune",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water"
         ],
@@ -3912,6 +4648,9 @@
     },
     "246": {
         "pokemon": "larvitar",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock",
             "Ground"
@@ -3926,6 +4665,9 @@
     },
     "247": {
         "pokemon": "pupitar",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Rock",
             "Ground"
@@ -3940,6 +4682,9 @@
     },
     "248": {
         "pokemon": "tyranitar",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock",
             "Dark"
@@ -3958,6 +4703,9 @@
     },
     "249": {
         "pokemon": "lugia",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Psychic",
             "Flying"
@@ -3972,6 +4720,9 @@
     },
     "250": {
         "pokemon": "ho-oh",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fire",
             "Flying"
@@ -3986,6 +4737,9 @@
     },
     "251": {
         "pokemon": "celebi",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Psychic",
             "Grass"
@@ -4000,6 +4754,9 @@
     },
     "252": {
         "pokemon": "treecko",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -4013,6 +4770,9 @@
     },
     "253": {
         "pokemon": "grovyle",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -4026,6 +4786,9 @@
     },
     "254": {
         "pokemon": "sceptile",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -4049,6 +4812,9 @@
     },
     "255": {
         "pokemon": "torchic",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -4062,6 +4828,9 @@
     },
     "256": {
         "pokemon": "combusken",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Fire",
             "Fighting"
@@ -4076,6 +4845,9 @@
     },
     "257": {
         "pokemon": "blaziken",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire",
             "Fighting"
@@ -4094,6 +4866,9 @@
     },
     "258": {
         "pokemon": "mudkip",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -4107,6 +4882,9 @@
     },
     "259": {
         "pokemon": "marshtomp",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Water",
             "Ground"
@@ -4121,6 +4899,9 @@
     },
     "260": {
         "pokemon": "swampert",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Ground"
@@ -4139,6 +4920,9 @@
     },
     "261": {
         "pokemon": "poochyena",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dark"
         ],
@@ -4152,6 +4936,9 @@
     },
     "262": {
         "pokemon": "mightyena",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dark"
         ],
@@ -4165,6 +4952,9 @@
     },
     "263": {
         "pokemon": "zigzagoon",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -4188,6 +4978,9 @@
     },
     "264": {
         "pokemon": "linoone",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -4216,6 +5009,9 @@
     },
     "265": {
         "pokemon": "wurmple",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug"
         ],
@@ -4233,6 +5029,9 @@
     },
     "266": {
         "pokemon": "silcoon",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Bug"
         ],
@@ -4246,6 +5045,9 @@
     },
     "267": {
         "pokemon": "beautifly",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Flying"
@@ -4260,6 +5062,9 @@
     },
     "268": {
         "pokemon": "cascoon",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Bug"
         ],
@@ -4273,6 +5078,9 @@
     },
     "269": {
         "pokemon": "dustox",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Poison"
@@ -4287,6 +5095,9 @@
     },
     "270": {
         "pokemon": "lotad",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water",
             "Grass"
@@ -4301,6 +5112,9 @@
     },
     "271": {
         "pokemon": "lombre",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Water",
             "Grass"
@@ -4315,6 +5129,9 @@
     },
     "272": {
         "pokemon": "ludicolo",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Grass"
@@ -4329,6 +5146,9 @@
     },
     "273": {
         "pokemon": "seedot",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -4342,6 +5162,9 @@
     },
     "274": {
         "pokemon": "nuzleaf",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Grass",
             "Dark"
@@ -4356,6 +5179,9 @@
     },
     "275": {
         "pokemon": "shiftry",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Dark"
@@ -4370,6 +5196,9 @@
     },
     "276": {
         "pokemon": "taillow",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -4384,6 +5213,9 @@
     },
     "277": {
         "pokemon": "swellow",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -4398,6 +5230,9 @@
     },
     "278": {
         "pokemon": "wingull",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water",
             "Flying"
@@ -4412,6 +5247,9 @@
     },
     "279": {
         "pokemon": "pelipper",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Flying"
@@ -4426,6 +5264,9 @@
     },
     "280": {
         "pokemon": "ralts",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Psychic",
             "Fairy"
@@ -4440,6 +5281,9 @@
     },
     "281": {
         "pokemon": "kirlia",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Psychic",
             "Fairy"
@@ -4458,6 +5302,9 @@
     },
     "282": {
         "pokemon": "gardevoir",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Psychic",
             "Fairy"
@@ -4476,6 +5323,9 @@
     },
     "283": {
         "pokemon": "surskit",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug",
             "Water"
@@ -4490,6 +5340,9 @@
     },
     "284": {
         "pokemon": "masquerain",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Flying"
@@ -4504,6 +5357,9 @@
     },
     "285": {
         "pokemon": "shroomish",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -4517,6 +5373,9 @@
     },
     "286": {
         "pokemon": "breloom",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Fighting"
@@ -4531,6 +5390,9 @@
     },
     "287": {
         "pokemon": "slakoth",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -4544,6 +5406,9 @@
     },
     "288": {
         "pokemon": "vigoroth",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -4557,6 +5422,9 @@
     },
     "289": {
         "pokemon": "slaking",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -4570,6 +5438,9 @@
     },
     "290": {
         "pokemon": "nincada",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug",
             "Ground"
@@ -4588,6 +5459,9 @@
     },
     "291": {
         "pokemon": "ninjask",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Flying"
@@ -4602,6 +5476,9 @@
     },
     "292": {
         "pokemon": "shedinja",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Ghost"
@@ -4616,6 +5493,9 @@
     },
     "293": {
         "pokemon": "whismur",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -4629,6 +5509,9 @@
     },
     "294": {
         "pokemon": "loudred",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -4642,6 +5525,9 @@
     },
     "295": {
         "pokemon": "exploud",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -4655,6 +5541,9 @@
     },
     "296": {
         "pokemon": "makuhita",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -4668,6 +5557,9 @@
     },
     "297": {
         "pokemon": "hariyama",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -4681,6 +5573,9 @@
     },
     "298": {
         "pokemon": "azurill",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Fairy"
@@ -4695,6 +5590,9 @@
     },
     "299": {
         "pokemon": "nosepass",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock"
         ],
@@ -4708,6 +5606,9 @@
     },
     "300": {
         "pokemon": "skitty",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -4721,6 +5622,9 @@
     },
     "301": {
         "pokemon": "delcatty",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -4734,6 +5638,9 @@
     },
     "302": {
         "pokemon": "sableye",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dark",
             "Ghost"
@@ -4752,6 +5659,9 @@
     },
     "303": {
         "pokemon": "mawile",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Steel",
             "Fairy"
@@ -4770,6 +5680,9 @@
     },
     "304": {
         "pokemon": "aron",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Steel",
             "Rock"
@@ -4784,6 +5697,9 @@
     },
     "305": {
         "pokemon": "lairon",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Steel",
             "Rock"
@@ -4798,6 +5714,9 @@
     },
     "306": {
         "pokemon": "aggron",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Steel",
             "Rock"
@@ -4821,6 +5740,9 @@
     },
     "307": {
         "pokemon": "meditite",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fighting",
             "Psychic"
@@ -4835,6 +5757,9 @@
     },
     "308": {
         "pokemon": "medicham",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fighting",
             "Psychic"
@@ -4853,6 +5778,9 @@
     },
     "309": {
         "pokemon": "electrike",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -4866,6 +5794,9 @@
     },
     "310": {
         "pokemon": "manectric",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -4883,6 +5814,9 @@
     },
     "311": {
         "pokemon": "plusle",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Electric"
         ],
@@ -4896,6 +5830,9 @@
     },
     "312": {
         "pokemon": "minun",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Electric"
         ],
@@ -4909,6 +5846,9 @@
     },
     "313": {
         "pokemon": "volbeat",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Bug",
             "Electric"
@@ -4923,6 +5863,9 @@
     },
     "314": {
         "pokemon": "illumise",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Bug",
             "Electric"
@@ -4937,6 +5880,9 @@
     },
     "315": {
         "pokemon": "roselia",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Grass",
             "Poison"
@@ -4951,6 +5897,9 @@
     },
     "316": {
         "pokemon": "gulpin",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Poison"
         ],
@@ -4964,6 +5913,9 @@
     },
     "317": {
         "pokemon": "swalot",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Poison"
         ],
@@ -4977,6 +5929,9 @@
     },
     "318": {
         "pokemon": "carvanha",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water",
             "Dark"
@@ -4991,6 +5946,9 @@
     },
     "319": {
         "pokemon": "sharpedo",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Dark"
@@ -5009,6 +5967,9 @@
     },
     "320": {
         "pokemon": "wailmer",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -5022,6 +5983,9 @@
     },
     "321": {
         "pokemon": "wailord",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -5035,6 +5999,9 @@
     },
     "322": {
         "pokemon": "numel",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire",
             "Ground"
@@ -5049,6 +6016,9 @@
     },
     "323": {
         "pokemon": "camerupt",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire",
             "Ground"
@@ -5067,6 +6037,9 @@
     },
     "324": {
         "pokemon": "torkoal",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fire"
         ],
@@ -5080,6 +6053,9 @@
     },
     "325": {
         "pokemon": "spoink",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -5093,6 +6069,9 @@
     },
     "326": {
         "pokemon": "grumpig",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -5106,6 +6085,9 @@
     },
     "327": {
         "pokemon": "spinda",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal"
         ],
@@ -5119,6 +6101,9 @@
     },
     "328": {
         "pokemon": "trapinch",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ground"
         ],
@@ -5132,6 +6117,9 @@
     },
     "329": {
         "pokemon": "vibrava",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Ground",
             "Dragon"
@@ -5146,6 +6134,9 @@
     },
     "330": {
         "pokemon": "flygon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ground",
             "Dragon"
@@ -5160,6 +6151,9 @@
     },
     "331": {
         "pokemon": "cacnea",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -5173,6 +6167,9 @@
     },
     "332": {
         "pokemon": "cacturne",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Dark"
@@ -5187,6 +6184,9 @@
     },
     "333": {
         "pokemon": "swablu",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -5201,6 +6201,9 @@
     },
     "334": {
         "pokemon": "altaria",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dragon",
             "Flying"
@@ -5225,6 +6228,9 @@
     },
     "335": {
         "pokemon": "zangoose",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal"
         ],
@@ -5238,6 +6244,9 @@
     },
     "336": {
         "pokemon": "seviper",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Poison"
         ],
@@ -5251,6 +6260,9 @@
     },
     "337": {
         "pokemon": "lunatone",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Rock",
             "Psychic"
@@ -5265,6 +6277,9 @@
     },
     "338": {
         "pokemon": "solrock",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Rock",
             "Psychic"
@@ -5279,6 +6294,9 @@
     },
     "339": {
         "pokemon": "barboach",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water",
             "Ground"
@@ -5293,6 +6311,9 @@
     },
     "340": {
         "pokemon": "whiscash",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Ground"
@@ -5307,6 +6328,9 @@
     },
     "341": {
         "pokemon": "corphish",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -5320,6 +6344,9 @@
     },
     "342": {
         "pokemon": "crawdaunt",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Dark"
@@ -5334,6 +6361,9 @@
     },
     "343": {
         "pokemon": "baltoy",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ground",
             "Psychic"
@@ -5348,6 +6378,9 @@
     },
     "344": {
         "pokemon": "claydol",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ground",
             "Psychic"
@@ -5362,6 +6395,9 @@
     },
     "345": {
         "pokemon": "lileep",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock",
             "Grass"
@@ -5376,6 +6412,9 @@
     },
     "346": {
         "pokemon": "cradily",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock",
             "Grass"
@@ -5390,6 +6429,9 @@
     },
     "347": {
         "pokemon": "anorith",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock",
             "Bug"
@@ -5404,6 +6446,9 @@
     },
     "348": {
         "pokemon": "armaldo",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock",
             "Bug"
@@ -5418,6 +6463,9 @@
     },
     "349": {
         "pokemon": "feebas",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -5431,6 +6479,9 @@
     },
     "350": {
         "pokemon": "milotic",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -5444,6 +6495,9 @@
     },
     "351": {
         "pokemon": "castform",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal"
         ],
@@ -5457,6 +6511,9 @@
     },
     "352": {
         "pokemon": "kecleon",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal"
         ],
@@ -5470,6 +6527,9 @@
     },
     "353": {
         "pokemon": "shuppet",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ghost"
         ],
@@ -5483,6 +6543,9 @@
     },
     "354": {
         "pokemon": "banette",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ghost"
         ],
@@ -5500,6 +6563,9 @@
     },
     "355": {
         "pokemon": "duskull",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ghost"
         ],
@@ -5513,6 +6579,9 @@
     },
     "356": {
         "pokemon": "dusclops",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Ghost"
         ],
@@ -5526,6 +6595,9 @@
     },
     "357": {
         "pokemon": "tropius",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Grass",
             "Flying"
@@ -5540,6 +6612,9 @@
     },
     "358": {
         "pokemon": "chimecho",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -5553,6 +6628,9 @@
     },
     "359": {
         "pokemon": "absol",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dark"
         ],
@@ -5570,6 +6648,9 @@
     },
     "360": {
         "pokemon": "wynaut",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -5583,6 +6664,9 @@
     },
     "361": {
         "pokemon": "snorunt",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ice"
         ],
@@ -5600,6 +6684,9 @@
     },
     "362": {
         "pokemon": "glalie",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ice"
         ],
@@ -5617,6 +6704,9 @@
     },
     "363": {
         "pokemon": "spheal",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ice",
             "Water"
@@ -5631,6 +6721,9 @@
     },
     "364": {
         "pokemon": "sealeo",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Ice",
             "Water"
@@ -5645,6 +6738,9 @@
     },
     "365": {
         "pokemon": "walrein",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ice",
             "Water"
@@ -5659,6 +6755,9 @@
     },
     "366": {
         "pokemon": "clamperl",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -5676,6 +6775,9 @@
     },
     "367": {
         "pokemon": "huntail",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -5689,6 +6791,9 @@
     },
     "368": {
         "pokemon": "gorebyss",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -5702,6 +6807,9 @@
     },
     "369": {
         "pokemon": "relicanth",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water",
             "Rock"
@@ -5716,6 +6824,9 @@
     },
     "370": {
         "pokemon": "luvdisc",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water"
         ],
@@ -5729,6 +6840,9 @@
     },
     "371": {
         "pokemon": "bagon",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dragon"
         ],
@@ -5742,6 +6856,9 @@
     },
     "372": {
         "pokemon": "shelgon",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Dragon"
         ],
@@ -5755,6 +6872,9 @@
     },
     "373": {
         "pokemon": "salamence",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dragon",
             "Flying"
@@ -5773,6 +6893,9 @@
     },
     "374": {
         "pokemon": "beldum",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Steel",
             "Psychic"
@@ -5787,6 +6910,9 @@
     },
     "375": {
         "pokemon": "metang",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Steel",
             "Psychic"
@@ -5801,6 +6927,9 @@
     },
     "376": {
         "pokemon": "metagross",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Steel",
             "Psychic"
@@ -5819,6 +6948,9 @@
     },
     "377": {
         "pokemon": "regirock",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Rock"
         ],
@@ -5832,6 +6964,9 @@
     },
     "378": {
         "pokemon": "regice",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Ice"
         ],
@@ -5845,6 +6980,9 @@
     },
     "379": {
         "pokemon": "registeel",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Steel"
         ],
@@ -5858,6 +6996,9 @@
     },
     "380": {
         "pokemon": "latias",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dragon",
             "Psychic"
@@ -5876,6 +7017,9 @@
     },
     "381": {
         "pokemon": "latios",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dragon",
             "Psychic"
@@ -5894,6 +7038,9 @@
     },
     "382": {
         "pokemon": "kyogre",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water"
         ],
@@ -5911,6 +7058,9 @@
     },
     "383": {
         "pokemon": "groudon",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Ground"
         ],
@@ -5934,6 +7084,9 @@
     },
     "384": {
         "pokemon": "rayquaza",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dragon",
             "Flying"
@@ -5952,6 +7105,9 @@
     },
     "385": {
         "pokemon": "jirachi",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Steel",
             "Psychic"
@@ -5966,6 +7122,9 @@
     },
     "386": {
         "pokemon": "deoxys",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Psychic"
         ],
@@ -5985,6 +7144,9 @@
     },
     "387": {
         "pokemon": "turtwig",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -5998,6 +7160,9 @@
     },
     "388": {
         "pokemon": "grotle",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -6011,6 +7176,9 @@
     },
     "389": {
         "pokemon": "torterra",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Ground"
@@ -6025,6 +7193,9 @@
     },
     "390": {
         "pokemon": "chimchar",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -6038,6 +7209,9 @@
     },
     "391": {
         "pokemon": "monferno",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Fire",
             "Fighting"
@@ -6052,6 +7226,9 @@
     },
     "392": {
         "pokemon": "infernape",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire",
             "Fighting"
@@ -6066,6 +7243,9 @@
     },
     "393": {
         "pokemon": "piplup",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -6079,6 +7259,9 @@
     },
     "394": {
         "pokemon": "prinplup",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -6092,6 +7275,9 @@
     },
     "395": {
         "pokemon": "empoleon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Steel"
@@ -6106,6 +7292,9 @@
     },
     "396": {
         "pokemon": "starly",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -6120,6 +7309,9 @@
     },
     "397": {
         "pokemon": "staravia",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -6134,6 +7326,9 @@
     },
     "398": {
         "pokemon": "staraptor",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -6148,6 +7343,9 @@
     },
     "399": {
         "pokemon": "bidoof",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Water"
@@ -6162,6 +7360,9 @@
     },
     "400": {
         "pokemon": "bibarel",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal",
             "Water"
@@ -6176,6 +7377,9 @@
     },
     "401": {
         "pokemon": "kricketot",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug"
         ],
@@ -6189,6 +7393,9 @@
     },
     "402": {
         "pokemon": "kricketune",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug"
         ],
@@ -6202,6 +7409,9 @@
     },
     "403": {
         "pokemon": "shinx",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -6215,6 +7425,9 @@
     },
     "404": {
         "pokemon": "luxio",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -6228,6 +7441,9 @@
     },
     "405": {
         "pokemon": "luxray",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -6241,6 +7457,9 @@
     },
     "406": {
         "pokemon": "budew",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass",
             "Poison"
@@ -6255,6 +7474,9 @@
     },
     "407": {
         "pokemon": "roserade",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Poison"
@@ -6269,6 +7491,9 @@
     },
     "408": {
         "pokemon": "cranidos",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock"
         ],
@@ -6282,6 +7507,9 @@
     },
     "409": {
         "pokemon": "rampardos",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock"
         ],
@@ -6295,6 +7523,9 @@
     },
     "410": {
         "pokemon": "shieldon",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock",
             "Steel"
@@ -6309,6 +7540,9 @@
     },
     "411": {
         "pokemon": "bastiodon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock",
             "Steel"
@@ -6323,6 +7557,9 @@
     },
     "412": {
         "pokemon": "burmy",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug"
         ],
@@ -6340,6 +7577,9 @@
     },
     "413": {
         "pokemon": "wormadam",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Grass"
@@ -6354,6 +7594,9 @@
     },
     "414": {
         "pokemon": "mothim",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Flying"
@@ -6368,6 +7611,9 @@
     },
     "415": {
         "pokemon": "combee",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug",
             "Flying"
@@ -6382,6 +7628,9 @@
     },
     "416": {
         "pokemon": "vespiquen",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Flying"
@@ -6396,6 +7645,9 @@
     },
     "417": {
         "pokemon": "pachirisu",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Electric"
         ],
@@ -6409,6 +7661,9 @@
     },
     "418": {
         "pokemon": "buizel",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -6422,6 +7677,9 @@
     },
     "419": {
         "pokemon": "floatzel",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -6435,6 +7693,9 @@
     },
     "420": {
         "pokemon": "cherubi",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -6448,6 +7709,9 @@
     },
     "421": {
         "pokemon": "cherrim",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -6465,6 +7729,9 @@
     },
     "422": {
         "pokemon": "shellos",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -6482,6 +7749,9 @@
     },
     "423": {
         "pokemon": "gastrodon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Ground"
@@ -6500,6 +7770,9 @@
     },
     "424": {
         "pokemon": "ambipom",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -6513,6 +7786,9 @@
     },
     "425": {
         "pokemon": "drifloon",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ghost",
             "Flying"
@@ -6527,6 +7803,9 @@
     },
     "426": {
         "pokemon": "drifblim",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ghost",
             "Flying"
@@ -6541,6 +7820,9 @@
     },
     "427": {
         "pokemon": "buneary",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -6554,6 +7836,9 @@
     },
     "428": {
         "pokemon": "lopunny",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -6577,6 +7862,9 @@
     },
     "429": {
         "pokemon": "mismagius",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ghost"
         ],
@@ -6590,6 +7878,9 @@
     },
     "430": {
         "pokemon": "honchkrow",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dark",
             "Flying"
@@ -6604,6 +7895,9 @@
     },
     "431": {
         "pokemon": "glameow",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -6617,6 +7911,9 @@
     },
     "432": {
         "pokemon": "purugly",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -6630,6 +7927,9 @@
     },
     "433": {
         "pokemon": "chingling",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -6643,6 +7943,9 @@
     },
     "434": {
         "pokemon": "stunky",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Poison",
             "Dark"
@@ -6657,6 +7960,9 @@
     },
     "435": {
         "pokemon": "skuntank",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Poison",
             "Dark"
@@ -6671,6 +7977,9 @@
     },
     "436": {
         "pokemon": "bronzor",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Steel",
             "Psychic"
@@ -6685,6 +7994,9 @@
     },
     "437": {
         "pokemon": "bronzong",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Steel",
             "Psychic"
@@ -6699,6 +8011,9 @@
     },
     "438": {
         "pokemon": "bonsly",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock"
         ],
@@ -6712,6 +8027,9 @@
     },
     "439": {
         "pokemon": "mime jr.",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Psychic",
             "Fairy"
@@ -6726,6 +8044,9 @@
     },
     "440": {
         "pokemon": "happiny",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -6739,6 +8060,9 @@
     },
     "441": {
         "pokemon": "chatot",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -6753,6 +8077,9 @@
     },
     "442": {
         "pokemon": "spiritomb",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Ghost",
             "Dark"
@@ -6767,6 +8094,9 @@
     },
     "443": {
         "pokemon": "gible",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dragon",
             "Ground"
@@ -6781,6 +8111,9 @@
     },
     "444": {
         "pokemon": "gabite",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Dragon",
             "Ground"
@@ -6795,6 +8128,9 @@
     },
     "445": {
         "pokemon": "garchomp",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dragon",
             "Ground"
@@ -6813,6 +8149,9 @@
     },
     "446": {
         "pokemon": "munchlax",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -6826,6 +8165,9 @@
     },
     "447": {
         "pokemon": "riolu",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -6839,6 +8181,9 @@
     },
     "448": {
         "pokemon": "lucario",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fighting",
             "Steel"
@@ -6857,6 +8202,9 @@
     },
     "449": {
         "pokemon": "hippopotas",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ground"
         ],
@@ -6870,6 +8218,9 @@
     },
     "450": {
         "pokemon": "hippowdon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ground"
         ],
@@ -6883,6 +8234,9 @@
     },
     "451": {
         "pokemon": "skorupi",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Poison",
             "Bug"
@@ -6897,6 +8251,9 @@
     },
     "452": {
         "pokemon": "drapion",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Poison",
             "Dark"
@@ -6911,6 +8268,9 @@
     },
     "453": {
         "pokemon": "croagunk",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Poison",
             "Fighting"
@@ -6925,6 +8285,9 @@
     },
     "454": {
         "pokemon": "toxicroak",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Poison",
             "Fighting"
@@ -6939,6 +8302,9 @@
     },
     "455": {
         "pokemon": "carnivine",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Grass"
         ],
@@ -6952,6 +8318,9 @@
     },
     "456": {
         "pokemon": "finneon",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -6965,6 +8334,9 @@
     },
     "457": {
         "pokemon": "lumineon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -6978,6 +8350,9 @@
     },
     "458": {
         "pokemon": "mantyke",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water",
             "Flying"
@@ -6992,6 +8367,9 @@
     },
     "459": {
         "pokemon": "snover",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass",
             "Ice"
@@ -7006,6 +8384,9 @@
     },
     "460": {
         "pokemon": "abomasnow",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Ice"
@@ -7024,6 +8405,9 @@
     },
     "461": {
         "pokemon": "weavile",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dark",
             "Ice"
@@ -7039,6 +8423,9 @@
     },
     "462": {
         "pokemon": "magnezone",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Electric",
             "Steel"
@@ -7053,6 +8440,9 @@
     },
     "463": {
         "pokemon": "lickilicky",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -7066,6 +8456,9 @@
     },
     "464": {
         "pokemon": "rhyperior",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ground",
             "Rock"
@@ -7080,6 +8473,9 @@
     },
     "465": {
         "pokemon": "tangrowth",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -7093,6 +8489,9 @@
     },
     "466": {
         "pokemon": "electivire",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -7106,6 +8505,9 @@
     },
     "467": {
         "pokemon": "magmortar",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -7119,6 +8521,9 @@
     },
     "468": {
         "pokemon": "togekiss",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fairy",
             "Flying"
@@ -7133,6 +8538,9 @@
     },
     "469": {
         "pokemon": "yanmega",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Flying"
@@ -7147,6 +8555,9 @@
     },
     "470": {
         "pokemon": "leafeon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -7160,6 +8571,9 @@
     },
     "471": {
         "pokemon": "glaceon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ice"
         ],
@@ -7173,6 +8587,9 @@
     },
     "472": {
         "pokemon": "gliscor",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ground",
             "Flying"
@@ -7187,6 +8604,9 @@
     },
     "473": {
         "pokemon": "mamoswine",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ice",
             "Ground"
@@ -7201,6 +8621,9 @@
     },
     "474": {
         "pokemon": "porygon-z",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -7214,6 +8637,9 @@
     },
     "475": {
         "pokemon": "gallade",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fighting",
             "Psychic"
@@ -7232,6 +8658,9 @@
     },
     "476": {
         "pokemon": "probopass",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock",
             "Steel"
@@ -7246,6 +8675,9 @@
     },
     "477": {
         "pokemon": "dusknoir",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ghost"
         ],
@@ -7259,6 +8691,9 @@
     },
     "478": {
         "pokemon": "froslass",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ice",
             "Ghost"
@@ -7273,6 +8708,9 @@
     },
     "479": {
         "pokemon": "rotom",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Electric",
             "Ghost"
@@ -7317,6 +8755,9 @@
     },
     "480": {
         "pokemon": "uxie",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Psychic"
         ],
@@ -7330,6 +8771,9 @@
     },
     "481": {
         "pokemon": "mesprit",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Psychic"
         ],
@@ -7343,6 +8787,9 @@
     },
     "482": {
         "pokemon": "azelf",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Psychic"
         ],
@@ -7356,6 +8803,9 @@
     },
     "483": {
         "pokemon": "dialga",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Steel",
             "Dragon"
@@ -7374,6 +8824,9 @@
     },
     "484": {
         "pokemon": "palkia",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water",
             "Dragon"
@@ -7392,6 +8845,9 @@
     },
     "485": {
         "pokemon": "heatran",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fire",
             "Steel"
@@ -7406,6 +8862,9 @@
     },
     "486": {
         "pokemon": "regigigas",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal"
         ],
@@ -7419,6 +8878,9 @@
     },
     "487": {
         "pokemon": "giratina",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Ghost",
             "Dragon"
@@ -7437,6 +8899,9 @@
     },
     "488": {
         "pokemon": "cresselia",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Psychic"
         ],
@@ -7450,6 +8915,9 @@
     },
     "489": {
         "pokemon": "phione",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water"
         ],
@@ -7463,6 +8931,9 @@
     },
     "490": {
         "pokemon": "manaphy",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water"
         ],
@@ -7476,6 +8947,9 @@
     },
     "491": {
         "pokemon": "darkrai",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dark"
         ],
@@ -7489,6 +8963,9 @@
     },
     "492": {
         "pokemon": "shaymin",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Grass"
         ],
@@ -7512,6 +8989,9 @@
     },
     "493": {
         "pokemon": "arceus",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal"
         ],
@@ -7525,6 +9005,9 @@
     },
     "494": {
         "pokemon": "victini",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Psychic",
             "Fire"
@@ -7539,6 +9022,9 @@
     },
     "495": {
         "pokemon": "snivy",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -7552,6 +9038,9 @@
     },
     "496": {
         "pokemon": "servine",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -7565,6 +9054,9 @@
     },
     "497": {
         "pokemon": "serperior",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -7578,6 +9070,9 @@
     },
     "498": {
         "pokemon": "tepig",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -7591,6 +9086,9 @@
     },
     "499": {
         "pokemon": "pignite",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Fire",
             "Fighting"
@@ -7605,6 +9103,9 @@
     },
     "500": {
         "pokemon": "emboar",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire",
             "Fighting"
@@ -7619,6 +9120,9 @@
     },
     "501": {
         "pokemon": "oshawott",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -7632,6 +9136,9 @@
     },
     "502": {
         "pokemon": "dewott",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -7645,6 +9152,9 @@
     },
     "503": {
         "pokemon": "samurott",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -7668,6 +9178,9 @@
     },
     "504": {
         "pokemon": "patrat",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -7681,6 +9194,9 @@
     },
     "505": {
         "pokemon": "watchog",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -7694,6 +9210,9 @@
     },
     "506": {
         "pokemon": "lillipup",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -7707,6 +9226,9 @@
     },
     "507": {
         "pokemon": "herdier",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -7720,6 +9242,9 @@
     },
     "508": {
         "pokemon": "stoutland",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -7733,6 +9258,9 @@
     },
     "509": {
         "pokemon": "purrloin",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dark"
         ],
@@ -7746,6 +9274,9 @@
     },
     "510": {
         "pokemon": "liepard",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dark"
         ],
@@ -7759,6 +9290,9 @@
     },
     "511": {
         "pokemon": "pansage",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -7772,6 +9306,9 @@
     },
     "512": {
         "pokemon": "simisage",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -7785,6 +9322,9 @@
     },
     "513": {
         "pokemon": "pansear",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -7798,6 +9338,9 @@
     },
     "514": {
         "pokemon": "simisear",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -7811,6 +9354,9 @@
     },
     "515": {
         "pokemon": "panpour",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -7824,6 +9370,9 @@
     },
     "516": {
         "pokemon": "simipour",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -7837,6 +9386,9 @@
     },
     "517": {
         "pokemon": "munna",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -7850,6 +9402,9 @@
     },
     "518": {
         "pokemon": "musharna",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -7863,6 +9418,9 @@
     },
     "519": {
         "pokemon": "pidove",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -7877,6 +9435,9 @@
     },
     "520": {
         "pokemon": "tranquill",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -7891,6 +9452,9 @@
     },
     "521": {
         "pokemon": "unfezant",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -7909,6 +9473,9 @@
     },
     "522": {
         "pokemon": "blitzle",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -7922,6 +9489,9 @@
     },
     "523": {
         "pokemon": "zebstrika",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -7935,6 +9505,9 @@
     },
     "524": {
         "pokemon": "roggenrola",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock"
         ],
@@ -7948,6 +9521,9 @@
     },
     "525": {
         "pokemon": "boldore",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Rock"
         ],
@@ -7961,6 +9537,9 @@
     },
     "526": {
         "pokemon": "gigalith",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock"
         ],
@@ -7974,6 +9553,9 @@
     },
     "527": {
         "pokemon": "woobat",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Psychic",
             "Flying"
@@ -7988,6 +9570,9 @@
     },
     "528": {
         "pokemon": "swoobat",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Psychic",
             "Flying"
@@ -8002,6 +9587,9 @@
     },
     "529": {
         "pokemon": "drilbur",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ground"
         ],
@@ -8015,6 +9603,9 @@
     },
     "530": {
         "pokemon": "excadrill",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ground",
             "Steel"
@@ -8029,6 +9620,9 @@
     },
     "531": {
         "pokemon": "audino",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal"
         ],
@@ -8052,6 +9646,9 @@
     },
     "532": {
         "pokemon": "timburr",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -8065,6 +9662,9 @@
     },
     "533": {
         "pokemon": "gurdurr",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -8078,6 +9678,9 @@
     },
     "534": {
         "pokemon": "conkeldurr",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -8091,6 +9694,9 @@
     },
     "535": {
         "pokemon": "tympole",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -8104,6 +9710,9 @@
     },
     "536": {
         "pokemon": "palpitoad",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Water",
             "Ground"
@@ -8118,6 +9727,9 @@
     },
     "537": {
         "pokemon": "seismitoad",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Ground"
@@ -8132,6 +9744,9 @@
     },
     "538": {
         "pokemon": "throh",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fighting"
         ],
@@ -8145,6 +9760,9 @@
     },
     "539": {
         "pokemon": "sawk",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fighting"
         ],
@@ -8158,6 +9776,9 @@
     },
     "540": {
         "pokemon": "sewaddle",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug",
             "Grass"
@@ -8172,6 +9793,9 @@
     },
     "541": {
         "pokemon": "swadloon",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Bug",
             "Grass"
@@ -8186,6 +9810,9 @@
     },
     "542": {
         "pokemon": "leavanny",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Grass"
@@ -8200,6 +9827,9 @@
     },
     "543": {
         "pokemon": "venipede",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug",
             "Poison"
@@ -8214,6 +9844,9 @@
     },
     "544": {
         "pokemon": "whirlipede",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Bug",
             "Poison"
@@ -8228,6 +9861,9 @@
     },
     "545": {
         "pokemon": "scolipede",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Poison"
@@ -8242,6 +9878,9 @@
     },
     "546": {
         "pokemon": "cottonee",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass",
             "Fairy"
@@ -8256,6 +9895,9 @@
     },
     "547": {
         "pokemon": "whimsicott",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Fairy"
@@ -8270,6 +9912,9 @@
     },
     "548": {
         "pokemon": "petilil",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -8283,6 +9928,9 @@
     },
     "549": {
         "pokemon": "lilligant",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -8296,6 +9944,9 @@
     },
     "550": {
         "pokemon": "basculin",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -8319,6 +9970,9 @@
     },
     "551": {
         "pokemon": "sandile",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ground",
             "Dark"
@@ -8333,6 +9987,9 @@
     },
     "552": {
         "pokemon": "krokorok",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Ground",
             "Dark"
@@ -8347,6 +10004,9 @@
     },
     "553": {
         "pokemon": "krookodile",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ground",
             "Dark"
@@ -8361,6 +10021,9 @@
     },
     "554": {
         "pokemon": "darumaka",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -8383,6 +10046,9 @@
     },
     "555": {
         "pokemon": "darmanitan",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -8406,6 +10072,9 @@
     },
     "556": {
         "pokemon": "maractus",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Grass"
         ],
@@ -8419,6 +10088,9 @@
     },
     "557": {
         "pokemon": "dwebble",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug",
             "Rock"
@@ -8433,6 +10105,9 @@
     },
     "558": {
         "pokemon": "crustle",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Rock"
@@ -8447,6 +10122,9 @@
     },
     "559": {
         "pokemon": "scraggy",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dark",
             "Fighting"
@@ -8461,6 +10139,9 @@
     },
     "560": {
         "pokemon": "scrafty",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dark",
             "Fighting"
@@ -8475,6 +10156,9 @@
     },
     "561": {
         "pokemon": "sigilyph",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Psychic",
             "Flying"
@@ -8489,6 +10173,9 @@
     },
     "562": {
         "pokemon": "yamask",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ghost"
         ],
@@ -8516,6 +10203,9 @@
     },
     "563": {
         "pokemon": "cofagrigus",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ghost"
         ],
@@ -8529,6 +10219,9 @@
     },
     "564": {
         "pokemon": "tirtouga",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water",
             "Rock"
@@ -8543,6 +10236,9 @@
     },
     "565": {
         "pokemon": "carracosta",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Rock"
@@ -8557,6 +10253,9 @@
     },
     "566": {
         "pokemon": "archen",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock",
             "Flying"
@@ -8571,6 +10270,9 @@
     },
     "567": {
         "pokemon": "archeops",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock",
             "Flying"
@@ -8585,6 +10287,9 @@
     },
     "568": {
         "pokemon": "trubbish",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Poison"
         ],
@@ -8598,6 +10303,9 @@
     },
     "569": {
         "pokemon": "garbodor",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Poison"
         ],
@@ -8615,6 +10323,9 @@
     },
     "570": {
         "pokemon": "zorua",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dark"
         ],
@@ -8638,6 +10349,9 @@
     },
     "571": {
         "pokemon": "zoroark",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dark"
         ],
@@ -8661,6 +10375,9 @@
     },
     "572": {
         "pokemon": "minccino",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -8674,6 +10391,9 @@
     },
     "573": {
         "pokemon": "cinccino",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -8687,6 +10407,9 @@
     },
     "574": {
         "pokemon": "gothita",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -8700,6 +10423,9 @@
     },
     "575": {
         "pokemon": "gothorita",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -8713,6 +10439,9 @@
     },
     "576": {
         "pokemon": "gothitelle",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -8726,6 +10455,9 @@
     },
     "577": {
         "pokemon": "solosis",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -8739,6 +10471,9 @@
     },
     "578": {
         "pokemon": "duosion",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -8752,6 +10487,9 @@
     },
     "579": {
         "pokemon": "reuniclus",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -8765,6 +10503,9 @@
     },
     "580": {
         "pokemon": "ducklett",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water",
             "Flying"
@@ -8779,6 +10520,9 @@
     },
     "581": {
         "pokemon": "swanna",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Flying"
@@ -8793,6 +10537,9 @@
     },
     "582": {
         "pokemon": "vanillite",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ice"
         ],
@@ -8806,6 +10553,9 @@
     },
     "583": {
         "pokemon": "vanillish",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Ice"
         ],
@@ -8819,6 +10569,9 @@
     },
     "584": {
         "pokemon": "vanilluxe",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ice"
         ],
@@ -8832,6 +10585,9 @@
     },
     "585": {
         "pokemon": "deerling",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Grass"
@@ -8852,6 +10608,9 @@
     },
     "586": {
         "pokemon": "sawsbuck",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal",
             "Grass"
@@ -8872,6 +10631,9 @@
     },
     "587": {
         "pokemon": "emolga",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Electric",
             "Flying"
@@ -8886,6 +10648,9 @@
     },
     "588": {
         "pokemon": "karrablast",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug"
         ],
@@ -8899,6 +10664,9 @@
     },
     "589": {
         "pokemon": "escavalier",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Steel"
@@ -8913,6 +10681,9 @@
     },
     "590": {
         "pokemon": "foongus",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass",
             "Poison"
@@ -8927,6 +10698,9 @@
     },
     "591": {
         "pokemon": "amoonguss",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Poison"
@@ -8941,6 +10715,9 @@
     },
     "592": {
         "pokemon": "frillish",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water",
             "Ghost"
@@ -8959,6 +10736,9 @@
     },
     "593": {
         "pokemon": "jellicent",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Ghost"
@@ -8977,6 +10757,9 @@
     },
     "594": {
         "pokemon": "alomomola",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water"
         ],
@@ -8990,6 +10773,9 @@
     },
     "595": {
         "pokemon": "joltik",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug",
             "Electric"
@@ -9004,6 +10790,9 @@
     },
     "596": {
         "pokemon": "galvantula",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Electric"
@@ -9018,6 +10807,9 @@
     },
     "597": {
         "pokemon": "ferroseed",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass",
             "Steel"
@@ -9032,6 +10824,9 @@
     },
     "598": {
         "pokemon": "ferrothorn",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Steel"
@@ -9046,6 +10841,9 @@
     },
     "599": {
         "pokemon": "klink",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Steel"
         ],
@@ -9059,6 +10857,9 @@
     },
     "600": {
         "pokemon": "klang",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Steel"
         ],
@@ -9072,6 +10873,9 @@
     },
     "601": {
         "pokemon": "klinklang",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Steel"
         ],
@@ -9085,6 +10889,9 @@
     },
     "602": {
         "pokemon": "tynamo",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -9098,6 +10905,9 @@
     },
     "603": {
         "pokemon": "eelektrik",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -9111,6 +10921,9 @@
     },
     "604": {
         "pokemon": "eelektross",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -9124,6 +10937,9 @@
     },
     "605": {
         "pokemon": "elgyem",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -9137,6 +10953,9 @@
     },
     "606": {
         "pokemon": "beheeyem",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -9150,6 +10969,9 @@
     },
     "607": {
         "pokemon": "litwick",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ghost",
             "Fire"
@@ -9164,6 +10986,9 @@
     },
     "608": {
         "pokemon": "lampent",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Ghost",
             "Fire"
@@ -9178,6 +11003,9 @@
     },
     "609": {
         "pokemon": "chandelure",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ghost",
             "Fire"
@@ -9192,6 +11020,9 @@
     },
     "610": {
         "pokemon": "axew",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dragon"
         ],
@@ -9205,6 +11036,9 @@
     },
     "611": {
         "pokemon": "fraxure",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Dragon"
         ],
@@ -9218,6 +11052,9 @@
     },
     "612": {
         "pokemon": "haxorus",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dragon"
         ],
@@ -9231,6 +11068,9 @@
     },
     "613": {
         "pokemon": "cubchoo",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ice"
         ],
@@ -9244,6 +11084,9 @@
     },
     "614": {
         "pokemon": "beartic",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ice"
         ],
@@ -9257,6 +11100,9 @@
     },
     "615": {
         "pokemon": "cryogonal",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Ice"
         ],
@@ -9270,6 +11116,9 @@
     },
     "616": {
         "pokemon": "shelmet",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug"
         ],
@@ -9283,6 +11132,9 @@
     },
     "617": {
         "pokemon": "accelgor",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug"
         ],
@@ -9296,6 +11148,9 @@
     },
     "618": {
         "pokemon": "stunfisk",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Ground",
             "Electric"
@@ -9310,6 +11165,9 @@
     },
     "619": {
         "pokemon": "mienfoo",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -9323,6 +11181,9 @@
     },
     "620": {
         "pokemon": "mienshao",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -9336,6 +11197,9 @@
     },
     "621": {
         "pokemon": "druddigon",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dragon"
         ],
@@ -9349,6 +11213,9 @@
     },
     "622": {
         "pokemon": "golett",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ground",
             "Ghost"
@@ -9363,6 +11230,9 @@
     },
     "623": {
         "pokemon": "golurk",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ground",
             "Ghost"
@@ -9377,6 +11247,9 @@
     },
     "624": {
         "pokemon": "pawniard",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dark",
             "Steel"
@@ -9391,6 +11264,9 @@
     },
     "625": {
         "pokemon": "bisharp",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dark",
             "Steel"
@@ -9405,6 +11281,9 @@
     },
     "626": {
         "pokemon": "bouffalant",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal"
         ],
@@ -9418,6 +11297,9 @@
     },
     "627": {
         "pokemon": "rufflet",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -9432,6 +11314,9 @@
     },
     "628": {
         "pokemon": "braviary",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -9456,6 +11341,9 @@
     },
     "629": {
         "pokemon": "vullaby",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dark",
             "Flying"
@@ -9470,6 +11358,9 @@
     },
     "630": {
         "pokemon": "mandibuzz",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dark",
             "Flying"
@@ -9484,6 +11375,9 @@
     },
     "631": {
         "pokemon": "heatmor",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fire"
         ],
@@ -9497,6 +11391,9 @@
     },
     "632": {
         "pokemon": "durant",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Bug",
             "Steel"
@@ -9511,6 +11408,9 @@
     },
     "633": {
         "pokemon": "deino",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dark",
             "Dragon"
@@ -9525,6 +11425,9 @@
     },
     "634": {
         "pokemon": "zweilous",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Dark",
             "Dragon"
@@ -9539,6 +11442,9 @@
     },
     "635": {
         "pokemon": "hydreigon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dark",
             "Dragon"
@@ -9553,6 +11459,9 @@
     },
     "636": {
         "pokemon": "larvesta",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug",
             "Fire"
@@ -9567,6 +11476,9 @@
     },
     "637": {
         "pokemon": "volcarona",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Fire"
@@ -9581,6 +11493,9 @@
     },
     "638": {
         "pokemon": "cobalion",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Steel",
             "Fighting"
@@ -9595,6 +11510,9 @@
     },
     "639": {
         "pokemon": "terrakion",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Rock",
             "Fighting"
@@ -9609,6 +11527,9 @@
     },
     "640": {
         "pokemon": "virizion",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Grass",
             "Fighting"
@@ -9623,6 +11544,9 @@
     },
     "641": {
         "pokemon": "tornadus",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Flying"
         ],
@@ -9640,6 +11564,9 @@
     },
     "642": {
         "pokemon": "thundurus",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Electric",
             "Flying"
@@ -9658,6 +11585,9 @@
     },
     "643": {
         "pokemon": "reshiram",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dragon",
             "Fire"
@@ -9676,6 +11606,9 @@
     },
     "644": {
         "pokemon": "zekrom",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dragon",
             "Electric"
@@ -9694,6 +11627,9 @@
     },
     "645": {
         "pokemon": "landorus",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Ground",
             "Flying"
@@ -9712,6 +11648,9 @@
     },
     "646": {
         "pokemon": "kyurem",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dragon",
             "Ice"
@@ -9733,6 +11672,9 @@
     },
     "647": {
         "pokemon": "keldeo",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water",
             "Fighting"
@@ -9747,6 +11689,9 @@
     },
     "648": {
         "pokemon": "meloetta",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal",
             "Psychic"
@@ -9771,6 +11716,9 @@
     },
     "649": {
         "pokemon": "genesect",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Bug",
             "Steel"
@@ -9785,6 +11733,9 @@
     },
     "650": {
         "pokemon": "chespin",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -9798,6 +11749,9 @@
     },
     "651": {
         "pokemon": "quilladin",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -9811,6 +11765,9 @@
     },
     "652": {
         "pokemon": "chesnaught",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Fighting"
@@ -9825,6 +11782,9 @@
     },
     "653": {
         "pokemon": "fennekin",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -9838,6 +11798,9 @@
     },
     "654": {
         "pokemon": "braixen",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -9851,6 +11814,9 @@
     },
     "655": {
         "pokemon": "delphox",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire",
             "Psychic"
@@ -9865,6 +11831,9 @@
     },
     "656": {
         "pokemon": "froakie",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -9878,6 +11847,9 @@
     },
     "657": {
         "pokemon": "frogadier",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -9891,6 +11863,9 @@
     },
     "658": {
         "pokemon": "greninja",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Dark"
@@ -9909,6 +11884,9 @@
     },
     "659": {
         "pokemon": "bunnelby",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Ground"
@@ -9923,6 +11901,9 @@
     },
     "660": {
         "pokemon": "diggersby",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal",
             "Ground"
@@ -9937,6 +11918,9 @@
     },
     "661": {
         "pokemon": "fletchling",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -9951,6 +11935,9 @@
     },
     "662": {
         "pokemon": "fletchinder",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Fire",
             "Flying"
@@ -9965,6 +11952,9 @@
     },
     "663": {
         "pokemon": "talonflame",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire",
             "Flying"
@@ -9979,6 +11969,9 @@
     },
     "664": {
         "pokemon": "scatterbug",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug"
         ],
@@ -9992,6 +11985,9 @@
     },
     "665": {
         "pokemon": "spewpa",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Bug"
         ],
@@ -10005,6 +12001,9 @@
     },
     "666": {
         "pokemon": "vivillon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Flying"
@@ -10029,6 +12028,9 @@
     },
     "667": {
         "pokemon": "litleo",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire",
             "Normal"
@@ -10043,6 +12045,9 @@
     },
     "668": {
         "pokemon": "pyroar",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire",
             "Normal"
@@ -10057,6 +12062,9 @@
     },
     "669": {
         "pokemon": "flabébé",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fairy"
         ],
@@ -10070,6 +12078,9 @@
     },
     "670": {
         "pokemon": "floette",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Fairy"
         ],
@@ -10083,6 +12094,9 @@
     },
     "671": {
         "pokemon": "florges",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fairy"
         ],
@@ -10096,6 +12110,9 @@
     },
     "672": {
         "pokemon": "skiddo",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -10109,6 +12126,9 @@
     },
     "673": {
         "pokemon": "gogoat",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -10122,6 +12142,9 @@
     },
     "674": {
         "pokemon": "pancham",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -10135,6 +12158,9 @@
     },
     "675": {
         "pokemon": "pangoro",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fighting",
             "Dark"
@@ -10149,6 +12175,9 @@
     },
     "676": {
         "pokemon": "furfrou",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal"
         ],
@@ -10162,6 +12191,9 @@
     },
     "677": {
         "pokemon": "espurr",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -10175,6 +12207,9 @@
     },
     "678": {
         "pokemon": "meowstic",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -10192,6 +12227,9 @@
     },
     "679": {
         "pokemon": "honedge",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Steel",
             "Ghost"
@@ -10206,6 +12244,9 @@
     },
     "680": {
         "pokemon": "doublade",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Steel",
             "Ghost"
@@ -10220,6 +12261,9 @@
     },
     "681": {
         "pokemon": "aegislash",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Steel",
             "Ghost"
@@ -10234,6 +12278,9 @@
     },
     "682": {
         "pokemon": "spritzee",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fairy"
         ],
@@ -10247,6 +12294,9 @@
     },
     "683": {
         "pokemon": "aromatisse",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fairy"
         ],
@@ -10260,6 +12310,9 @@
     },
     "684": {
         "pokemon": "swirlix",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fairy"
         ],
@@ -10273,6 +12326,9 @@
     },
     "685": {
         "pokemon": "slurpuff",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fairy"
         ],
@@ -10286,6 +12342,9 @@
     },
     "686": {
         "pokemon": "inkay",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dark",
             "Psychic"
@@ -10300,6 +12359,9 @@
     },
     "687": {
         "pokemon": "malamar",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dark",
             "Psychic"
@@ -10314,6 +12376,9 @@
     },
     "688": {
         "pokemon": "binacle",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock",
             "Water"
@@ -10328,6 +12393,9 @@
     },
     "689": {
         "pokemon": "barbaracle",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock",
             "Water"
@@ -10342,6 +12410,9 @@
     },
     "690": {
         "pokemon": "skrelp",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Poison",
             "Water"
@@ -10356,6 +12427,9 @@
     },
     "691": {
         "pokemon": "dragalge",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Poison",
             "Dragon"
@@ -10370,6 +12444,9 @@
     },
     "692": {
         "pokemon": "clauncher",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -10383,6 +12460,9 @@
     },
     "693": {
         "pokemon": "clawitzer",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -10396,6 +12476,9 @@
     },
     "694": {
         "pokemon": "helioptile",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Electric",
             "Normal"
@@ -10410,6 +12493,9 @@
     },
     "695": {
         "pokemon": "heliolisk",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Electric",
             "Normal"
@@ -10424,6 +12510,9 @@
     },
     "696": {
         "pokemon": "tyrunt",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock",
             "Dragon"
@@ -10438,6 +12527,9 @@
     },
     "697": {
         "pokemon": "tyrantrum",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock",
             "Dragon"
@@ -10452,6 +12544,9 @@
     },
     "698": {
         "pokemon": "amaura",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock",
             "Ice"
@@ -10466,6 +12561,9 @@
     },
     "699": {
         "pokemon": "aurorus",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock",
             "Ice"
@@ -10480,6 +12578,9 @@
     },
     "700": {
         "pokemon": "sylveon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fairy"
         ],
@@ -10493,6 +12594,9 @@
     },
     "701": {
         "pokemon": "hawlucha",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fighting",
             "Flying"
@@ -10507,6 +12611,9 @@
     },
     "702": {
         "pokemon": "dedenne",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Electric",
             "Fairy"
@@ -10521,6 +12628,9 @@
     },
     "703": {
         "pokemon": "carbink",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Rock",
             "Fairy"
@@ -10535,6 +12645,9 @@
     },
     "704": {
         "pokemon": "goomy",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dragon"
         ],
@@ -10548,6 +12661,9 @@
     },
     "705": {
         "pokemon": "sliggoo",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Dragon"
         ],
@@ -10571,6 +12687,9 @@
     },
     "706": {
         "pokemon": "goodra",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dragon"
         ],
@@ -10595,6 +12714,9 @@
     },
     "707": {
         "pokemon": "klefki",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Steel",
             "Fairy"
@@ -10609,6 +12731,9 @@
     },
     "708": {
         "pokemon": "phantump",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ghost",
             "Grass"
@@ -10623,6 +12748,9 @@
     },
     "709": {
         "pokemon": "trevenant",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ghost",
             "Grass"
@@ -10637,6 +12765,9 @@
     },
     "710": {
         "pokemon": "pumpkaboo",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ghost",
             "Grass"
@@ -10651,6 +12782,9 @@
     },
     "711": {
         "pokemon": "gourgeist",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ghost",
             "Grass"
@@ -10665,6 +12799,9 @@
     },
     "712": {
         "pokemon": "bergmite",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ice"
         ],
@@ -10678,6 +12815,9 @@
     },
     "713": {
         "pokemon": "avalugg",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ice"
         ],
@@ -10702,6 +12842,9 @@
     },
     "714": {
         "pokemon": "noibat",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Flying",
             "Dragon"
@@ -10716,6 +12859,9 @@
     },
     "715": {
         "pokemon": "noivern",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Flying",
             "Dragon"
@@ -10730,6 +12876,9 @@
     },
     "716": {
         "pokemon": "xerneas",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fairy"
         ],
@@ -10743,6 +12892,9 @@
     },
     "717": {
         "pokemon": "yveltal",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dark",
             "Flying"
@@ -10757,6 +12909,9 @@
     },
     "718": {
         "pokemon": "zygarde",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dragon",
             "Ground"
@@ -10776,6 +12931,9 @@
     },
     "719": {
         "pokemon": "diancie",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Rock",
             "Fairy"
@@ -10794,6 +12952,9 @@
     },
     "720": {
         "pokemon": "hoopa",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Psychic",
             "Ghost"
@@ -10818,6 +12979,9 @@
     },
     "721": {
         "pokemon": "volcanion",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fire",
             "Water"
@@ -10832,6 +12996,9 @@
     },
     "722": {
         "pokemon": "rowlet",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass",
             "Flying"
@@ -10846,6 +13013,9 @@
     },
     "723": {
         "pokemon": "dartrix",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Grass",
             "Flying"
@@ -10860,6 +13030,9 @@
     },
     "724": {
         "pokemon": "decidueye",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Ghost"
@@ -10884,6 +13057,9 @@
     },
     "725": {
         "pokemon": "litten",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -10897,6 +13073,9 @@
     },
     "726": {
         "pokemon": "torracat",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -10910,6 +13089,9 @@
     },
     "727": {
         "pokemon": "incineroar",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire",
             "Dark"
@@ -10924,6 +13106,9 @@
     },
     "728": {
         "pokemon": "popplio",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -10937,6 +13122,9 @@
     },
     "729": {
         "pokemon": "brionne",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -10950,6 +13138,9 @@
     },
     "730": {
         "pokemon": "primarina",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Fairy"
@@ -10964,6 +13155,9 @@
     },
     "731": {
         "pokemon": "pikipek",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -10978,6 +13172,9 @@
     },
     "732": {
         "pokemon": "trumbeak",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -10992,6 +13189,9 @@
     },
     "733": {
         "pokemon": "toucannon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -11006,6 +13206,9 @@
     },
     "734": {
         "pokemon": "yungoos",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -11019,6 +13222,9 @@
     },
     "735": {
         "pokemon": "gumshoos",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -11032,6 +13238,9 @@
     },
     "736": {
         "pokemon": "grubbin",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug"
         ],
@@ -11045,6 +13254,9 @@
     },
     "737": {
         "pokemon": "charjabug",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Bug",
             "Electric"
@@ -11059,6 +13271,9 @@
     },
     "738": {
         "pokemon": "vikavolt",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Electric"
@@ -11073,6 +13288,9 @@
     },
     "739": {
         "pokemon": "crabrawler",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -11086,6 +13304,9 @@
     },
     "740": {
         "pokemon": "crabominable",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fighting",
             "Ice"
@@ -11100,6 +13321,9 @@
     },
     "741": {
         "pokemon": "oricorio",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fire",
             "Flying"
@@ -11134,6 +13358,9 @@
     },
     "742": {
         "pokemon": "cutiefly",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug",
             "Fairy"
@@ -11148,6 +13375,9 @@
     },
     "743": {
         "pokemon": "ribombee",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Fairy"
@@ -11162,6 +13392,9 @@
     },
     "744": {
         "pokemon": "rockruff",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock"
         ],
@@ -11175,6 +13408,9 @@
     },
     "745": {
         "pokemon": "lycanroc",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock"
         ],
@@ -11193,6 +13429,9 @@
     },
     "746": {
         "pokemon": "wishiwashi",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water"
         ],
@@ -11210,6 +13449,9 @@
     },
     "747": {
         "pokemon": "mareanie",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water",
             "Poison"
@@ -11224,6 +13466,9 @@
     },
     "748": {
         "pokemon": "toxapex",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Poison"
@@ -11238,6 +13483,9 @@
     },
     "749": {
         "pokemon": "mudbray",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ground"
         ],
@@ -11251,6 +13499,9 @@
     },
     "750": {
         "pokemon": "mudsdale",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ground"
         ],
@@ -11264,6 +13515,9 @@
     },
     "751": {
         "pokemon": "dewpider",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water",
             "Bug"
@@ -11278,6 +13532,9 @@
     },
     "752": {
         "pokemon": "araquanid",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Bug"
@@ -11292,6 +13549,9 @@
     },
     "753": {
         "pokemon": "fomantis",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -11305,6 +13565,9 @@
     },
     "754": {
         "pokemon": "lurantis",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -11318,6 +13581,9 @@
     },
     "755": {
         "pokemon": "morelull",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass",
             "Fairy"
@@ -11332,6 +13598,9 @@
     },
     "756": {
         "pokemon": "shiinotic",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Fairy"
@@ -11346,6 +13615,9 @@
     },
     "757": {
         "pokemon": "salandit",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Poison",
             "Fire"
@@ -11360,6 +13632,9 @@
     },
     "758": {
         "pokemon": "salazzle",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Poison",
             "Fire"
@@ -11374,6 +13649,9 @@
     },
     "759": {
         "pokemon": "stufful",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal",
             "Fighting"
@@ -11388,6 +13666,9 @@
     },
     "760": {
         "pokemon": "bewear",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal",
             "Fighting"
@@ -11402,6 +13683,9 @@
     },
     "761": {
         "pokemon": "bounsweet",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -11415,6 +13699,9 @@
     },
     "762": {
         "pokemon": "steenee",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -11428,6 +13715,9 @@
     },
     "763": {
         "pokemon": "tsareena",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -11441,6 +13731,9 @@
     },
     "764": {
         "pokemon": "comfey",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fairy"
         ],
@@ -11454,6 +13747,9 @@
     },
     "765": {
         "pokemon": "oranguru",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal",
             "Psychic"
@@ -11468,6 +13764,9 @@
     },
     "766": {
         "pokemon": "passimian",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fighting"
         ],
@@ -11481,6 +13780,9 @@
     },
     "767": {
         "pokemon": "wimpod",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug",
             "Water"
@@ -11495,6 +13797,9 @@
     },
     "768": {
         "pokemon": "golisopod",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Water"
@@ -11509,6 +13814,9 @@
     },
     "769": {
         "pokemon": "sandygast",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ghost",
             "Ground"
@@ -11523,6 +13831,9 @@
     },
     "770": {
         "pokemon": "palossand",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ghost",
             "Ground"
@@ -11537,6 +13848,9 @@
     },
     "771": {
         "pokemon": "pyukumuku",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water",
             "Psychic"
@@ -11551,6 +13865,9 @@
     },
     "772": {
         "pokemon": "type: null",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -11564,6 +13881,9 @@
     },
     "773": {
         "pokemon": "silvally",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -11577,6 +13897,9 @@
     },
     "774": {
         "pokemon": "minior",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Rock",
             "Flying"
@@ -11595,6 +13918,9 @@
     },
     "775": {
         "pokemon": "komala",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal"
         ],
@@ -11608,6 +13934,9 @@
     },
     "776": {
         "pokemon": "turtonator",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fire",
             "Dragon"
@@ -11622,6 +13951,9 @@
     },
     "777": {
         "pokemon": "togedemaru",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Electric",
             "Steel"
@@ -11636,6 +13968,9 @@
     },
     "778": {
         "pokemon": "mimikyu",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Ghost",
             "Fairy"
@@ -11650,6 +13985,9 @@
     },
     "779": {
         "pokemon": "bruxish",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water",
             "Psychic"
@@ -11664,6 +14002,9 @@
     },
     "780": {
         "pokemon": "drampa",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal",
             "Dragon"
@@ -11678,6 +14019,9 @@
     },
     "781": {
         "pokemon": "dhelmise",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Ghost",
             "Grass"
@@ -11692,6 +14036,9 @@
     },
     "782": {
         "pokemon": "jangmo-o",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dragon"
         ],
@@ -11705,6 +14052,9 @@
     },
     "783": {
         "pokemon": "hakamo-o",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Dragon",
             "Fighting"
@@ -11719,6 +14069,9 @@
     },
     "784": {
         "pokemon": "kommo-o",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dragon",
             "Fighting"
@@ -11733,6 +14086,9 @@
     },
     "785": {
         "pokemon": "tapu koko",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Electric",
             "Fairy"
@@ -11747,6 +14103,9 @@
     },
     "786": {
         "pokemon": "tapu lele",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Psychic",
             "Fairy"
@@ -11761,6 +14120,9 @@
     },
     "787": {
         "pokemon": "tapu bulu",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Grass",
             "Fairy"
@@ -11775,6 +14137,9 @@
     },
     "788": {
         "pokemon": "tapu fini",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water",
             "Fairy"
@@ -11789,6 +14154,9 @@
     },
     "789": {
         "pokemon": "cosmog",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -11802,6 +14170,9 @@
     },
     "790": {
         "pokemon": "cosmoem",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Psychic"
         ],
@@ -11819,6 +14190,9 @@
     },
     "791": {
         "pokemon": "solgaleo",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Psychic",
             "Steel"
@@ -11833,6 +14207,9 @@
     },
     "792": {
         "pokemon": "lunala",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Psychic",
             "Ghost"
@@ -11847,6 +14224,9 @@
     },
     "793": {
         "pokemon": "nihilego",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Rock",
             "Poison"
@@ -11861,6 +14241,9 @@
     },
     "794": {
         "pokemon": "buzzwole",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Bug",
             "Fighting"
@@ -11875,6 +14258,9 @@
     },
     "795": {
         "pokemon": "pheromosa",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Bug",
             "Fighting"
@@ -11889,6 +14275,9 @@
     },
     "796": {
         "pokemon": "xurkitree",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Electric",
             "Bug"
@@ -11903,6 +14292,9 @@
     },
     "797": {
         "pokemon": "celesteela",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Steel",
             "Flying"
@@ -11917,6 +14309,9 @@
     },
     "798": {
         "pokemon": "kartana",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Grass",
             "Steel"
@@ -11931,6 +14326,9 @@
     },
     "799": {
         "pokemon": "guzzlord",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dark",
             "Dragon"
@@ -11945,6 +14343,9 @@
     },
     "800": {
         "pokemon": "necrozma",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Psychic"
         ],
@@ -11978,6 +14379,9 @@
     },
     "801": {
         "pokemon": "magearna",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Steel",
             "Fairy"
@@ -11992,6 +14396,9 @@
     },
     "802": {
         "pokemon": "marshadow",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fighting",
             "Ghost"
@@ -12006,6 +14413,9 @@
     },
     "803": {
         "pokemon": "poipole",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Poison"
         ],
@@ -12019,6 +14429,9 @@
     },
     "804": {
         "pokemon": "naganadel",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Poison",
             "Dragon"
@@ -12033,6 +14446,9 @@
     },
     "805": {
         "pokemon": "stakataka",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Rock",
             "Steel"
@@ -12047,6 +14463,9 @@
     },
     "806": {
         "pokemon": "blacephalon",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fire",
             "Ghost"
@@ -12061,6 +14480,9 @@
     },
     "807": {
         "pokemon": "zeraora",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Electric"
         ],
@@ -12074,6 +14496,9 @@
     },
     "808": {
         "pokemon": "meltan",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Steel"
         ],
@@ -12087,6 +14512,9 @@
     },
     "809": {
         "pokemon": "melmetal",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Steel"
         ],
@@ -12104,6 +14532,9 @@
     },
     "810": {
         "pokemon": "grookey",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -12117,6 +14548,9 @@
     },
     "811": {
         "pokemon": "thwackey",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -12130,6 +14564,9 @@
     },
     "812": {
         "pokemon": "rillaboom",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -12147,6 +14584,9 @@
     },
     "813": {
         "pokemon": "scorbunny",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -12160,6 +14600,9 @@
     },
     "814": {
         "pokemon": "raboot",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -12173,6 +14616,9 @@
     },
     "815": {
         "pokemon": "cinderace",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -12190,6 +14636,9 @@
     },
     "816": {
         "pokemon": "sobble",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -12203,6 +14652,9 @@
     },
     "817": {
         "pokemon": "drizzile",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -12216,6 +14668,9 @@
     },
     "818": {
         "pokemon": "inteleon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -12233,6 +14688,9 @@
     },
     "819": {
         "pokemon": "skwovet",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -12246,6 +14704,9 @@
     },
     "820": {
         "pokemon": "greedent",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -12259,6 +14720,9 @@
     },
     "821": {
         "pokemon": "rookidee",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Flying"
         ],
@@ -12272,6 +14736,9 @@
     },
     "822": {
         "pokemon": "corvisquire",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Flying"
         ],
@@ -12285,6 +14752,9 @@
     },
     "823": {
         "pokemon": "corviknight",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Flying",
             "Steel"
@@ -12303,6 +14773,9 @@
     },
     "824": {
         "pokemon": "blipbug",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug"
         ],
@@ -12316,6 +14789,9 @@
     },
     "825": {
         "pokemon": "dottler",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Bug",
             "Psychic"
@@ -12330,6 +14806,9 @@
     },
     "826": {
         "pokemon": "orbeetle",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Psychic"
@@ -12348,6 +14827,9 @@
     },
     "827": {
         "pokemon": "nickit",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dark"
         ],
@@ -12361,6 +14843,9 @@
     },
     "828": {
         "pokemon": "thievul",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dark"
         ],
@@ -12374,6 +14859,9 @@
     },
     "829": {
         "pokemon": "gossifleur",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -12387,6 +14875,9 @@
     },
     "830": {
         "pokemon": "eldegoss",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -12400,6 +14891,9 @@
     },
     "831": {
         "pokemon": "wooloo",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -12413,6 +14907,9 @@
     },
     "832": {
         "pokemon": "dubwool",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -12426,6 +14923,9 @@
     },
     "833": {
         "pokemon": "chewtle",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -12439,6 +14939,9 @@
     },
     "834": {
         "pokemon": "drednaw",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Rock"
@@ -12457,6 +14960,9 @@
     },
     "835": {
         "pokemon": "yamper",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -12470,6 +14976,9 @@
     },
     "836": {
         "pokemon": "boltund",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -12483,6 +14992,9 @@
     },
     "837": {
         "pokemon": "rolycoly",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock"
         ],
@@ -12496,6 +15008,9 @@
     },
     "838": {
         "pokemon": "carkol",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Rock",
             "Fire"
@@ -12510,6 +15025,9 @@
     },
     "839": {
         "pokemon": "coalossal",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock",
             "Fire"
@@ -12528,6 +15046,9 @@
     },
     "840": {
         "pokemon": "applin",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass",
             "Dragon"
@@ -12547,6 +15068,9 @@
     },
     "841": {
         "pokemon": "flapple",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Dragon"
@@ -12565,6 +15089,9 @@
     },
     "842": {
         "pokemon": "appletun",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Dragon"
@@ -12583,6 +15110,9 @@
     },
     "843": {
         "pokemon": "silicobra",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ground"
         ],
@@ -12596,6 +15126,9 @@
     },
     "844": {
         "pokemon": "sandaconda",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ground"
         ],
@@ -12613,6 +15146,9 @@
     },
     "845": {
         "pokemon": "cramorant",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Flying",
             "Water"
@@ -12627,6 +15163,9 @@
     },
     "846": {
         "pokemon": "arrokuda",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -12640,6 +15179,9 @@
     },
     "847": {
         "pokemon": "barraskewda",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -12653,6 +15195,9 @@
     },
     "848": {
         "pokemon": "toxel",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Electric",
             "Poison"
@@ -12667,6 +15212,9 @@
     },
     "849": {
         "pokemon": "toxtricity",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Electric",
             "Poison"
@@ -12686,6 +15234,9 @@
     },
     "850": {
         "pokemon": "sizzlipede",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire",
             "Bug"
@@ -12700,6 +15251,9 @@
     },
     "851": {
         "pokemon": "centiskorch",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire",
             "Bug"
@@ -12718,6 +15272,9 @@
     },
     "852": {
         "pokemon": "clobbopus",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -12731,6 +15288,9 @@
     },
     "853": {
         "pokemon": "grapploct",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fighting",
             "Water"
@@ -12745,6 +15305,9 @@
     },
     "854": {
         "pokemon": "sinistea",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ghost"
         ],
@@ -12758,6 +15321,9 @@
     },
     "855": {
         "pokemon": "polteageist",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ghost"
         ],
@@ -12771,6 +15337,9 @@
     },
     "856": {
         "pokemon": "hatenna",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Psychic",
             "Fairy"
@@ -12785,6 +15354,9 @@
     },
     "857": {
         "pokemon": "hattrem",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Psychic",
             "Fairy"
@@ -12799,6 +15371,9 @@
     },
     "858": {
         "pokemon": "hatterene",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Psychic",
             "Fairy"
@@ -12817,6 +15392,9 @@
     },
     "859": {
         "pokemon": "impidimp",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dark",
             "Fairy"
@@ -12831,6 +15409,9 @@
     },
     "860": {
         "pokemon": "morgrem",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Dark",
             "Fairy"
@@ -12845,6 +15426,9 @@
     },
     "861": {
         "pokemon": "grimmsnarl",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dark",
             "Fairy"
@@ -12863,6 +15447,9 @@
     },
     "862": {
         "pokemon": "obstagoon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dark",
             "Normal"
@@ -12878,6 +15465,9 @@
     },
     "863": {
         "pokemon": "perrserker",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Steel",
             "Fighting"
@@ -12893,6 +15483,9 @@
     },
     "864": {
         "pokemon": "cursola",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ghost"
         ],
@@ -12907,9 +15500,11 @@
     },
     "865": {
         "pokemon": "sirfetch'd",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
-            "Fighting",
-            "Flying"
+            "Fighting"
         ],
         "forms": 1,
         "previous": {
@@ -12922,6 +15517,9 @@
     },
     "866": {
         "pokemon": "mr. rime",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ice",
             "Psychic"
@@ -12937,6 +15535,9 @@
     },
     "867": {
         "pokemon": "runerigus",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ground",
             "Ghost"
@@ -12952,6 +15553,9 @@
     },
     "868": {
         "pokemon": "milcery",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fairy"
         ],
@@ -12965,6 +15569,9 @@
     },
     "869": {
         "pokemon": "alcremie",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fairy"
         ],
@@ -12982,6 +15589,9 @@
     },
     "870": {
         "pokemon": "falinks",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fighting"
         ],
@@ -12995,6 +15605,9 @@
     },
     "871": {
         "pokemon": "pincurchin",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Electric"
         ],
@@ -13008,6 +15621,9 @@
     },
     "872": {
         "pokemon": "snom",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ice",
             "Bug"
@@ -13022,6 +15638,9 @@
     },
     "873": {
         "pokemon": "frosmoth",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ice",
             "Bug"
@@ -13036,6 +15655,9 @@
     },
     "874": {
         "pokemon": "stonjourner",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Rock"
         ],
@@ -13049,6 +15671,9 @@
     },
     "875": {
         "pokemon": "eiscue",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Ice"
         ],
@@ -13062,6 +15687,9 @@
     },
     "876": {
         "pokemon": "indeedee",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal",
             "Psychic"
@@ -13080,6 +15708,9 @@
     },
     "877": {
         "pokemon": "morpeko",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Electric",
             "Dark"
@@ -13098,6 +15729,9 @@
     },
     "878": {
         "pokemon": "cufant",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Steel"
         ],
@@ -13111,6 +15745,9 @@
     },
     "879": {
         "pokemon": "copperajah",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Steel"
         ],
@@ -13128,6 +15765,9 @@
     },
     "880": {
         "pokemon": "dracozolt",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Electric",
             "Dragon"
@@ -13142,6 +15782,9 @@
     },
     "881": {
         "pokemon": "arctozolt",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Electric",
             "Ice"
@@ -13156,6 +15799,9 @@
     },
     "882": {
         "pokemon": "dracovish",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water",
             "Dragon"
@@ -13170,6 +15816,9 @@
     },
     "883": {
         "pokemon": "arctovish",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water",
             "Ice"
@@ -13184,6 +15833,9 @@
     },
     "884": {
         "pokemon": "duraludon",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Steel",
             "Dragon"
@@ -13202,6 +15854,9 @@
     },
     "885": {
         "pokemon": "dreepy",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dragon",
             "Ghost"
@@ -13216,6 +15871,9 @@
     },
     "886": {
         "pokemon": "drakloak",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Dragon",
             "Ghost"
@@ -13230,6 +15888,9 @@
     },
     "887": {
         "pokemon": "dragapult",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dragon",
             "Ghost"
@@ -13244,6 +15905,9 @@
     },
     "888": {
         "pokemon": "zacian",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fairy"
         ],
@@ -13267,6 +15931,9 @@
     },
     "889": {
         "pokemon": "zamazenta",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fighting"
         ],
@@ -13290,6 +15957,9 @@
     },
     "890": {
         "pokemon": "eternatus",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Poison",
             "Dragon"
@@ -13304,6 +15974,9 @@
     },
     "891": {
         "pokemon": "kubfu",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fighting"
         ],
@@ -13317,6 +15990,9 @@
     },
     "892": {
         "pokemon": "urshifu",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fighting",
             "Dark"
@@ -13347,6 +16023,9 @@
     },
     "893": {
         "pokemon": "zarude",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dark",
             "Grass"
@@ -13361,6 +16040,9 @@
     },
     "894": {
         "pokemon": "regieleki",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Electric"
         ],
@@ -13374,6 +16056,9 @@
     },
     "895": {
         "pokemon": "regidrago",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dragon"
         ],
@@ -13387,6 +16072,9 @@
     },
     "896": {
         "pokemon": "glastrier",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Ice"
         ],
@@ -13400,6 +16088,9 @@
     },
     "897": {
         "pokemon": "spectrier",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Ghost"
         ],
@@ -13413,6 +16104,9 @@
     },
     "898": {
         "pokemon": "calyrex",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Psychic",
             "Grass"
@@ -13442,6 +16136,9 @@
     },
     "899": {
         "pokemon": "wyrdeer",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal",
             "Psychic"
@@ -13456,6 +16153,9 @@
     },
     "900": {
         "pokemon": "kleavor",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Rock"
@@ -13470,6 +16170,9 @@
     },
     "901": {
         "pokemon": "ursaluna",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ground",
             "Normal"
@@ -13488,6 +16191,9 @@
     },
     "902": {
         "pokemon": "basculegion",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Ghost"
@@ -13507,6 +16213,9 @@
     },
     "903": {
         "pokemon": "sneasler",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fighting",
             "Ice"
@@ -13522,6 +16231,9 @@
     },
     "904": {
         "pokemon": "overqwil",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Poison",
             "Dark"
@@ -13537,6 +16249,9 @@
     },
     "905": {
         "pokemon": "enamorus",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Fairy",
             "Flying"
@@ -13555,6 +16270,9 @@
     },
     "906": {
         "pokemon": "sprigatito",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -13568,6 +16286,9 @@
     },
     "907": {
         "pokemon": "floragato",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Grass"
         ],
@@ -13581,6 +16302,9 @@
     },
     "908": {
         "pokemon": "meowscarada",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Dark"
@@ -13595,6 +16319,9 @@
     },
     "909": {
         "pokemon": "fuecoco",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -13608,6 +16335,9 @@
     },
     "910": {
         "pokemon": "crocalor",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -13621,6 +16351,9 @@
     },
     "911": {
         "pokemon": "skeledirge",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire",
             "Ghost"
@@ -13635,6 +16368,9 @@
     },
     "912": {
         "pokemon": "quaxly",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -13648,6 +16384,9 @@
     },
     "913": {
         "pokemon": "quaxwell",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -13661,6 +16400,9 @@
     },
     "914": {
         "pokemon": "quaquaval",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Fighting"
@@ -13675,6 +16417,9 @@
     },
     "915": {
         "pokemon": "lechonk",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -13688,6 +16433,9 @@
     },
     "916": {
         "pokemon": "oinkologne",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -13705,6 +16453,9 @@
     },
     "917": {
         "pokemon": "tarountula",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug"
         ],
@@ -13718,6 +16469,9 @@
     },
     "918": {
         "pokemon": "spidops",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Grass"
@@ -13732,6 +16486,9 @@
     },
     "919": {
         "pokemon": "nymble",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug"
         ],
@@ -13745,6 +16502,9 @@
     },
     "920": {
         "pokemon": "lokix",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Dark"
@@ -13759,6 +16519,9 @@
     },
     "921": {
         "pokemon": "pawmi",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -13772,6 +16535,9 @@
     },
     "922": {
         "pokemon": "pawmo",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Electric",
             "Fighting"
@@ -13786,6 +16552,9 @@
     },
     "923": {
         "pokemon": "pawmot",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Electric",
             "Fighting"
@@ -13800,6 +16569,9 @@
     },
     "924": {
         "pokemon": "tandemaus",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -13813,6 +16585,9 @@
     },
     "925": {
         "pokemon": "maushold",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -13826,6 +16601,9 @@
     },
     "926": {
         "pokemon": "fidough",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fairy"
         ],
@@ -13839,6 +16617,9 @@
     },
     "927": {
         "pokemon": "dachsbun",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fairy"
         ],
@@ -13852,6 +16633,9 @@
     },
     "928": {
         "pokemon": "smoliv",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass",
             "Normal"
@@ -13866,6 +16650,9 @@
     },
     "929": {
         "pokemon": "dolliv",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Grass",
             "Normal"
@@ -13880,6 +16667,9 @@
     },
     "930": {
         "pokemon": "arboliva",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Normal"
@@ -13894,6 +16684,9 @@
     },
     "931": {
         "pokemon": "squawkabilly",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal",
             "Flying"
@@ -13914,6 +16707,9 @@
     },
     "932": {
         "pokemon": "nacli",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock"
         ],
@@ -13927,6 +16723,9 @@
     },
     "933": {
         "pokemon": "naclstack",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Rock",
             "Ground"
@@ -13941,6 +16740,9 @@
     },
     "934": {
         "pokemon": "garganacl",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock",
             "Ground"
@@ -13955,6 +16757,9 @@
     },
     "935": {
         "pokemon": "charcadet",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fire"
         ],
@@ -13972,6 +16777,9 @@
     },
     "936": {
         "pokemon": "armarouge",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire",
             "Psychic"
@@ -13986,6 +16794,9 @@
     },
     "937": {
         "pokemon": "ceruledge",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fire",
             "Ghost"
@@ -14000,6 +16811,9 @@
     },
     "938": {
         "pokemon": "tadbulb",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -14013,6 +16827,9 @@
     },
     "939": {
         "pokemon": "bellibolt",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Electric"
         ],
@@ -14026,6 +16843,9 @@
     },
     "940": {
         "pokemon": "wattrel",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Electric",
             "Flying"
@@ -14040,6 +16860,9 @@
     },
     "941": {
         "pokemon": "kilowattrel",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Electric",
             "Flying"
@@ -14054,6 +16877,9 @@
     },
     "942": {
         "pokemon": "maschiff",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dark"
         ],
@@ -14067,6 +16893,9 @@
     },
     "943": {
         "pokemon": "mabosstiff",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dark"
         ],
@@ -14080,6 +16909,9 @@
     },
     "944": {
         "pokemon": "shroodle",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Poison",
             "Normal"
@@ -14094,6 +16926,9 @@
     },
     "945": {
         "pokemon": "grafaiai",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Poison",
             "Normal"
@@ -14108,6 +16943,9 @@
     },
     "946": {
         "pokemon": "bramblin",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass",
             "Flying"
@@ -14122,6 +16960,9 @@
     },
     "947": {
         "pokemon": "brambleghast",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Ghost"
@@ -14136,6 +16977,9 @@
     },
     "948": {
         "pokemon": "toedscool",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ground",
             "Grass"
@@ -14150,6 +16994,9 @@
     },
     "949": {
         "pokemon": "toedscruel",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ground",
             "Grass"
@@ -14164,6 +17011,9 @@
     },
     "950": {
         "pokemon": "klawf",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Rock"
         ],
@@ -14177,6 +17027,9 @@
     },
     "951": {
         "pokemon": "capsakid",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass",
             "Fire"
@@ -14191,6 +17044,9 @@
     },
     "952": {
         "pokemon": "scovillain",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Fire"
@@ -14205,6 +17061,9 @@
     },
     "953": {
         "pokemon": "rellor",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Bug",
             "Rock"
@@ -14219,6 +17078,9 @@
     },
     "954": {
         "pokemon": "rabsca",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Bug",
             "Psychic"
@@ -14233,6 +17095,9 @@
     },
     "955": {
         "pokemon": "flittle",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Psychic",
             "Flying"
@@ -14247,6 +17112,9 @@
     },
     "956": {
         "pokemon": "espathra",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Psychic",
             "Flying"
@@ -14261,6 +17129,9 @@
     },
     "957": {
         "pokemon": "tinkatink",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Fairy",
             "Steel"
@@ -14275,6 +17146,9 @@
     },
     "958": {
         "pokemon": "tinkatuff",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Fairy",
             "Steel"
@@ -14289,6 +17163,9 @@
     },
     "959": {
         "pokemon": "tinkaton",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fairy",
             "Steel"
@@ -14303,6 +17180,9 @@
     },
     "960": {
         "pokemon": "wiglett",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -14316,6 +17196,9 @@
     },
     "961": {
         "pokemon": "wugtrio",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water",
             "Ground"
@@ -14330,6 +17213,9 @@
     },
     "962": {
         "pokemon": "bombirdier",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Flying",
             "Dark"
@@ -14344,6 +17230,9 @@
     },
     "963": {
         "pokemon": "finizen",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -14357,6 +17246,9 @@
     },
     "964": {
         "pokemon": "palafin",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Water"
         ],
@@ -14374,6 +17266,9 @@
     },
     "965": {
         "pokemon": "varoom",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Steel",
             "Poison"
@@ -14388,6 +17283,9 @@
     },
     "966": {
         "pokemon": "revavroom",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Steel",
             "Poison"
@@ -14402,6 +17300,9 @@
     },
     "967": {
         "pokemon": "cyclizar",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dragon",
             "Normal"
@@ -14416,6 +17317,9 @@
     },
     "968": {
         "pokemon": "orthworm",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Steel"
         ],
@@ -14429,6 +17333,9 @@
     },
     "969": {
         "pokemon": "glimmet",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Rock",
             "Poison"
@@ -14443,6 +17350,9 @@
     },
     "970": {
         "pokemon": "glimmora",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Rock",
             "Poison"
@@ -14457,6 +17367,9 @@
     },
     "971": {
         "pokemon": "greavard",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ghost"
         ],
@@ -14470,6 +17383,9 @@
     },
     "972": {
         "pokemon": "houndstone",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ghost"
         ],
@@ -14483,6 +17399,9 @@
     },
     "973": {
         "pokemon": "flamigo",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Flying",
             "Fighting"
@@ -14497,6 +17416,9 @@
     },
     "974": {
         "pokemon": "cetoddle",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ice"
         ],
@@ -14510,6 +17432,9 @@
     },
     "975": {
         "pokemon": "cetitan",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Ice"
         ],
@@ -14523,6 +17448,9 @@
     },
     "976": {
         "pokemon": "veluza",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water",
             "Psychic"
@@ -14537,6 +17465,9 @@
     },
     "977": {
         "pokemon": "dondozo",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water"
         ],
@@ -14550,6 +17481,9 @@
     },
     "978": {
         "pokemon": "tatsugiri",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Water",
             "Dragon"
@@ -14569,6 +17503,9 @@
     },
     "979": {
         "pokemon": "annihilape",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Fighting",
             "Ghost"
@@ -14583,6 +17520,9 @@
     },
     "980": {
         "pokemon": "clodsire",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Poison",
             "Ground"
@@ -14598,6 +17538,9 @@
     },
     "981": {
         "pokemon": "farigiraf",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal",
             "Psychic"
@@ -14612,6 +17555,9 @@
     },
     "982": {
         "pokemon": "dudunsparce",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Normal"
         ],
@@ -14629,6 +17575,9 @@
     },
     "983": {
         "pokemon": "kingambit",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dark",
             "Steel"
@@ -14643,6 +17592,11 @@
     },
     "984": {
         "pokemon": "great tusk",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "past"
+        ],
         "type": [
             "Ground",
             "Fighting"
@@ -14657,9 +17611,14 @@
     },
     "985": {
         "pokemon": "scream tail",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "past"
+        ],
         "type": [
             "Fairy",
-            "Ghost"
+            "Psychic"
         ],
         "forms": 1,
         "previous": {
@@ -14671,6 +17630,11 @@
     },
     "986": {
         "pokemon": "brute bonnet",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "past"
+        ],
         "type": [
             "Grass",
             "Dark"
@@ -14685,6 +17649,11 @@
     },
     "987": {
         "pokemon": "flutter mane",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "past"
+        ],
         "type": [
             "Ghost",
             "Fairy"
@@ -14699,6 +17668,11 @@
     },
     "988": {
         "pokemon": "slither wing",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "past"
+        ],
         "type": [
             "Bug",
             "Fighting"
@@ -14713,6 +17687,11 @@
     },
     "989": {
         "pokemon": "sandy shocks",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "past"
+        ],
         "type": [
             "Electric",
             "Ground"
@@ -14727,6 +17706,11 @@
     },
     "990": {
         "pokemon": "iron treads",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "future"
+        ],
         "type": [
             "Ground",
             "Steel"
@@ -14741,6 +17725,11 @@
     },
     "991": {
         "pokemon": "iron bundle",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "future"
+        ],
         "type": [
             "Ice",
             "Water"
@@ -14755,6 +17744,11 @@
     },
     "992": {
         "pokemon": "iron hands",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "future"
+        ],
         "type": [
             "Fighting",
             "Electric"
@@ -14769,6 +17763,11 @@
     },
     "993": {
         "pokemon": "iron jugulis",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "future"
+        ],
         "type": [
             "Dark",
             "Flying"
@@ -14783,6 +17782,11 @@
     },
     "994": {
         "pokemon": "iron moth",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "future"
+        ],
         "type": [
             "Fire",
             "Poison"
@@ -14797,6 +17801,11 @@
     },
     "995": {
         "pokemon": "iron thorns",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "future"
+        ],
         "type": [
             "Rock",
             "Electric"
@@ -14811,6 +17820,9 @@
     },
     "996": {
         "pokemon": "frigibax",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Dragon",
             "Ice"
@@ -14825,6 +17837,9 @@
     },
     "997": {
         "pokemon": "arctibax",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Dragon",
             "Ice"
@@ -14839,6 +17854,9 @@
     },
     "998": {
         "pokemon": "baxcalibur",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Dragon",
             "Ice"
@@ -14853,6 +17871,9 @@
     },
     "999": {
         "pokemon": "gimmighoul",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Ghost"
         ],
@@ -14870,6 +17891,9 @@
     },
     "1000": {
         "pokemon": "gholdengo",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Steel",
             "Ghost"
@@ -14884,6 +17908,9 @@
     },
     "1001": {
         "pokemon": "wo-chien",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dark",
             "Grass"
@@ -14898,6 +17925,9 @@
     },
     "1002": {
         "pokemon": "chien-pao",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dark",
             "Ice"
@@ -14912,6 +17942,9 @@
     },
     "1003": {
         "pokemon": "ting-lu",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dark",
             "Ground"
@@ -14926,6 +17959,9 @@
     },
     "1004": {
         "pokemon": "chi-yu",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Dark",
             "Fire"
@@ -14940,6 +17976,11 @@
     },
     "1005": {
         "pokemon": "roaring moon",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "past"
+        ],
         "type": [
             "Dark",
             "Dragon"
@@ -14954,6 +17995,11 @@
     },
     "1006": {
         "pokemon": "iron valiant",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "future"
+        ],
         "type": [
             "Fighting",
             "Fairy"
@@ -14968,6 +18014,11 @@
     },
     "1007": {
         "pokemon": "koraidon",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "past"
+        ],
         "type": [
             "Fighting",
             "Dragon"
@@ -14982,6 +18033,11 @@
     },
     "1008": {
         "pokemon": "miraidon",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "future"
+        ],
         "type": [
             "Electric",
             "Dragon"
@@ -14996,6 +18052,11 @@
     },
     "1009": {
         "pokemon": "walking wake",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "past"
+        ],
         "type": [
             "Water",
             "Dragon"
@@ -15010,6 +18071,11 @@
     },
     "1010": {
         "pokemon": "iron leaves",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "future"
+        ],
         "type": [
             "Grass",
             "Psychic"
@@ -15024,6 +18090,9 @@
     },
     "1011": {
         "pokemon": "dipplin",
+        "tags": [
+            "middle-stage"
+        ],
         "type": [
             "Grass",
             "Dragon"
@@ -15038,6 +18107,9 @@
     },
     "1012": {
         "pokemon": "poltchageist",
+        "tags": [
+            "base-stage"
+        ],
         "type": [
             "Grass",
             "Ghost"
@@ -15052,6 +18124,9 @@
     },
     "1013": {
         "pokemon": "sinistcha",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Ghost"
@@ -15066,6 +18141,9 @@
     },
     "1014": {
         "pokemon": "okidogi",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Poison",
             "Fighting"
@@ -15080,6 +18158,9 @@
     },
     "1015": {
         "pokemon": "munkidori",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Poison",
             "Psychic"
@@ -15094,6 +18175,9 @@
     },
     "1016": {
         "pokemon": "fezandipiti",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Poison",
             "Fairy"
@@ -15108,6 +18192,9 @@
     },
     "1017": {
         "pokemon": "ogerpon",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Grass"
         ],
@@ -15141,6 +18228,9 @@
     },
     "1018": {
         "pokemon": "archaludon",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Steel",
             "Dragon"
@@ -15155,6 +18245,9 @@
     },
     "1019": {
         "pokemon": "hydrapple",
+        "tags": [
+            "last-stage"
+        ],
         "type": [
             "Grass",
             "Dragon"
@@ -15169,6 +18262,11 @@
     },
     "1020": {
         "pokemon": "gouging fire",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "past"
+        ],
         "type": [
             "Fire",
             "Dragon"
@@ -15183,6 +18281,11 @@
     },
     "1021": {
         "pokemon": "raging bolt",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "past"
+        ],
         "type": [
             "Electric",
             "Dragon"
@@ -15197,6 +18300,11 @@
     },
     "1022": {
         "pokemon": "iron boulder",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "future"
+        ],
         "type": [
             "Rock",
             "Fighting"
@@ -15211,6 +18319,11 @@
     },
     "1023": {
         "pokemon": "iron crown",
+        "tags": [
+            "no-evolution",
+            "paradox",
+            "future"
+        ],
         "type": [
             "Steel",
             "Psychic"
@@ -15225,6 +18338,9 @@
     },
     "1024": {
         "pokemon": "terapagos",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Normal"
         ],
@@ -15243,6 +18359,9 @@
     },
     "1025": {
         "pokemon": "pecharunt",
+        "tags": [
+            "no-evolution"
+        ],
         "type": [
             "Poison",
             "Ghost"
