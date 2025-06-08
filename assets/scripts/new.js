@@ -508,13 +508,20 @@ function spotlight(n) {
 
 
 function get_form_name(name, n) {
-    var fname;
-    if (x[x.nameToNo[name]].fnames) {
-        fname = x[x.nameToNo[name]].fnames[n];
-    } else {
-        fname = ""
+    if (n > x[x.nameToNo[name.toLowerCase()]].forms.length) return false;
+    try {
+        var fname = x[x.nameToNo[name.toLowerCase()]].forms[n - 1].name;
+    } catch (e) {
+        console.log(x[x.nameToNo[name.toLowerCase()]])
+        console.log(n)
+        console.error(e);
+
     }
-    return (fname && fname != "Base" ? fname + " " : "") + capitalize(name)
+
+    if (fname == "Base") fname = "";
+    else fname += " ";
+
+    return fname + capitalize(name)
 }
 //Generating
 function random_pokemon() {
@@ -573,7 +580,7 @@ function set_pokemon(dex, form = 1, show_type = false) {
         dex = parseInt(dex)
 
 
-    form_buttons(x[dex].forms);
+    form_buttons(x[dex].forms.length);
 
     qs('.form-button') && qsa('.form-button')[form_num - 1].click();
 
@@ -604,7 +611,7 @@ function form_buttons(n) {
     n === 1 && (n = 0)
     var btns = ``;
     for (let i = 1; i <= n; i++) {
-        btns += `<button class="function form-button">${x[x.nameToNo[get_current()]].fnames[i]}</button>`
+        btns += `<button class="function form-button">${x[x.nameToNo[get_current()]].forms[i - 1].name}</button>`
     }
     qs('#form-bar').innerHTML = btns;
     const btnHTML = qsa('.form-button');
@@ -758,21 +765,15 @@ function random_multiple(q) {
     var arr = [];
     var forms = [];
     for (let i = 0; i < q; i++) {
-        let rn = Math.floor(Math.random() * 1025) + 1;;
+        let rn = Math.floor(Math.random() * 1025) + 1;
         arr.push(x[rn].pokemon);
 
+        var rf;
+        do {
+            rf = Math.floor(Math.random() * x[rn].forms.length) + 1;
+        } while (x[rn].forms[rf - 1].name.includes('Gigantamax'));
 
-        if (x[rn].fnames) {
-            var stop = 0;
-            for (let v of Object.values(x[rn].fnames)) {
-                if (v.includes('Gigantamax')) {
-                    break;
-                }
-                stop++;
-            }
-
-            forms.push(Math.floor(Math.random() * stop) + 1);
-        } else forms.push(1);
+        forms.push(rf);
     }
     set_multiple_pokemon(arr, forms)
     form_buttons(1) //no form buttons
@@ -902,16 +903,18 @@ function infoBox(n, form = 1, set = true) {
     var name = x[parseInt(n)].pokemon;
     var fname = get_form_name(name, form);
 
-    var type;
+    /* var type;
     if (form == 1) {
         type = x[x.nameToNo[name.toLowerCase()]].type;
     } else if (x[x.nameToNo[name.toLowerCase()]].form_types[form]) {
         type = x[x.nameToNo[name.toLowerCase()]].form_types[form.toString()]
     } else {
         type = x[x.nameToNo[name.toLowerCase()]].type;
-    }
+    } */
 
-    console.log(type);
+    type = x[x.nameToNo[name.toLowerCase()]].forms[form - 1].type
+
+    // console.log(type);
 
     var next = x[x.nameToNo[name.toLowerCase()]].next.pokemon;
     if (typeof next == "string")
@@ -934,11 +937,11 @@ function infoBox(n, form = 1, set = true) {
 			<h1 id="info-name">${capitalize(fname) + " #" + x.nameToNo[name.toLowerCase()]}</h1>
 			<span id="info-gen"><b>${"<b>Generation " + generation + "</b>"}</b></span>
 			<span id="info-type">${"<b>Type: </b>" + `<span class="type">${capitalize(type[0])}</span> ${type[1] ? "/" : ""} <span class="type">${capitalize(type[1]) || ""}</span>`}</span>
-			<span id="info-forms"><b>Forms: </b>${x[x.nameToNo[name.toLowerCase()]].forms}</span>
+			<span id="info-forms"><b>Forms: </b>${x[x.nameToNo[name.toLowerCase()]].forms.length}</span>
 			<span id="info-prev"><b>Prevolution: </b>${capitalize(x[x.nameToNo[name.toLowerCase()]].previous.pokemon, "none")}</span>
 			<span id="info-next"><b>Evolution: </b>${next}</span>
 		</div>`;
-    var text = `${capitalize(fname) + " #" + x.nameToNo[name.toLowerCase()]}\n${"Generation " + generation}\n${"Type: " + `${capitalize(type[0])} ${capitalize(type[1]) ? "/" : ""} ${capitalize(type[1]) || ""}`}\n${"Forms: " + x[x.nameToNo[name.toLowerCase()]].forms}\n${"Prevolution: " + capitalize(x[x.nameToNo[name.toLowerCase()]].previous.pokemon, "none")}\n${"Next: " + next}`;
+    var text = `${capitalize(fname) + " #" + x.nameToNo[name.toLowerCase()]}\n${"Generation " + generation}\n${"Type: " + `${capitalize(type[0])} ${capitalize(type[1]) ? "/" : ""} ${capitalize(type[1]) || ""}`}\n${"Forms: " + x[x.nameToNo[name.toLowerCase()]].forms.length}\n${"Prevolution: " + capitalize(x[x.nameToNo[name.toLowerCase()]].previous.pokemon, "none")}\n${"Next: " + next}`;
 
 
     if (set) {
@@ -954,8 +957,9 @@ function infoBox(n, form = 1, set = true) {
     return { html, text }
 }
 
-function getByTags(q, b = true) {
+function getByTags(q = [], b = true) {
     const res = [];
+    const data_res = [];
 
     if (typeof q == "string") {
         q = [q]
@@ -979,10 +983,11 @@ function getByTags(q, b = true) {
 
             if (match) {
                 res.push(x[i].pokemon)
+                data_res.push(x[i])
             }
 
         }
     }
 
-    return res
+    return data_res
 }
