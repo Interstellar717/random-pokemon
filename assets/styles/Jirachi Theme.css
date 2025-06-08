@@ -4,8 +4,8 @@ html {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 115%;
-    background-position-x: -230px;
-    background-position-y: -260px;
+    background-position-x: -15vw;
+    background-position-y: -30vh;
 }
 
 img {
@@ -14,27 +14,38 @@ img {
 }
 
 #help {
-    background-color: hsl(169.47deg 58.76% 19.02%);
+    background-color: hsla(169.47, 58.76%, 19.02%, 0.75);
+    border-color: #81eddf;
+}
+
+#help:hover {
+    background-color: hsla(169.47, 58.76%, 24.02%, 0.75);
+    border-color: #81eddf;
+}
+
+#help:active {
+    background-color: hsla(169.47, 58.76%, 29.02%, 0.75);
     border-color: #81eddf;
 }
 
 .function {
-    background-color: hsl(320.57deg 67.74% 69.61%);
+    background-color: hsla(320, 67.74%, 69.61%, 0.75);
     color: white;
-    border-color: rgb(206 163 206);
+    border: solid rgb(206 163 206) 2px;
+    padding: 5px;
 }
 
 .function:hover {
     /* hsl(199, 65%, 49%) */
-    background-color: hsl(320.57deg 67.74% 74.61%);
+    background-color: hsla(320.57deg, 67.74%, 74.61%, 0.75);
     color: white;
-    border-color: rgb(206 163 206);
+    border: solid rgb(206 163 206) 2px;
 }
 
 .function:active {
-    background-color: hsl(320.57deg 67.74% 79.61%);
+    background-color: hsla(320.57deg, 67.74%, 79.61%, 0.75);
     color: white;
-    border-color: rgb(206 163 206);
+    border: solid rgb(206 163 206) 2px;
 }
 
 button#toggle-sidebar {
