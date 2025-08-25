@@ -1,11 +1,11 @@
 @font-face {
     font-family: MSR;
-    src: url('assets/fonts/msr.woff2');
+    src: url('random-pokemon/assets/fonts/msr.woff2');
 }
 
 @font-face {
     font-family: Afacad Flux;
-    src: url('assets/fonts/AfacadFlux-Regular.ttf');
+    src: url('/random-pokemon/assets/fonts/AfacadFlux-Regular.ttf');
 }
 
 * {
@@ -431,4 +431,5 @@ h1#info-name {
     top: 30px;
     right: 30px;
 }
+
 
