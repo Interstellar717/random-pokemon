@@ -980,7 +980,7 @@ function infoBox(n, form = 1, set = true) {
     var html = `<div id="info" style="display: block; transform: translateY(0%);">
 			<h1 id="info-name">${capitalize(fname) + " #" + dexData.nameToNo[name.toLowerCase()]}</h1>
 			<span id="info-gen"><b>${"<b>Generation " + generation + "</b>"}</b></span>
-			<span id="info-type">${"<b>Type: </b>" + `<span class="type">${capitalize(type[0])}</span> ${type[1] ? "/" : ""} <span class="type">${capitalize(type[1]) || ""}</span>`}</span>
+			<span id="info-type" style="gap: 0.25vw;">${"<b>Type: </b>" + `<span class="type">${capitalize(type[0])}</span><span class="type">${capitalize(type[1]) || ""}</span>`}</span>
 			<span id="info-forms"><b>Forms: </b>${dexData[dexData.nameToNo[name.toLowerCase()]].forms.length}</span>
 			<span id="info-prev"><b>Prevolution: </b>${capitalize(dexData[dexData.nameToNo[name.toLowerCase()]].previous.pokemon, "none")}</span>
 			<span id="info-next"><b>Evolution: </b>${next}</span>
@@ -997,6 +997,7 @@ function infoBox(n, form = 1, set = true) {
         qs('#info').innerHTML = "";
     }
 
+    setTimeout(updateTypeColors, 100);
 
     return { html, text }
 }

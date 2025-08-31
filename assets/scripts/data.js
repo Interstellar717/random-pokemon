@@ -1,27 +1,47 @@
 const qs = (e) => document.querySelector(e);
 const qsa = (e) => document.querySelectorAll(e);
 
+class HSL {
+    constructor(h, s, l) {
+        [this.h, this.s, this.l] = [h, s, l];
+    }
+
+    getStyleCode() {
+        return `hsl(${this.h}, ${this.s}%, ${this.l}%)`;
+    }
+
+    newFromReference(h, s, l) {
+        return new HSL(this.h + h, this.s + s, this.l + l);
+    }
+}
 
 const typeColor = {
-    nor: "#ADA594",
-    fir: "#F75231",
-    wat: "#399CFF",
-    gra: "#7BCE52",
-    ele: "#FFC631",
-    ice: "#5ACEE7",
-    roc: "#BDA55A",
-    gro: "#D6B55A",
-    ste: "#ADADC6",
-    poi: "#B55AA5",
-    fig: "#A55239",
-    fly: "#9CADF7",
-    bug: "#ADBD21",
-    psy: "#FF73A5",
-    gho: "#6363B5",
-    dar: "#735A4A",
-    fai: "#FF65D5",
-    dra: "#7B63E7"
+    nor: new HSL(41, 13, 63),
+    fir: new HSL(10, 93, 58),
+    wat: new HSL(210, 100, 61),
+    gra: new HSL(100, 56, 56),
+    ele: new HSL(43, 100, 60),
+    ice: new HSL(191, 75, 63),
+    roc: new HSL(45, 43, 55),
+    gro: new HSL(44, 60, 60),
+    ste: new HSL(240, 18, 73),
+    poi: new HSL(311, 38, 53),
+    fig: new HSL(14, 49, 44),
+    fly: new HSL(229, 85, 79),
+    bug: new HSL(66, 70, 44),
+    psy: new HSL(339, 100, 73),
+    gho: new HSL(240, 36, 55),
+    dar: new HSL(23, 22, 37),
+    fai: new HSL(316, 100, 70),
+    dra: new HSL(251, 73, 65)
 }
+
+const typeBorderColor = {};
+
+for (let k of Object.keys(typeColor)) {
+    typeBorderColor[k] = typeColor[k].newFromReference(0, 0, 20);
+}
+
 
 function zeroes(n, name = "", place = 3) {
 
