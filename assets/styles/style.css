@@ -9,7 +9,9 @@
 }
 
 * {
-    transition: 0.5s all;
+    transition-property: all, border;
+    transition-duration: 0.5s, 0s;
+
     background: rgb(var(--bkg-gray) var(--bkg-gray) var(--bkg-gray));
     --bkg-gray: auto;
 }
@@ -458,4 +460,16 @@ a:has(.logo) {
 .center div#sidebar * {
     font-size: 30px;
     padding: 1vw;
+}
+
+.type {
+    font-size: 20px;
+    padding: 1px 8px;
+    border-radius: 0.3em;
+    line-height: 1em;
+    border: solid transparent 3px;
+}
+
+.type:not(.type:nth-of-type(1)) {
+    margin-left: 5px;
 }
