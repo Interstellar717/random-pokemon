@@ -1,15 +1,17 @@
 @font-face {
     font-family: MSR;
-    src: url('/random-pokemon/assets/fonts/msr.woff2');
+    src: url('/assets/fonts/msr.woff2');
 }
 
 @font-face {
     font-family: Afacad Flux;
-    src: url('/random-pokemon/assets/fonts/AfacadFlux-Regular.ttf');
+    src: url('/assets/fonts/AfacadFlux-Regular.ttf');
 }
 
 * {
     transition: 0.5s all;
+    background: rgb(var(--bkg-gray) var(--bkg-gray) var(--bkg-gray));
+    --bkg-gray: auto;
 }
 
 html {
@@ -50,6 +52,7 @@ img {
     width: clamp(200px, 600px, 75vh);
     aspect-ratio: 1 / 1;
     border: solid transparent 3px;
+    margin-top: 6.5vh;
 }
 
 #extraForms1 {
@@ -97,36 +100,25 @@ img {
 
 .function:hover {
     background-color: rgb(62, 71, 113);
-    color: white;
-    font-style: bold;
-    border-radius: 10px;
     border-color: rgb(118, 164, 0);
-    border-width: 3px;
-    text-align: left;
-    margin: 5px;
 }
 
 .function:active {
     background-color: rgb(53, 60, 92);
-    color: white;
-    font-style: bold;
-    border-radius: 10px;
     border-color: rgb(118, 164, 0);
-    border-width: 3px;
-    text-align: left;
-    margin: 5px;
 }
 
 #logContainer,
 .search-column {
     text-align: left;
     width: 425px;
-    height: 100%;
+    height: 90vh;
     overflow-y: scroll;
     position: absolute;
     top: -100%;
     right: 0px;
-    background-color: rgba(255, 255, 255, 0.35);
+    /* background-color: rgba(255, 255, 255, 0.35); */
+    --bkg-gray: 52;
     transform: translateY(0px);
     transition: 0.75s transform, 1s border-bottom-left-radius, 0.4s border-left;
     border-bottom-left-radius: 50px;
@@ -254,8 +246,8 @@ div#sidebar-new {
 
 button#toggle-sidebar {
     font-family: MSR;
-    left: 5px;
-    top: 5px;
+    left: 10px;
+    top: 10px;
     position: absolute;
     height: 50px;
     width: 50px;
@@ -269,6 +261,11 @@ button#toggle-sidebar {
     transition: 0.5s all;
     user-select: none;
     cursor: pointer;
+}
+
+.toggle-sidebar.invert {
+    border: solid white 1px;
+    color: white;
 }
 
 .label-header {
@@ -295,13 +292,11 @@ div#name-num h1 {
 
 #messages {
     position: fixed;
-    top: 0;
+    top: 10vh;
     right: 0;
     width: 200px;
     height: fit-content;
-
     /* background: rgba(0, 0, 0, 0.2); */
-
     color: white;
     /* padding: 10px; */
     text-align: center;
@@ -325,6 +320,8 @@ div#name-num h1 {
     font-size: 20px;
     transition: 0.5s;
     transform: translateX(calc(200px + 20px));
+    z-index: 100;
+    position: relative;
 }
 
 .msg button {
@@ -347,9 +344,6 @@ div#name-num h1 {
     text-align: left;
 }
 
-.search-column {
-    background-color: rgba(255, 255, 255, 0.75);
-}
 
 .search-bar {
     width: calc(100% - 6px * 4 - 3px);
@@ -358,6 +352,7 @@ div#name-num h1 {
     margin: 6px;
     padding: 6px;
     border-radius: 4px;
+    color: white;
 }
 
 .results {
@@ -376,6 +371,7 @@ div#name-num h1 {
     padding: 5px;
     font-size: 15px;
     font-family: 'Afacad Flux';
+    color: white;
 }
 
 .result:hover,
@@ -383,9 +379,6 @@ div#name-num h1 {
     background-color: rgb(240, 240, 240);
 }
 
-.invert {
-    filter: invert(1);
-}
 
 #close-center-bar {
     position: absolute;
@@ -397,7 +390,7 @@ div#name-num h1 {
 }
 
 div#info {
-    width: 300px;
+    width: 330px;
     height: fit-content;
     background-color: rgba(0, 0, 0, 0.25);
     position: absolute;
@@ -433,4 +426,36 @@ h1#info-name {
 }
 
 
+.navbar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    --bkg-gray: 52;
+    height: 10vh;
+    width: 100vw;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 
+.navbar .logo {
+    height: 100%;
+    width: 100%;
+    /* MAYBE */
+    /* filter: drop-shadow(2px 4px 6px black); */
+}
+
+a:has(.logo) {
+    display: inline-block;
+    height: 95%;
+    margin-top: 0.25vh;
+}
+
+.center div#sidebar {
+    margin-top: 8vh;
+}
+
+.center div#sidebar * {
+    font-size: 30px;
+    padding: 1vw;
+}

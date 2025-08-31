@@ -1,0 +1,117 @@
+* {
+    --dark-blue: hwb(216 20% 67%);
+    --dark-blue-hover: hwb(218 20% 57%);
+    --light-blue: hwb(191 38% 32%);
+    --light-blue-hover: hwb(191 38% 22%);
+}
+
+html {
+    background-color: #2A2A2A;
+}
+
+button.function {
+    background-color: var(--dark-blue);
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5vw;
+    padding: 1vh;
+    line-height: 1em;
+    cursor: pointer;
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+button.function:hover {
+    background-color: var(--dark-blue-hover);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+button#toggle-sidebar {
+    border: solid white 2px;
+    color: white;
+    filter: drop-shadow(2px 4px 3px black);
+}
+
+button#toggle-sidebar:hover {
+    filter: drop-shadow(2px 4px 2px black);
+}
+
+button#toggle-sidebar.invert {
+    border: solid white 2px;
+    color: white;
+}
+
+#help {
+    background-color: var(--light-blue);
+    border-color: #81eddf;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#help:hover {
+    background-color: var(--light-blue-hover);
+    border-color: #81eddf;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+div#info {
+    width: 330px;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: left;
+    color: white;
+    font-family: 'Afacad Flux';
+    display: none;
+    transform: translateY(150%);
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.msg {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+div#sidebar-new {
+    --p: 0;
+    width: calc(300px - 25px - 25px);
+    height: 100%;
+    --bkg-gray: 52;
+    background: rgb(var(--bkg-gray) var(--bkg-gray) var(--bkg-gray));
+    position: absolute;
+    top: 0;
+    transform: translateX(-300px);
+    transition: 0.5s all;
+    padding: 0 25px;
+    align-content: center;
+}
+
+.sidebar {
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    --bkg-gray: 52;
+    height: 90vh;
+    width: 17vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.sidebar.hidden:not(.center):hover {
+    transform: translateX(-15vw);
+    cursor: pointer;
+}
+
+.sidebar.hidden {
+    transform: translateX(-16.9vw);
+}
+
+.sidebar.hidden:not(.center) {
+    cursor: pointer;
+}
