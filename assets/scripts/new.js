@@ -1,5 +1,7 @@
 sessionStorage.setItem('hasChangedType', 'false');
 
+var dexData;
+
 var selected_result = -1;
 
 var centerbar = true;
@@ -19,7 +21,7 @@ var click_listeners = {
     // "#shiny": shiny,
     // "#rand-mult": () => random_multiple(prompt('How Many Pokemon? Currently works up to 9')),
     "#rand-mult": () => random_multiple(3),
-    "#toggle-sidebar": toggle_sidebar,
+    // "#toggle-sidebar": toggle_sidebar,
     ".msg button": () => msg(false),
     "#img-bkg": toggleImgBkg,
     "#close-center-bar": closeCenterBar
@@ -31,13 +33,15 @@ for (let [key, value] of Object.entries(click_listeners)) {
 
 const search = e => {
     var y = []
-    for (let [ki, vi] of Object.entries(x)) {
+    for (let [ki, vi] of Object.entries(dexData)) {
         if (!vi.pokemon || !e.target.value) continue;
 
         if (vi.pokemon.includes(e.target.value.toLowerCase())) {
             y.push(vi.pokemon)
         }
     }
+
+    y.sort((a, b) => a.toLowerCase().indexOf(e.target.value.toLowerCase()) - b.toLowerCase().indexOf(e.target.value.toLowerCase()));
 
     qs('.results').innerHTML = "";
 
@@ -371,7 +375,7 @@ function typeChange() {
             // var name = x[parseInt(dex)].pokemon;
 
             var name = get_current();
-            var dex = x.nameToNo[name];
+            var dex = dexData.nameToNo[name];
             var type = typeGen();
 
             name && (name = capitalize(name));
@@ -426,24 +430,24 @@ function showLog() {
     var log = qs('#logContainer');
     var col = qs('.search-column');
 
-    if (log.style.transform == 'translateY(100%)') {
+    if (log.style.transform == 'translateY(110vh)') {
         log.style.transform = 'translateY(0px)';
         log.style.borderBottomLeftRadius = '50px';
-        log.style.borderLeft = 'solid black 0px';
+        // log.style.borderLeft = 'solid black 0px';
 
-        if (col.style.transform != "translateY(100%)") {
-            qs('#info').style.transform = "translateY(0%)";
+        if (col.style.transform != "translateY(100vh)") {
+            qs('#info').style.transform = "translateY(0vh)";
         }
 
     } else {
-        log.style.transform = 'translateY(100%)';
+        log.style.transform = 'translateY(110vh)';
         log.style.borderBottomLeftRadius = '0px';
-        log.style.borderLeft = 'solid black 10px';
+        // log.style.borderLeft = 'solid black 10px';
 
-        qs('#info').style.transform = "translateY(150%)";
+        qs('#info').style.transform = "translateY(150vh)";
 
 
-        if (col.style.transform == "translateY(100%)") {
+        if (col.style.transform == "translateY(110vh)") {
             showSearch()
         }
     }
@@ -453,32 +457,32 @@ function showSearch(n) {
     var col = qs('.search-column');
     var log = qs('#logContainer');
 
-    if (col.style.transform == 'translateY(100%)') {
+    if (col.style.transform == 'translateY(110vh)') {
         col.querySelector('.search-bar').blur();
 
         col.querySelector('.search-bar').value = "";
         col.querySelector('.results').textContent = "";
         col.style.transform = 'translateY(0px)';
         col.style.borderBottomLeftRadius = '50px';
-        col.style.borderLeft = 'solid black 0px';
+        // col.style.borderLeft = 'solid black 0px';
 
-        if (log.style.transform != "translateY(100%)") {
-            qs('#info').style.transform = "translateY(0%)";
+        if (log.style.transform != "translateY(110vh)") {
+            qs('#info').style.transform = "translateY(0vh)";
         }
 
     } else {
-        col.style.transform = 'translateY(100%)';
+        col.style.transform = 'translateY(110vh)';
         col.style.borderBottomLeftRadius = '0px';
-        col.style.borderLeft = 'solid black 10px';
+        // col.style.borderLeft = 'solid black 10px';
         selected_result = -1
         setTimeout(() => {
             col.querySelector('.search-bar').select();
         }, n)
 
-        qs('#info').style.transform = "translateY(150%)";
+        qs('#info').style.transform = "translateY(150vh)";
 
 
-        if (log.style.transform == "translateY(100%)") {
+        if (log.style.transform == "translateY(110vh)") {
             showLog()
         }
     }
@@ -502,17 +506,17 @@ function spotlight(n) {
     else source = img.src.split('.png')[0] + end;
     // img.src = '';
     img.src = source;
-    h1.textContent = get_form_name(get_current(), n) + " #" + x.nameToNo[get_current()];
-    infoBox(x.nameToNo[get_current()], n, true);
+    h1.textContent = get_form_name(get_current(), n) + " #" + dexData.nameToNo[get_current()];
+    infoBox(dexData.nameToNo[get_current()], n, true);
 }
 
 
 function get_form_name(name, n) {
-    if (n > x[x.nameToNo[name.toLowerCase()]].forms.length) return false;
+    if (n > dexData[dexData.nameToNo[name.toLowerCase()]].forms.length) return false;
     try {
-        var fname = x[x.nameToNo[name.toLowerCase()]].forms[n - 1].name;
+        var fname = dexData[dexData.nameToNo[name.toLowerCase()]].forms[n - 1]?.name || "Base";
     } catch (e) {
-        console.log(x[x.nameToNo[name.toLowerCase()]])
+        console.log(dexData[dexData.nameToNo[name.toLowerCase()]])
         console.log(n)
         console.error(e);
 
@@ -543,7 +547,7 @@ function set_pokemon(dex, form = 1, show_type = false) {
 
     var name, type;
 
-    !parseInt(dex) ? (dex = x.nameToNo[dex.toLowerCase()]) : (dex = parseInt(dex)) //for names
+    !parseInt(dex) ? (dex = dexData.nameToNo[dex.toLowerCase()]) : (dex = parseInt(dex)) //for names
 
     dex = special(zeroes(dex));
     localStorage.setItem('dex', dex);
@@ -554,7 +558,7 @@ function set_pokemon(dex, form = 1, show_type = false) {
 
     setTimeout(imageFormat, 100);
 
-    name = x[parseInt(dex)].pokemon;
+    name = dexData[parseInt(dex)].pokemon;
     name = capitalize(name)
     type = typeGen();
 
@@ -580,7 +584,7 @@ function set_pokemon(dex, form = 1, show_type = false) {
         dex = parseInt(dex)
 
 
-    form_buttons(x[dex].forms.length);
+    form_buttons(dexData[dex].forms.length);
 
     qs('.form-button') && qsa('.form-button')[form_num - 1].click();
 
@@ -596,8 +600,8 @@ function custom() {
 
     if (!dex) return false;
 
-    msg = x.nameToNo[dex.toLowerCase()] || "failed"
-    msg = parseInt(dex).toString() != 'NaN' ? x[dex].pokemon : msg
+    msg = dexData.nameToNo[dex.toLowerCase()] || "failed"
+    msg = parseInt(dex).toString() != 'NaN' ? dexData[dex].pokemon : msg
 
     toLog(`Search Query: ${dex}`, null, msg);
 
@@ -611,7 +615,7 @@ function form_buttons(n) {
     n === 1 && (n = 0)
     var btns = ``;
     for (let i = 1; i <= n; i++) {
-        btns += `<button class="function form-button">${x[x.nameToNo[get_current()]].forms[i - 1].name}</button>`
+        btns += `<button class="function form-button">${dexData[dexData.nameToNo[get_current()]].forms[i - 1].name}</button>`
     }
     qs('#form-bar').innerHTML = btns;
     const btnHTML = qsa('.form-button');
@@ -625,7 +629,7 @@ const
         // return qs('div#name-num h1').textContent.split(' #')[0].toLocaleLowerCase()
 
         // parseInt() to get rid of preceding zeroes
-        var res = x[parseInt(qs('#pkmn').src.split('.png')[0]?.split('/full/')[1]?.split("_")[0])]?.pokemon;
+        var res = dexData[parseInt(qs('#pkmn').src.split('.png')[0]?.split('/full/')[1]?.split("_")[0])]?.pokemon;
         !res && msg('No Pokémon generated!', 1000);
         if (qs('#image-container').classList.contains('multiple')) {
             msg('Multiple Pokémon generated!', 1000);
@@ -639,7 +643,7 @@ const
 
 
 function evolution(n) {
-    var data = x[x.nameToNo[get_current()]];
+    var data = dexData[dexData.nameToNo[get_current()]];
 
     if (!data) return false;
 
@@ -714,6 +718,7 @@ function set_multiple_pokemon(arr, forms = "") {
     qs('#image-container').classList.add('multiple');
 
     var og_names = arr.slice();
+    for (let i in og_names) og_names[i] = og_names[i].toLowerCase();
 
     for (let i in arr) {
         arr[i] = get_form_name(arr[i], forms[i])
@@ -723,13 +728,20 @@ function set_multiple_pokemon(arr, forms = "") {
 
 
     for (let p in arr) {
-        qsa('.pkmn')[p].src = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${zeroes(x.nameToNo[og_names[p]])}${forms[p] > 1 ? "_f" + forms[p] : ""}.png`;
-        qsa('.pkmn')[p].addEventListener('click', () => set_pokemon(og_names[p], forms ? forms[p] : 1));
-        qsa('.pkmn')[p].title = infoBox(x.nameToNo[og_names[p]], forms[p], false).text
+        console.log(og_names, p);
+        qsa('.pkmn')[p].src = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${zeroes(dexData.nameToNo[og_names[p]])}${forms[p] > 1 ? "_f" + forms[p] : ""}.png`;
+        qsa('.pkmn')[p].addEventListener('click', () => set_pokemon(og_names[p].toLowerCase(), forms ? forms[p] : 1));
+        qsa('.pkmn')[p].title = infoBox(dexData.nameToNo[og_names[p]], forms[p], false).text
     }
 
     qs('div#name-num').style.display = "";
     qs('div#image-container').style.transform = "translateY(0vh)";
+
+    if (arr.length > 3) {
+        qs("div#name-num").style.marginTop = "-5vh";
+    } else {
+        qs("div#name-num").style.marginTop = "";
+    }
 
 
     centerbar && closeCenterBar();
@@ -748,7 +760,7 @@ function shiny() {
 
     switch (is_shiny) {
         case false: {
-            img.src = `https://db.pokemongohub.net/images/pokemon-home-renders/Shiny/poke_capture_${zeroes(x.nameToNo[get_current()], null, 4)}_000_mf_n_00000000_f_r.png`
+            img.src = `https://db.pokemongohub.net/images/pokemon-home-renders/Shiny/poke_capture_${zeroes(dexData.nameToNo[get_current()], null, 4)}_000_mf_n_00000000_f_r.png`
         }
             break;
         case true: {
@@ -766,12 +778,12 @@ function random_multiple(q) {
     var forms = [];
     for (let i = 0; i < q; i++) {
         let rn = Math.floor(Math.random() * 1025) + 1;
-        arr.push(x[rn].pokemon);
+        arr.push(dexData[rn].pokemon);
 
         var rf;
         do {
-            rf = Math.floor(Math.random() * x[rn].forms.length) + 1;
-        } while (x[rn].forms[rf - 1].name.includes('Gigantamax'));
+            rf = Math.floor(Math.random() * dexData[rn].forms.length) + 1;
+        } while (dexData[rn].forms[rf - 1].name.includes('Gigantamax'));
 
         forms.push(rf);
     }
@@ -812,14 +824,14 @@ function toggle_sidebar() {
         // ts.style.border = "solid white 1px";
         ts.classList.add('invert');
 
-        enabled = true
+        enabled = true;
     } else {
         s.style.transform = ''
         // ts.style.color = "black";
         // ts.style.border = "solid black 1px";
         ts.classList.remove('invert');
 
-        enabled = false
+        enabled = false;
     }
 }
 
@@ -838,12 +850,12 @@ function msg(str, time = 0) {
 
 function dex_num(n) {
     if (get_current()?.split(',')?.length == 1 &&
-        x.nameToNo[get_current()] + n > 0 &&
-        x.nameToNo[get_current()] + n <= 1025) {
-        set_pokemon(x.nameToNo[get_current()] + n)
-    } else if (x.nameToNo[get_current()] + n <= 0) {
+        dexData.nameToNo[get_current()] + n > 0 &&
+        dexData.nameToNo[get_current()] + n <= 1025) {
+        set_pokemon(dexData.nameToNo[get_current()] + n)
+    } else if (dexData.nameToNo[get_current()] + n <= 0) {
         msg('No Pokémon with number 0!', 1000);
-    } else if (x.nameToNo[get_current()] + n > 1025) {
+    } else if (dexData.nameToNo[get_current()] + n > 1025) {
         msg('No Pokémon with number 1026 yet!', 1000);
     }
 }
@@ -862,12 +874,44 @@ function toggleImgBkg() {
 }
 
 function closeCenterBar() {
-    qs('#sidebar').style = "text-align: center; transform: translateX(0%); width: 100%; font-size: 16px; padding-right: 35%;";
+    qs('#sidebar').style = "text-align: center; transform: translateX(-10%); width: 100%; font-size: 16px; padding: 8vh 4vw 0vh 2vw;";
     qs('#close-center-bar').style.display = "none";
 
     qs('#toggle-sidebar').style.transform = "";
 
-    setTimeout(() => qs('#sidebar').style = "font-size: 16px; padding-right: 35%;", 600);
+    setTimeout(() => {
+        qs('#sidebar').style = "font-size: 16px; padding: 8vh 4vw 0vh 2vw;";
+        qs('#sidebar').parentElement.classList.remove("center");
+        qs("#sidebar").parentElement.classList.add("sidebar");
+
+        qsa("#sidebar *").forEach(e => {
+            e.style.display = ""
+        });
+
+        qsa("br.delete").forEach(e => {
+            e.remove();
+        });
+
+        const sidebar = qs(".sidebar");
+
+        sidebar.addEventListener("click", e => {
+
+            if (e.target != sidebar && !sidebar.contains(e.target)) return;
+
+            if (sidebar.classList.contains("hidden")) {
+                sidebar.classList.remove("hidden");
+            }
+        });
+
+        document.addEventListener("click", e => {
+            if (e.target != sidebar && !sidebar.contains(e.target)) {
+                if (!sidebar.classList.contains("hidden")) {
+                    sidebar.classList.add("hidden");
+                }
+            }
+        })
+
+    }, 600);
 
     centerbar = false;
 }
@@ -900,7 +944,7 @@ const gen = n => {
 
 
 function infoBox(n, form = 1, set = true) {
-    var name = x[parseInt(n)].pokemon;
+    var name = dexData[parseInt(n)].pokemon;
     var fname = get_form_name(name, form);
 
     /* var type;
@@ -912,15 +956,15 @@ function infoBox(n, form = 1, set = true) {
         type = x[x.nameToNo[name.toLowerCase()]].type;
     } */
 
-    type = x[x.nameToNo[name.toLowerCase()]].forms[form - 1].type
+    type = dexData[dexData.nameToNo[name.toLowerCase()]].forms[form - 1].type
 
     // console.log(type);
 
-    var next = x[x.nameToNo[name.toLowerCase()]].next.pokemon;
+    var next = dexData[dexData.nameToNo[name.toLowerCase()]].next.pokemon;
     if (typeof next == "string")
-        next = capitalize(x[x.nameToNo[name.toLowerCase()]].next.pokemon, "none");
+        next = capitalize(dexData[dexData.nameToNo[name.toLowerCase()]].next.pokemon, "none");
     else if (typeof next == "object")
-        next = capitalize(x[x.nameToNo[name.toLowerCase()]].next.pokemon.join(', '), "none");
+        next = capitalize(dexData[dexData.nameToNo[name.toLowerCase()]].next.pokemon.join(', '), "none");
 
     var generation;
 
@@ -930,18 +974,18 @@ function infoBox(n, form = 1, set = true) {
         case "Galarian": generation = 8; break;
         case "Hisuian": generation = 8; break;
         case "Paldean": generation = 9; break;
-        default: generation = gen(x.nameToNo[name.toLowerCase()]);
+        default: generation = gen(dexData.nameToNo[name.toLowerCase()]);
     }
 
     var html = `<div id="info" style="display: block; transform: translateY(0%);">
-			<h1 id="info-name">${capitalize(fname) + " #" + x.nameToNo[name.toLowerCase()]}</h1>
+			<h1 id="info-name">${capitalize(fname) + " #" + dexData.nameToNo[name.toLowerCase()]}</h1>
 			<span id="info-gen"><b>${"<b>Generation " + generation + "</b>"}</b></span>
 			<span id="info-type">${"<b>Type: </b>" + `<span class="type">${capitalize(type[0])}</span> ${type[1] ? "/" : ""} <span class="type">${capitalize(type[1]) || ""}</span>`}</span>
-			<span id="info-forms"><b>Forms: </b>${x[x.nameToNo[name.toLowerCase()]].forms.length}</span>
-			<span id="info-prev"><b>Prevolution: </b>${capitalize(x[x.nameToNo[name.toLowerCase()]].previous.pokemon, "none")}</span>
+			<span id="info-forms"><b>Forms: </b>${dexData[dexData.nameToNo[name.toLowerCase()]].forms.length}</span>
+			<span id="info-prev"><b>Prevolution: </b>${capitalize(dexData[dexData.nameToNo[name.toLowerCase()]].previous.pokemon, "none")}</span>
 			<span id="info-next"><b>Evolution: </b>${next}</span>
 		</div>`;
-    var text = `${capitalize(fname) + " #" + x.nameToNo[name.toLowerCase()]}\n${"Generation " + generation}\n${"Type: " + `${capitalize(type[0])} ${capitalize(type[1]) ? "/" : ""} ${capitalize(type[1]) || ""}`}\n${"Forms: " + x[x.nameToNo[name.toLowerCase()]].forms.length}\n${"Prevolution: " + capitalize(x[x.nameToNo[name.toLowerCase()]].previous.pokemon, "none")}\n${"Next: " + next}`;
+    var text = `${capitalize(fname) + " #" + dexData.nameToNo[name.toLowerCase()]}\n${"Generation " + generation}\n${"Type: " + `${capitalize(type[0])} ${capitalize(type[1]) ? "/" : ""} ${capitalize(type[1]) || ""}`}\n${"Forms: " + dexData[dexData.nameToNo[name.toLowerCase()]].forms.length}\n${"Prevolution: " + capitalize(dexData[dexData.nameToNo[name.toLowerCase()]].previous.pokemon, "none")}\n${"Next: " + next}`;
 
 
     if (set) {
@@ -965,25 +1009,25 @@ function getByTags(q = [], b = true) {
         q = [q]
     }
 
-    for (let i of Object.keys(x)) {
+    for (let i of Object.keys(dexData)) {
         if (parseInt(i)) {
             var match = true;
 
             for (let j of q) {
                 if (b === true) {
-                    if (!x[i].tags.includes(j)) {
+                    if (!dexData[i].tags.includes(j)) {
                         match = false;
                     }
                 } else if (b === false) {
-                    if (x[i].tags.includes(j)) {
+                    if (dexData[i].tags.includes(j)) {
                         match = false;
                     }
                 }
             }
 
             if (match) {
-                res.push(x[i].pokemon)
-                data_res.push(x[i])
+                res.push(dexData[i].pokemon)
+                data_res.push(dexData[i])
             }
 
         }

@@ -2,6 +2,27 @@ const qs = (e) => document.querySelector(e);
 const qsa = (e) => document.querySelectorAll(e);
 
 
+const typeColor = {
+    nor: "#ADA594",
+    fir: "#F75231",
+    wat: "#399CFF",
+    gra: "#7BCE52",
+    ele: "#FFC631",
+    ice: "#5ACEE7",
+    roc: "#BDA55A",
+    gro: "#D6B55A",
+    ste: "#ADADC6",
+    poi: "#B55AA5",
+    fig: "#A55239",
+    fly: "#9CADF7",
+    bug: "#ADBD21",
+    psy: "#FF73A5",
+    gho: "#6363B5",
+    dar: "#735A4A",
+    fai: "#FF65D5",
+    dra: "#7B63E7"
+}
+
 function zeroes(n, name = "", place = 3) {
 
     /* if (n == undefined) {
@@ -76,7 +97,7 @@ function capitalize(str, def) {
     sections.forEach(e => {
         count++
         var list = e.toString().split(''),
-            capital = list[0].toUpperCase();
+            capital = list[0]?.toUpperCase();
         list.splice(0, 1);
         res += (count != 1 ? " " : "") + capital + list.join('');
     })
@@ -85,13 +106,17 @@ function capitalize(str, def) {
 }
 
 const head = document.head;
+const preloadContainer = document.createElement("div");
+preloadContainer.id = "subhead";
 for (let i = 1; i <= 1025; i++) {
     const number = String(i).padStart(3, '0');
     const link = document.createElement('link');
     link.rel = 'prefetch';
     link.href = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${number}.png`;
-    head.appendChild(link);
+    preloadContainer.appendChild(link);
 }
+head.appendChild(preloadContainer);
+
 
 async function getJSON() {
     var n = location.pathname.includes(".") ? "/" : location.pathname,
@@ -99,16 +124,16 @@ async function getJSON() {
         r = await s.json();
     return (r)
 }
-var x,
+var dexData,
     base_total = 1025,
     total = 1025;
 
-getJSON().then(data => x = data).then(() => {
-    Object.keys(x).forEach(k => {
-        x[k].forms > 1 && (total += (x[k].forms - 1))
+getJSON().then(data => dexData = data).then(() => {
+    Object.keys(dexData).forEach(k => {
+        dexData[k].forms > 1 && (total += (dexData[k].forms - 1))
     });
     // form images
-    for (let [k, v] of Object.entries(x)) {
+    for (let [k, v] of Object.entries(dexData)) {
         for (let i = 2; i < v.forms + 1; i++) {
             const link = document.createElement('link');
             link.rel = 'prefetch';
@@ -176,4 +201,5 @@ function getSeason() {
 
 // var season = getSeason();
 // document.getElementsByTagName('head')[0].innerHTML += '<link rel="stylesheet" href="assets/styles/' + season + ' Theme.css">';
-document.getElementsByTagName('head')[0].innerHTML += '<link rel="stylesheet" href="assets/styles/Jirachi Theme.css">';
+// document.getElementsByTagName('head')[0].innerHTML += '<link rel="stylesheet" href="assets/styles/Jirachi Theme.css">';
+document.getElementsByTagName('head')[0].innerHTML += '<link rel="stylesheet" href="assets/styles/New Theme.css">';
