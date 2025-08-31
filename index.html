@@ -13,6 +13,13 @@
 <script src="assets/scripts/data.js"></script>
 
 <body>
+	<nav class="navbar">
+		<a href="/" title="Home">
+			<img class="logo" src="https://interstellar717.github.io/assets/img/ds_neon_transparent.png"
+				alt="Diastrikos Neon Logo">
+		</a>
+	</nav>
+
 	<!-- <img id="arrow"
 		src="https://media3.giphy.com/media/9PekRRQ0WlrRVwynAk/200w.gif?cid=6c09b95273brx7m1yfjowsv5j0j86z8oyc72vgq9y6ubdawo&ep=v1_gifs_search&rid=200w.gif&ct=s"> -->
 
@@ -48,39 +55,59 @@
 			</div>
 		</div>
 
-		<div id="sidebar-new" style="transform: translateX(-300px);">
+		<div class="sidebar hidden center">
 
 			<div id="sidebar"
-				style="text-align: center; transform: translateX(calc(50vw + 300px - 275px)); width: 200%; font-size: 22px; padding-right: 0%;">
+				style="text-align: center; transform: translateX(50vw) translateY(calc(10vh)); width: 200%; font-size: 22px; padding-right: 0%;">
 				<button class="function" id="help">Tutorial</button>
-				<h2 class="label-header">Random</h2>
+
+				<br class="delete">
+				<br class="delete">
+
+				<h2 style="display: none;" class="label-header">Random</h2>
+
 				<button class="function" id="activator">Random Pokémon</button>
-				<!-- <br> -->
+				
+				<br class="delete">
+				<br class="delete">
+
 				<button class="function" id="rand-mult">Random Multiple</button>
-				<!-- <br> -->
-				<h2 class="label-header">Log</h2>
-				<button class="function" id="showLog">Show</button>
-				<button class="function" id="clearLog">Clear</button>
-				<!-- <br> -->
-				<h2 class="label-header">Evolution</h2>
-				<button class="function msr" id="prevo">arrow_left</button>
-				<button class="function msr" id="evo">arrow_right</button>
-				<h2 class="label-header">Dex Number</h2>
-				<button class="function" id="dec-dex">Previous</button>
-				<button class="function" id="inc-dex">Next</button>
-				<h2 class="label-header">Other</h2>
+				
+				<br class="delete">
+				<br class="delete">
+
+				<h2 style="display: none;" class="label-header">Log</h2>
+
+				<button style="display: none;" class="function" id="showLog">Show</button>
+
+				<button style="display: none;" class="function" id="clearLog">Clear</button>
+
+				<h2 style="display: none;" class="label-header">Evolution</h2>
+
+				<button style="display: none;" class="function msr" id="prevo">arrow_left</button>
+
+				<button style="display: none;" class="function msr" id="evo">arrow_right</button>
+
+				<h2 style="display: none;" class="label-header">Dex Number</h2>
+
+				<button style="display: none;" class="function" id="dec-dex">Previous</button>
+
+				<button style="display: none;" class="function" id="inc-dex">Next</button>
+
+				<h2 style="display: none;" class="label-header">Other</h2>
+
 				<button class="function" id="custom">Search Pokémon</button>
-				<!-- <br> -->
-				<button class="function" id="typeChange">Type Change</button>
-				<!-- <br> -->
-				<!-- <button class="function" id="shiny">Shiny</button> -->
-				<!-- <br> -->
-				<button class="function" id="img-bkg">Image Bkg Toggle</button>
+
+				<button style="display: none;" class="function" id="typeChange">Type Change</button>
+
+				<button style="display: none;" class="function" id="img-bkg">Image Bkg Toggle</button>
+
 
 				<button id="close-center-bar" class="msr function">close</button>
 			</div>
 		</div>
-		<button id="toggle-sidebar" style="transform: translateX(-75px);">MENU</button>
+
+		<button id="toggle-sidebar" style="transform: translateX(-75px); display: none;">MENU</button>
 
 		<div class="search-column">
 			<input type="text" class="search-bar" placeholder="Enter Pokémon name query...">
@@ -97,5 +124,4 @@
 			<span id="info-prev"></span>
 			<span id="info-next"></span>
 		</div>
-<!-- 		this comment is just so that it will deploy -->
 </body>
