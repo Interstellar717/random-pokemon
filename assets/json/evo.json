@@ -10687,12 +10687,16 @@
                "name": "Plant Cloak",
                 "type": [
                     "bug"
-                ],
-                 "name": "Sand Cloak",
+                ]
+            },
+            {
+                "name": "Sand Cloak",
                 "type": [
                     "bug"
-                ],
-                 "name": "Trash Cloak",
+                ]
+            },
+            {
+                "name": "Trash Cloak",
                 "type": [
                     "bug"
                 ]
@@ -10724,13 +10728,17 @@
                 "type": [
                     "bug",
                     "grass"
-                ],
-                 "name": "Sand Cloak",
+                ]
+            },
+            {
+                "name": "Sand Cloak",
                 "type": [
                     "bug",
                     "ground"
                 ],
-                 "name": "Trash Cloak",
+            },
+            {
+                "name": "Trash Cloak",
                 "type": [
                     "bug",
                     "steel"
@@ -27467,3 +27475,4 @@
     }
 
 }
+
