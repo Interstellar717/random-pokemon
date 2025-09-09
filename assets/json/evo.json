@@ -10684,7 +10684,15 @@
         ],
         "forms": [
             {
-                "name": "Base",
+               "name": "Plant Cloak",
+                "type": [
+                    "bug"
+                ],
+                 "name": "Sand Cloak",
+                "type": [
+                    "bug"
+                ],
+                 "name": "Trash Cloak",
                 "type": [
                     "bug"
                 ]
@@ -10712,10 +10720,20 @@
         ],
         "forms": [
             {
-                "name": "Base",
+                "name": "Plant Cloak",
                 "type": [
                     "bug",
                     "grass"
+                ],
+                 "name": "Sand Cloak",
+                "type": [
+                    "bug",
+                    "ground"
+                ],
+                 "name": "Trash Cloak",
+                "type": [
+                    "bug",
+                    "steel"
                 ]
             }
         ],
@@ -27447,4 +27465,5 @@
         "pecharunt": 1025,
         "random pokémon": 0
     }
+
 }
