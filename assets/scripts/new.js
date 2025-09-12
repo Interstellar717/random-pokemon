@@ -381,7 +381,6 @@ function typeChange() {
             name && (name = capitalize(name));
 
             qs("div#name-num h1").innerHTML = name + "... but it's " + type + " type!";
-            toLog(name, type, dex);
         } else {
             let c = prompt('You\'ve already changed the type of this Pokémon!\n\nDon\'t wear the poor thing out lol');
             if (c == 'its flying type') {
@@ -492,8 +491,13 @@ function clearLog() {
     qs('#log').innerHTML = '';
 }
 
-function toLog(name, type, dex) {
-    qs('#log').innerHTML += "<li id='logItem'>[" + name + " (" + dex + ")" + (type ? ", " + type : "") + "]</li>";
+function toLog(name, dex, form, type) {
+    var string = "[" + name + " (" + dex + ")" + (type ? ", " + type : "") + "]";
+    var li = document.createElement("li");
+    li.classList.add("logItem");
+    li.textContent = string;
+    qs('#log').appendChild(li);
+    qs("#log .logItem:nth-last-child(1)").addEventListener("click", () => { set_pokemon(name, form || 1, false, false) });
 }
 //Image changing
 function spotlight(n) {
@@ -536,7 +540,7 @@ function random_pokemon() {
     set_pokemon(dex, form, /*true*/ false)
 }
 
-function set_pokemon(dex, form = 1, show_type = false) {
+function set_pokemon(dex, form = 1, show_type = false, log = true) {
 
     const form_num = form;
 
@@ -590,6 +594,9 @@ function set_pokemon(dex, form = 1, show_type = false) {
 
     centerbar && closeCenterBar();
 
+    log && toLog(name, dex);
+
+
 }
 
 function custom() {
@@ -603,7 +610,7 @@ function custom() {
     msg = dexData.nameToNo[dex.toLowerCase()] || "failed"
     msg = parseInt(dex).toString() != 'NaN' ? dexData[dex].pokemon : msg
 
-    toLog(`Search Query: ${dex}`, null, msg);
+    toLog(`Search Query: ${dex}`, msg);
 
     if (dex != null) {
         set_pokemon(dex)
