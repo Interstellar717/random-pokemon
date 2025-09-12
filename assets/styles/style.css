@@ -137,8 +137,9 @@ img {
     width: auto;
 }
 
-#logItem {
+.logItem {
     padding: 5px;
+    cursor: pointer;
 }
 
 #scroller {
