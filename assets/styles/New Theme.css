@@ -115,3 +115,7 @@ div#sidebar-new {
 .sidebar.hidden:not(.center) {
     cursor: pointer;
 }
+
+#logContainer {
+    color: white;
+}
