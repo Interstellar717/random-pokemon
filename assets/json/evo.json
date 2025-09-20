@@ -1453,6 +1453,7 @@
                 ]
             },
             {
+                "name": "Alolan",
                 "type": [
                     "dark"
                 ]
@@ -10684,19 +10685,7 @@
         ],
         "forms": [
             {
-               "name": "Plant Cloak",
-                "type": [
-                    "bug"
-                ]
-            },
-            {
-                "name": "Sand Cloak",
-                "type": [
-                    "bug"
-                ]
-            },
-            {
-                "name": "Trash Cloak",
+                "name": "Base",
                 "type": [
                     "bug"
                 ]
@@ -10724,24 +10713,10 @@
         ],
         "forms": [
             {
-                "name": "Plant Cloak",
+                "name": "Base",
                 "type": [
                     "bug",
                     "grass"
-                ]
-            },
-            {
-                "name": "Sand Cloak",
-                "type": [
-                    "bug",
-                    "ground"
-                ]
-            },
-            {
-                "name": "Trash Cloak",
-                "type": [
-                    "bug",
-                    "steel"
                 ]
             }
         ],
@@ -16950,7 +16925,7 @@
                 ]
             },
             {
-                "name": "Ash-greninja",
+                "name": "Ash",
                 "type": [
                     "water",
                     "dark"
@@ -22974,6 +22949,13 @@
                     "fighting",
                     "dark"
                 ]
+            },
+            {
+                "name": "Gigantamax Rapid Strike",
+                "type": [
+                    "fighting",
+                    "water"
+                ]
             }
         ],
         "previous": {
@@ -27473,7 +27455,4 @@
         "pecharunt": 1025,
         "random pokémon": 0
     }
-
 }
-
-
