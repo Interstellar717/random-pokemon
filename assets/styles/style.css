@@ -474,3 +474,16 @@ a:has(.logo) {
 .type:not(.type:nth-of-type(1)) {
     margin-left: 5px;
 }
+
+.function.add-btn {
+    line-height: 0em;
+    aspect-ratio: 1 / 1;
+    height: 1.5em;
+    font-size: 20px;
+    background-color: green;
+    transform: translate(2.5px, -2.5px);
+}
+
+.function.add-btn:hover {
+    background-color: hsl(120, 100%, 30%);
+}
