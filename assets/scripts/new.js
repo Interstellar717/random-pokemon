@@ -13,14 +13,14 @@ var click_listeners = {
     "#typeChange": typeChange,
     "#showLog": showLog,
     "#clearLog": clearLog,
-    "#activator": random_pokemon,
+    "#activator": randomPokemon,
     "#evo": () => evolution(1),
     "#prevo": () => evolution(-1),
-    "#inc-dex": () => dex_num(1),
-    "#dec-dex": () => dex_num(-1),
+    "#inc-dex": () => dexNum(1),
+    "#dec-dex": () => dexNum(-1),
     // "#shiny": shiny,
     // "#rand-mult": () => random_multiple(prompt('How Many Pokemon? Currently works up to 9')),
-    "#rand-mult": () => random_multiple(3),
+    "#rand-mult": () => randomMultiple(3),
     // "#toggle-sidebar": toggle_sidebar,
     ".msg button": () => msg(false),
     "#img-bkg": toggleImgBkg,
@@ -49,7 +49,7 @@ const search = e => {
         let el = document.createElement('span');
         el.textContent = capitalize(i);
         el.classList.add("result");
-        el.addEventListener('click', () => { set_pokemon(el.textContent), showSearch() /* hides the log */ });
+        el.addEventListener('click', () => { showSearch(false); setPokemon(el.textContent); });
 
         qs('.results').appendChild(el);
     }
@@ -89,7 +89,7 @@ addEventListener('keydown', (e) => {
 
     switch (e.key) {
         case '`': {
-            toggle_sidebar()
+            toggleSidebar()
         }
             break;
         case 'Q': {
@@ -101,11 +101,11 @@ addEventListener('keydown', (e) => {
         }
             break;
         case 'E': {
-            showSearch(100)
+            showSearch()
         }
             break;
         case 'R': {
-            random_pokemon()
+            randomPokemon()
         }
             break;
         case 'T': {
@@ -173,7 +173,7 @@ addEventListener('keydown', (e) => {
             break;
         case 'X': {
             // random_multiple(prompt('How Many Pokemon? Currently works up to 9'))
-            random_multiple(3);
+            randomMultiple(3);
         }
             break;
         case 'C': {
@@ -198,19 +198,19 @@ addEventListener('keydown', (e) => {
             break;
 
         case 'ArrowRight': {
-            dex_num(1)
+            dexNum(1)
         }
             break;
         case 'ArrowLeft': {
-            dex_num(-1)
+            dexNum(-1)
         }
             break;
         case 'ArrowDown': {
-            evolution(1)
+            evolution(-1)
         }
             break;
         case 'ArrowUp': {
-            evolution(-1)
+            evolution(1)
         }
             break;
         case 'F1': {
@@ -374,7 +374,7 @@ function typeChange() {
             // var dex = localStorage.getItem('dex');
             // var name = x[parseInt(dex)].pokemon;
 
-            var name = get_current();
+            var name = getCurrent();
             var dex = dexData.nameToNo[name];
             var type = typeGen();
 
@@ -425,65 +425,88 @@ function help() {
     helpWindow.document.getElementsByTagName('button')[0].addEventListener('click', () => helpWindow.close())
 }
 //Log
-function showLog() {
+function showLog(state) {
     var log = qs('#logContainer');
     var col = qs('.search-column');
 
-    if (log.style.transform == 'translateY(110vh)') {
-        log.style.transform = 'translateY(0px)';
-        log.style.borderBottomLeftRadius = '50px';
-        // log.style.borderLeft = 'solid black 0px';
+    const buggedY = 110;
 
-        if (col.style.transform != "translateY(100vh)") {
-            qs('#info').style.transform = "translateY(0vh)";
+    // if (log.style.transform == 'translateY(110vh)' || state == false) {
+    if (log.style.transform == 'translateY(' + buggedY + 'vh)' || state == false) {
+        // !state | state != true | state == false || state == undefined
+        if (!state) {
+            log.style.transform = 'translateY(0px)';
+            log.style.borderBottomLeftRadius = '50px';
+
+            // if (col.style.transform != "translateY(110vh)") {
+            if (col.style.transform != "translateY(' + buggedY + 'vh)") {
+                qs('#info').style.transform = "translateY(0vh)";
+            }
         }
+        if (state == false) return;
 
     } else {
-        log.style.transform = 'translateY(110vh)';
+        // log.style.transform = 'translateY(110vh)';
+        log.style.transform = 'translateY(' + buggedY + 'vh)';
         log.style.borderBottomLeftRadius = '0px';
-        // log.style.borderLeft = 'solid black 10px';
 
         qs('#info').style.transform = "translateY(150vh)";
 
 
-        if (col.style.transform == "translateY(110vh)") {
-            showSearch()
+        // if (col.style.transform == "translateY(110vh)") {
+        if (col.style.transform == "translateY(' + buggedY + 'vh)") {
+            showSearch(false)
         }
+
+        if (state == true) return;
     }
 }
 
-function showSearch(n) {
+function showSearch(state) {
     var col = qs('.search-column');
     var log = qs('#logContainer');
 
-    if (col.style.transform == 'translateY(110vh)') {
-        col.querySelector('.search-bar').blur();
+    const buggedY = 110;
 
-        col.querySelector('.search-bar').value = "";
-        col.querySelector('.results').textContent = "";
-        col.style.transform = 'translateY(0px)';
-        col.style.borderBottomLeftRadius = '50px';
-        // col.style.borderLeft = 'solid black 0px';
+    // if (col.style.transform == 'translateY(110vh)' || state == false) {
+    if (col.style.transform == 'translateY(' + buggedY + 'vh)' || state == false) {
+        // !state | state != true | state == false || state == undefined
+        if (!state) {
+            col.querySelector('.search-bar').blur();
 
-        if (log.style.transform != "translateY(110vh)") {
-            qs('#info').style.transform = "translateY(0vh)";
+            col.querySelector('.search-bar').value = "";
+            col.querySelector('.results').textContent = "";
+            col.style.transform = 'translateY(0px)';
+            col.style.borderBottomLeftRadius = '50px';
+            // col.style.borderLeft = 'solid black 0px';
+
+            // if (log.style.transform != "translateY(110vh)") {
+            if (log.style.transform != "translateY(' + buggedY + 'vh)") {
+                qs('#info').style.transform = "translateY(0vh)";
+            }
         }
 
+        if (state == false) return;
+
     } else {
-        col.style.transform = 'translateY(110vh)';
+        // col.style.transform = 'translateY(110vh)';
+        col.style.transform = 'translateY(' + buggedY + 'vh)';
         col.style.borderBottomLeftRadius = '0px';
         // col.style.borderLeft = 'solid black 10px';
         selected_result = -1
         setTimeout(() => {
             col.querySelector('.search-bar').select();
-        }, n)
+        }, 100)
 
         qs('#info').style.transform = "translateY(150vh)";
 
 
-        if (log.style.transform == "translateY(110vh)") {
-            showLog()
+        // if (log.style.transform == "translateY(110vh)") {
+        if (log.style.transform == "translateY(' + buggedY + 'vh)") {
+            showLog(false)
         }
+
+        if (state == true) return;
     }
 }
 
@@ -497,8 +520,22 @@ function toLog(name, dex, form, type) {
     li.classList.add("logItem");
     li.textContent = string;
     qs('#log').appendChild(li);
-    qs("#log .logItem:nth-last-child(1)").addEventListener("click", () => { set_pokemon(name, form || 1, false, false) });
+    qs("#log .logItem:nth-last-child(1)").addEventListener("click", () => { showLog(false); setPokemon(name, form || 1, false, false) });
 }
+
+function toLogMultiple(arr, forms) {
+    var string = "[";
+    for (let i in arr) {
+        string += arr[i] + "(" + dexData.nameToNo[arr[i].toLowerCase()] + ")" + (i != arr.length - 1 ? ", " : "");
+    }
+    string += "]";
+    var li = document.createElement("li");
+    li.classList.add("logItem");
+    li.textContent = string;
+    qs('#log').appendChild(li);
+    qs("#log .logItem:nth-last-child(1)").addEventListener("click", () => { showLog(false); setMultiplePokemon(arr, forms, false) });
+}
+
 //Image changing
 function spotlight(n) {
     if (n > qsa('.form-button').length) return; // keyboard shortcuts prevent selecting non-existent forms
@@ -510,12 +547,12 @@ function spotlight(n) {
     else source = img.src.split('.png')[0] + end;
     // img.src = '';
     img.src = source;
-    h1.textContent = get_form_name(get_current(), n) + " #" + dexData.nameToNo[get_current()];
-    infoBox(dexData.nameToNo[get_current()], n, true);
+    h1.textContent = getFormName(getCurrent(), n) + " #" + dexData.nameToNo[getCurrent()];
+    infoBox(dexData.nameToNo[getCurrent()], n, true);
 }
 
 
-function get_form_name(name, n) {
+function getFormName(name, n) {
     if (n > dexData[dexData.nameToNo[name.toLowerCase()]].forms.length) return false;
     try {
         var fname = dexData[dexData.nameToNo[name.toLowerCase()]].forms[n - 1]?.name || "Base";
@@ -531,16 +568,12 @@ function get_form_name(name, n) {
 
     return fname + capitalize(name)
 }
-//Generating
-function random_pokemon() {
 
-    var dex = Math.floor(Math.random() * 1011);
-    var form = 1;
-    // form = Math.floor(Math.random() * x[dex].forms) + 1;
-    set_pokemon(dex, form, /*true*/ false)
-}
 
-function set_pokemon(dex, form = 1, show_type = false, log = true) {
+function setPokemon(dex, form = 1, show_type = false, log = true) {
+
+    showLog(false);
+    showSearch(false);
 
     const form_num = form;
 
@@ -588,7 +621,7 @@ function set_pokemon(dex, form = 1, show_type = false, log = true) {
         dex = parseInt(dex)
 
 
-    form_buttons(dexData[dex].forms.length);
+    formButtons(dexData[dex].forms.length);
 
     qs('.form-button') && qsa('.form-button')[form_num - 1].click();
 
@@ -613,16 +646,16 @@ function custom() {
     toLog(`Search Query: ${dex}`, msg);
 
     if (dex != null) {
-        set_pokemon(dex)
+        setPokemon(dex)
     }
 
 }
 
-function form_buttons(n) {
+function formButtons(n) {
     n === 1 && (n = 0)
     var btns = ``;
     for (let i = 1; i <= n; i++) {
-        btns += `<button class="function form-button">${dexData[dexData.nameToNo[get_current()]].forms[i - 1].name}</button>`
+        btns += `<button class="function form-button">${dexData[dexData.nameToNo[getCurrent()]].forms[i - 1].name}</button>`
     }
     qs('#form-bar').innerHTML = btns;
     const btnHTML = qsa('.form-button');
@@ -632,7 +665,7 @@ function form_buttons(n) {
 }
 
 const
-    get_current = () => {
+    getCurrent = () => {
         // return qs('div#name-num h1').textContent.split(' #')[0].toLocaleLowerCase()
 
         // parseInt() to get rid of preceding zeroes
@@ -644,13 +677,13 @@ const
         }
         return res;
     },
-    get_form = () => {
+    getForm = () => {
         return parseInt(qs('#pkmn').src.split('.png')[0].split('full/')[1].split('_f')[1]) || 1
     }
 
 
 function evolution(n) {
-    var data = dexData[dexData.nameToNo[get_current()]];
+    var data = dexData[dexData.nameToNo[getCurrent()]];
 
     if (!data) return false;
 
@@ -660,11 +693,11 @@ function evolution(n) {
 
     if (n === -1 && previous) {
         if (data.previous.type === "parallel") {
-            set_pokemon(previous, get_form())
+            setPokemon(previous, getForm())
         } else if (data.previous.type === "shifted") {
-            set_pokemon(previous, get_form() + data.previous.shift)
+            setPokemon(previous, getForm() + data.previous.shift)
         } else {
-            set_pokemon(previous, data.previous.form || 1)
+            setPokemon(previous, data.previous.form || 1)
         }
     } else if (n === -1 && !previous) {
         msg('This Pokémon cannot devolve!', 1000);
@@ -673,20 +706,20 @@ function evolution(n) {
     if (n === 1 && next) {
         if (typeof next === "string") {
             if (data.next.type != "ignore-forms") {
-                set_pokemon(data.next.pokemon, get_form())
-            } else set_pokemon(data.next.pokemon)
+                setPokemon(data.next.pokemon, getForm())
+            } else setPokemon(data.next.pokemon)
         } else {
             if (data.next.type === "multiple") {
-                set_multiple_pokemon(next)
-                form_buttons(0)
+                setMultiplePokemon(next)
+                formButtons(0)
             } else if (data.next.type === "regional") {
-                var form = get_form()
-                next[form - 1] && set_pokemon(next[form - 1])
+                var form = getForm()
+                next[form - 1] && setPokemon(next[form - 1])
             } else if (data.next.type === "irregular") {
-                set_pokemon(next[get_form() - 1], data.next.map[get_form()])
+                setPokemon(next[getForm() - 1], data.next.map[getForm()])
             } else if (data.next.type === "irregular-multiple") {
-                set_multiple_pokemon(next, data.next.map[get_form()])
-                form_buttons(0)
+                setMultiplePokemon(next, data.next.map[getForm()])
+                formButtons(0)
             }
         }
     } else if (n === 1 && !next) {
@@ -694,7 +727,11 @@ function evolution(n) {
     }
 }
 
-function set_multiple_pokemon(arr, forms = "") {
+function setMultiplePokemon(arr, forms = "", log = true) {
+
+    showLog(false);
+    showSearch(false);
+
     let HTML = ``;
     for (let i = 0; i < arr.length; i++) {
         let n = Math.ceil(arr.length / 3);
@@ -728,16 +765,16 @@ function set_multiple_pokemon(arr, forms = "") {
     for (let i in og_names) og_names[i] = og_names[i].toLowerCase();
 
     for (let i in arr) {
-        arr[i] = get_form_name(arr[i], forms[i])
+        arr[i] = getFormName(arr[i], forms[i])
     }
 
     qs('div#name-num h1').textContent = capitalize(arr.join(', '));
 
 
     for (let p in arr) {
-        console.log(og_names, p);
+        // console.log(og_names, p);
         qsa('.pkmn')[p].src = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${zeroes(dexData.nameToNo[og_names[p]])}${forms[p] > 1 ? "_f" + forms[p] : ""}.png`;
-        qsa('.pkmn')[p].addEventListener('click', () => set_pokemon(og_names[p].toLowerCase(), forms ? forms[p] : 1));
+        qsa('.pkmn')[p].addEventListener('click', () => setPokemon(og_names[p].toLowerCase(), forms ? forms[p] : 1));
         qsa('.pkmn')[p].title = infoBox(dexData.nameToNo[og_names[p]], forms[p], false).text
     }
 
@@ -753,12 +790,12 @@ function set_multiple_pokemon(arr, forms = "") {
 
     centerbar && closeCenterBar();
 
-
+    log && toLogMultiple(arr, forms);
 }
 
 function shiny() {
 
-    if (get_current().split(',').length != 1)
+    if (getCurrent().split(',').length != 1)
         return alert('You may not change multiple Pokemon to their shiny forms at once.')
 
 
@@ -767,17 +804,25 @@ function shiny() {
 
     switch (is_shiny) {
         case false: {
-            img.src = `https://db.pokemongohub.net/images/pokemon-home-renders/Shiny/poke_capture_${zeroes(dexData.nameToNo[get_current()], null, 4)}_000_mf_n_00000000_f_r.png`
+            img.src = `https://db.pokemongohub.net/images/pokemon-home-renders/Shiny/poke_capture_${zeroes(dexData.nameToNo[getCurrent()], null, 4)}_000_mf_n_00000000_f_r.png`
         }
             break;
         case true: {
-            set_pokemon(get_current())
+            setPokemon(getCurrent())
         }
             break;
     }
 }
 
-function random_multiple(q) {
+//Generating
+function randomPokemon() {
+
+    var dex = Math.floor(Math.random() * 1011);
+    var form = 1;
+    setPokemon(dex, form, /*true*/ false)
+}
+
+function randomMultiple(q) {
     if (q > 9) return alert('Sorry, the maximum number of Pokémon you can generate at once is 9.')
     if (!q) return alert('Please enter a number of Pokémon to generate.')
 
@@ -794,8 +839,8 @@ function random_multiple(q) {
 
         forms.push(rf);
     }
-    set_multiple_pokemon(arr, forms)
-    form_buttons(1) //no form buttons
+    setMultiplePokemon(arr, forms)
+    formButtons(1) //no form buttons
 }
 
 
@@ -821,7 +866,7 @@ resize_function();
 
 var enabled = false;
 
-function toggle_sidebar() {
+function toggleSidebar() {
     var s = qs('#sidebar-new');
     var ts = qs('#toggle-sidebar');
 
@@ -848,28 +893,28 @@ function msg(str, time = 0) {
     if (str == false) return (qs('.msg').style.transform = "");
 
     qs('.msg').style.transform = "translateX(-20px)";
-    qs('.msg span').textContent = str;
+    qs('.msg span').innerHTML = str;
 
     time && setTimeout(() => {
         qs('.msg').style.transform = ""
     }, time)
 }
 
-function dex_num(n) {
-    if (get_current()?.split(',')?.length == 1 &&
-        dexData.nameToNo[get_current()] + n > 0 &&
-        dexData.nameToNo[get_current()] + n <= 1025) {
-        set_pokemon(dexData.nameToNo[get_current()] + n)
-    } else if (dexData.nameToNo[get_current()] + n <= 0) {
+function dexNum(n) {
+    if (getCurrent()?.split(',')?.length == 1 &&
+        dexData.nameToNo[getCurrent()] + n > 0 &&
+        dexData.nameToNo[getCurrent()] + n <= 1025) {
+        setPokemon(dexData.nameToNo[getCurrent()] + n)
+    } else if (dexData.nameToNo[getCurrent()] + n <= 0) {
         msg('No Pokémon with number 0!', 1000);
-    } else if (dexData.nameToNo[get_current()] + n > 1025) {
+    } else if (dexData.nameToNo[getCurrent()] + n > 1025) {
         msg('No Pokémon with number 1026 yet!', 1000);
     }
 }
 
 function toggleImgBkg() {
 
-    if (!get_current()) return false;
+    if (!getCurrent()) return false;
 
     if (qs('#pkmn').style.backgroundColor == "white") {
         qs('#pkmn').style.backgroundColor = "";
@@ -952,7 +997,7 @@ const gen = n => {
 
 function infoBox(n, form = 1, set = true) {
     var name = dexData[parseInt(n)].pokemon;
-    var fname = get_form_name(name, form);
+    var fname = getFormName(name, form);
 
     /* var type;
     if (form == 1) {
@@ -985,7 +1030,7 @@ function infoBox(n, form = 1, set = true) {
     }
 
     var html = `<div id="info" style="display: block; transform: translateY(0%);">
-			<h1 id="info-name">${capitalize(fname) + " #" + dexData.nameToNo[name.toLowerCase()]}</h1>
+			<h1 id="info-name">${capitalize(fname) + " #" + dexData.nameToNo[name.toLowerCase()]}<button class="function add-btn" title="Add to team">+</button></h1>
 			<span id="info-gen"><b>${"<b>Generation " + generation + "</b>"}</b></span>
 			<span id="info-type" style="gap: 0.25vw;">${"<b>Type: </b>" + `<span class="type">${capitalize(type[0])}</span><span class="type">${capitalize(type[1]) || ""}</span>`}</span>
 			<span id="info-forms"><b>Forms: </b>${dexData[dexData.nameToNo[name.toLowerCase()]].forms.length}</span>
@@ -994,10 +1039,17 @@ function infoBox(n, form = 1, set = true) {
 		</div>`;
     var text = `${capitalize(fname) + " #" + dexData.nameToNo[name.toLowerCase()]}\n${"Generation " + generation}\n${"Type: " + `${capitalize(type[0])} ${capitalize(type[1]) ? "/" : ""} ${capitalize(type[1]) || ""}`}\n${"Forms: " + dexData[dexData.nameToNo[name.toLowerCase()]].forms.length}\n${"Prevolution: " + capitalize(dexData[dexData.nameToNo[name.toLowerCase()]].previous.pokemon, "none")}\n${"Next: " + next}`;
 
-
     if (set) {
         qs('#info').style.display = "block";
         qs('#info').outerHTML = html;
+        qs(".function.add-btn").addEventListener("click", () => {
+            var success = team.addPokemon(dexData[n].pokemon, form);
+            if (success) {
+                msg("Added " + capitalize(team.array[team.array.length - 1]) + " to your team!", 1000);
+            } else {
+                msg("Couldn't add " + capitalize(team.array[team.array.length - 1]) + " to your team!<br>Reason: Team is full", 1000);
+            }
+        });
     }
     else {
         qs('#info').style.display = "none";

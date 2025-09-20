@@ -149,6 +149,8 @@ var dexData,
     total = 1025;
 
 getJSON().then(data => dexData = data).then(() => {
+
+    // getting total form count
     Object.keys(dexData).forEach(k => {
         dexData[k].forms > 1 && (total += (dexData[k].forms - 1))
     });
@@ -161,6 +163,52 @@ getJSON().then(data => dexData = data).then(() => {
             head.appendChild(link);
         }
     }
+
+
+    dexData["showdownNameToNo"] = {};
+
+    Object.keys(dexData).forEach(k => {
+        if (k == "nameToNo") return;
+        if (k == "showdownNameToNo") return;
+
+        var pokemon = dexData[k];
+        var forms = dexData[k].forms;
+
+        for (let i = 0; i < forms.length; i++) {
+
+            let pkName = pokemon.pokemon.replaceAll(" ", "-");
+
+            let fName = forms[i].name.toLowerCase();
+            fName = fName.replaceAll(".", "");
+            fName = fName.replaceAll("gigantamax", "gmax");
+            fName = fName.replaceAll("single strike", "");
+            fName = fName.replaceAll("sword", "");
+            fName = fName.replaceAll("shield", "");
+            fName = fName.replaceAll("alolan", "alola");
+            fName = fName.replaceAll("galarian", "galar");
+            fName = fName.replaceAll("hisuian", "hisui");
+            fName = fName.replaceAll("paldean", "paldea");
+            if (fName.endsWith(" ")) fName = fName.substr(0, fName.length - 1);
+
+            var res = undefined;
+
+            if (fName == "gmax rapid strike") {
+                res = pkName + "-rapid-strike-gmax";
+            }
+
+            if (fName == "base" || !fName || i == 0 || ["male", "female", "overdrive", "black overdrive", "white overdrive"].includes(fName)) {
+                res = pkName.replaceAll("♂", "-m").replaceAll("♀", "-f");
+            }
+
+
+            if (!res) {
+                res = `${pkName}-${fName.split(" ").join("-")}`;
+            }
+
+            forms[i].showdownName = res;
+            dexData.showdownNameToNo[res] = { number: dexData.nameToNo[pkName], form: i + 1 };
+        }
+    })
 });
 
 

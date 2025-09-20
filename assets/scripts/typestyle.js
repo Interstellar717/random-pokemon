@@ -5,5 +5,4 @@ function updateTypeColors() {
             span.style.border = `solid 3px ${typeBorderColor[span.textContent.substr(0, 3).toLowerCase()].getStyleCode()}`;
         }
     })
-
 }
