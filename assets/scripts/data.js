@@ -108,19 +108,23 @@ function capitalize(str, def) {
     if (!str) return def
 
 
-    var sections = str.toString().split(' '),
-        res = "",
-        count = 0;
+    for (let char of [" ", "-"]) {
+        var sections = str.toString().split(char),
+            res = "",
+            count = 0;
 
 
 
-    sections.forEach(e => {
-        count++
-        var list = e.toString().split(''),
-            capital = list[0]?.toUpperCase();
-        list.splice(0, 1);
-        res += (count != 1 ? " " : "") + capital + list.join('');
-    })
+        sections.forEach(e => {
+            count++
+            var list = e.toString().split(''),
+                capital = list[0]?.toUpperCase();
+            list.splice(0, 1);
+            if (e) {
+                res += (count != 1 ? char : "") + capital + list.join('');
+            }
+        })
+    }
 
     return res;
 }
@@ -271,3 +275,8 @@ function getSeason() {
 // document.getElementsByTagName('head')[0].innerHTML += '<link rel="stylesheet" href="assets/styles/' + season + ' Theme.css">';
 // document.getElementsByTagName('head')[0].innerHTML += '<link rel="stylesheet" href="assets/styles/Jirachi Theme.css">';
 document.getElementsByTagName('head')[0].innerHTML += '<link rel="stylesheet" href="assets/styles/New Theme.css">';
+
+
+function arrayRandom(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+}

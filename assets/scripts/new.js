@@ -24,11 +24,13 @@ var click_listeners = {
     // "#toggle-sidebar": toggle_sidebar,
     ".msg button": () => msg(false),
     "#img-bkg": toggleImgBkg,
-    "#close-center-bar": closeCenterBar
+    "#close-center-bar": closeCenterBar,
+    "#showTeam": toggleTeamDisplay,
+    "#clearTeam": clearTeam
 }
 
 for (let [key, value] of Object.entries(click_listeners)) {
-    qs(key).addEventListener('click', value)
+    qs(key) && qs(key).addEventListener('click', value);
 }
 
 const search = e => {
@@ -84,6 +86,10 @@ addEventListener('keydown', (e) => {
             console.log(e.target.parentElement.querySelectorAll('.result')[selected_result])
             e.target.parentElement.querySelectorAll('.result')[selected_result].classList.add('hovered');
         }
+        return;
+    }
+
+    if (e.target.parentElement.classList.contains("team-display")) {
         return;
     }
 
@@ -815,11 +821,54 @@ function shiny() {
 }
 
 //Generating
-function randomPokemon() {
+function randomPokemon(filter, formVariation = true) {
 
-    var dex = Math.floor(Math.random() * 1011);
-    var form = 1;
-    setPokemon(dex, form, /*true*/ false)
+    var dex;
+    var form;
+
+    if (!filter || filter instanceof MouseEvent) {
+        dex = Math.floor(Math.random() * 1011);
+    } else {
+        var candidates = [];
+
+        for (let k of Object.keys(dexData)) {
+            if (k == "nameToNo") continue;
+            if (k == "showdownNameToNo") continue;
+
+            var match = true;
+
+            if (filter.tags) {
+                for (let tag of filter.tags) {
+                    if (!dexData[k].tags.includes(tag)) {
+                        match = false;
+                    }
+                }
+            }
+
+            if (filter.type) {
+                for (let form of dexData[k].forms) {
+                    for (let type of filter.type) {
+                        if (!form.type.includes(type)) {
+                            match = false;
+                        }
+                    }
+                }
+            }
+            if (match) {
+                candidates.push(k);
+            }
+        }
+
+        dex = arrayRandom(candidates);
+    }
+
+
+    console.log(dex);
+
+    form = Math.floor(Math.random() * dexData[dex].forms.length) + 1;
+    if (!formVariation) form = 1;
+
+    setPokemon(dex, form, /*true*/ false);
 }
 
 function randomMultiple(q) {
@@ -1094,4 +1143,27 @@ function getByTags(q = [], b = true) {
     }
 
     return data_res
+}
+
+function toggleTeamDisplay() {
+    const teamDisplay = qs(".team-display");
+
+    if (teamDisplay.style.display != "block") {
+        teamDisplay.style.display = "block";
+        setTimeout(() => {
+            teamDisplay.style.opacity = "1";
+        }, 100);
+    } else {
+        teamDisplay.style.opacity = "0";
+        setTimeout(() => {
+            teamDisplay.style.display = "none";
+        }, 500);
+    }
+}
+
+function clearTeam(ask = true) {
+    if (ask)
+        confirm("Clear team?!") && team.clear();
+    else
+        team.clear();
 }

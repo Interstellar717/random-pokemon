@@ -31,8 +31,31 @@ class Team {
             text += pokemon + "\nTera Type: \n\n";
         }
 
+        qs(".team-display textarea").value = text;
         return text;
+    }
+
+    textToArray() {
+        var array = [];
+        for (let pokemon of this.text.split("\nTera Type: \n\n")) {
+            pokemon && array.push(pokemon);
+        }
+        return array;
+    }
+
+    clear() {
+        this.array = [];
+        this.text = "";
     }
 }
 
 const team = new Team();
+
+qs(".team-display button").addEventListener("click", e => {
+    toggleTeamDisplay();
+})
+
+qs(".team-display textarea").addEventListener("keyup", e => {
+    team.text = e.target.value;
+    team.array = team.textToArray();
+})
