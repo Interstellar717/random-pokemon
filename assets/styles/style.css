@@ -487,3 +487,31 @@ a:has(.logo) {
 .function.add-btn:hover {
     background-color: hsl(120, 100%, 30%);
 }
+
+.team-display {
+    position: absolute;
+    top: 15vh;
+    left: 25vw;
+    width: 50vw;
+    height: 80vh;
+    background-color: rgba(82, 82, 82, 0.5);
+    color: white;
+    opacity: 0;
+    display: none;
+}
+
+.team-display textarea {
+    width: 80%;
+    height: 80%;
+    margin: 11% 9%;
+    color: white;
+    resize: none;
+}
+
+.team-display button.function.msr {
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+    background: red;
+    aspect-ratio: 1 / 1;
+}
