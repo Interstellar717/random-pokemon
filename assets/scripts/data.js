@@ -107,24 +107,24 @@ function zeroes(n, name = "", place = 3) {
 function capitalize(str, def) {
     if (!str) return def
 
+    str = str.replaceAll("-", " ");
 
-    for (let char of [" ", "-"]) {
-        var sections = str.toString().split(char),
-            res = "",
-            count = 0;
+    var sections = str.toString().split(" "),
+        res = "",
+        count = 0;
 
 
 
-        sections.forEach(e => {
-            count++
-            var list = e.toString().split(''),
-                capital = list[0]?.toUpperCase();
-            list.splice(0, 1);
-            if (e) {
-                res += (count != 1 ? char : "") + capital + list.join('');
-            }
-        })
-    }
+    sections.forEach(e => {
+        count++
+        var list = e.toString().split(''),
+            capital = list[0]?.toUpperCase();
+        list.splice(0, 1);
+        if (e) {
+            res += (count != 1 ? " " : "") + capital + list.join('');
+        }
+    })
+
 
     return res;
 }
