@@ -212,7 +212,25 @@ getJSON().then(data => dexData = data).then(() => {
             forms[i].showdownName = res;
             dexData.showdownNameToNo[res] = { number: dexData.nameToNo[pkName], form: i + 1 };
         }
-    })
+    });
+
+
+    var allTags = [];
+    for (let k of Object.keys(dexData)) {
+        if (!dexData[k].forms) continue;
+        for (let form of dexData[k].forms) {
+            form.tags && (allTags = allTags.concat(form.tags));
+        }
+    }
+
+    allTags = allTags.filter((item, index) => allTags.indexOf(item) === index);
+
+    for (let tag of allTags) {
+        let o = document.createElement("option");
+        o.textContent = tag;
+        o.value = tag;
+        qs("#tag-filter").appendChild(o);
+    }
 });
 
 

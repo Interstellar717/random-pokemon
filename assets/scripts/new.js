@@ -26,7 +26,8 @@ var click_listeners = {
     "#img-bkg": toggleImgBkg,
     "#close-center-bar": closeCenterBar,
     "#showTeam": toggleTeamDisplay,
-    "#clearTeam": clearTeam
+    "#clearTeam": clearTeam,
+    "#rand-filter": filteredRandom
 }
 
 for (let [key, value] of Object.entries(click_listeners)) {
@@ -150,7 +151,7 @@ addEventListener('keydown', (e) => {
         }
             break;
         case 'F': {
-
+            filteredRandom();
         }
             break;
         case 'G': {
@@ -629,7 +630,10 @@ function setPokemon(dex, form = 1, show_type = false, log = true) {
 
     formButtons(dexData[dex].forms.length);
 
+
+    // console.log(form_num);
     qs('.form-button') && qsa('.form-button')[form_num - 1].click();
+
 
     centerbar && closeCenterBar();
 
@@ -820,74 +824,46 @@ function shiny() {
     }
 }
 
-//Generating
-function randomPokemon(filter, formVariation = true) {
 
-    var dex;
-    var form;
-
-    if (!filter || filter instanceof MouseEvent) {
-        dex = Math.floor(Math.random() * 1011);
-    } else {
-        var candidates = [];
-
-        for (let k of Object.keys(dexData)) {
-            if (k == "nameToNo") continue;
-            if (k == "showdownNameToNo") continue;
-
-            var match = true;
-
-            if (filter.tags) {
-                for (let tag of filter.tags) {
-                    if (!dexData[k].tags.includes(tag)) {
-                        match = false;
-                    }
-                }
-            }
-
-            if (filter.type) {
-                for (let form of dexData[k].forms) {
-                    for (let type of filter.type) {
-                        if (!form.type.includes(type)) {
-                            match = false;
-                        }
-                    }
-                }
-            }
-            if (match) {
-                candidates.push(k);
-            }
-        }
-
-        dex = arrayRandom(candidates);
-    }
-
-
-    console.log(dex);
-
-    form = Math.floor(Math.random() * dexData[dex].forms.length) + 1;
-    if (!formVariation) form = 1;
-
-    setPokemon(dex, form, /*true*/ false);
-}
-
-function randomMultiple(q) {
+function randomMultiple(q, filter) {
     if (q > 9) return alert('Sorry, the maximum number of Pokémon you can generate at once is 9.')
     if (!q) return alert('Please enter a number of Pokémon to generate.')
 
     var arr = [];
     var forms = [];
-    for (let i = 0; i < q; i++) {
-        let rn = Math.floor(Math.random() * 1025) + 1;
-        arr.push(dexData[rn].pokemon);
 
-        var rf;
-        do {
-            rf = Math.floor(Math.random() * dexData[rn].forms.length) + 1;
-        } while (dexData[rn].forms[rf - 1].name.includes('Gigantamax'));
-
-        forms.push(rf);
+    var candidates;
+    if (filter) {
+        candidates = filteredCandidates(filter);
+        console.log(candidates);
     }
+
+    for (let i = 0; i < q; i++) {
+        var rn;
+        var rf;
+
+        if (!filter) {
+            rn = Math.floor(Math.random() * 1025) + 1;
+            arr.push(dexData[rn].pokemon);
+
+            do {
+                rf = Math.floor(Math.random() * dexData[rn].forms.length) + 1;
+            } while (dexData[rn].forms[rf - 1].name.includes('Gigantamax'));
+
+            forms.push(rf);
+
+        } else {
+            var res = arrayRandom(candidates);
+
+            rn = res.number;
+            rf = res.form;
+
+            arr.push(dexData[rn].pokemon);
+            forms.push(rf);
+
+        }
+    }
+
     setMultiplePokemon(arr, forms)
     formButtons(1) //no form buttons
 }
@@ -975,13 +951,15 @@ function toggleImgBkg() {
 }
 
 function closeCenterBar() {
-    qs('#sidebar').style = "text-align: center; transform: translateX(-10%); width: 100%; font-size: 16px; padding: 8vh 4vw 0vh 2vw;";
+
+    var style = "font-size: 16px; padding: 4vh 4vw 0vh 2vw;";
+    qs('#sidebar').style = "text-align: center; transform: translateX(-10%); width: 100%;" + style;
     qs('#close-center-bar').style.display = "none";
 
     qs('#toggle-sidebar').style.transform = "";
 
     setTimeout(() => {
-        qs('#sidebar').style = "font-size: 16px; padding: 8vh 4vw 0vh 2vw;";
+        qs('#sidebar').style = style;
         qs('#sidebar').parentElement.classList.remove("center");
         qs("#sidebar").parentElement.classList.add("sidebar");
 
@@ -1167,3 +1145,156 @@ function clearTeam(ask = true) {
     else
         team.clear();
 }
+
+
+function filteredRandom() {
+    qs(".filtered-random-menu").style.display = "block";
+    setTimeout(() => {
+        qs(".filtered-random-menu").style.opacity = 1;
+    });
+}
+
+qsa("select.type-selector").forEach(e => {
+    for (let type of ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Rock", "Ground", "Steel", "Poison", "Fighting", "Flying", "Bug", "Psychic", "Ghost", "Dark", "Fairy", "Dragon"]) {
+        let o = document.createElement("option");
+        o.textContent = type;
+        o.value = type.toLowerCase().substring(0, 3);
+        e.appendChild(o);
+    }
+});
+
+qs(".filtered-random-menu button").addEventListener("click", e => {
+    e.target.parentElement.style.opacity = 0;
+    setTimeout(() => {
+        e.target.parentElement.style.display = "none";
+    }, 500);
+})
+
+function filteredCandidates(filter) {
+
+    var candidates = [];
+
+    for (let k of Object.keys(dexData)) {
+
+        if (k == "nameToNo") continue;
+        if (k == "showdownNameToNo") continue;
+
+        for (let form of dexData[k].forms) {
+
+
+            var match = true;
+
+            if (filter.tags) {
+                for (let tag of filter.tags) {
+                    if (!form.tags.includes(tag.toLowerCase())) {
+                        match = false;
+                    }
+                }
+            }
+
+            if (filter.type) {
+
+                // console.log(dexData[k].pokemon, dexData[k].forms);
+
+                var typeFiltersEdit = filter.type.slice();
+                var typesEdit = form.type.slice();
+
+                for (let i in typeFiltersEdit) typeFiltersEdit[i] = typeFiltersEdit[i].toLowerCase().substring(0, 3);
+                for (let i in typesEdit) typesEdit[i] = typesEdit[i].toLowerCase().substring(0, 3);
+
+                if (typeFiltersEdit.length == 1) {
+                    for (let typeFilter of typeFiltersEdit) {
+                        if (!typesEdit.includes(typeFilter)) {
+                            match = false;
+                        }
+                    }
+                } else if (typeFiltersEdit.length > 1) {
+                    typeFiltersEdit = typeFiltersEdit.sort((a, b) => a.localeCompare(b));
+                    typesEdit = typesEdit.sort((a, b) => a.localeCompare(b));
+                    if (
+                        typeFiltersEdit[0] != typesEdit[0] ||
+                        typeFiltersEdit[1] != typesEdit[1]
+                    ) {
+                        match = false;
+                    }
+                }
+            }
+
+            if (match == true) {
+                candidates.push({ name: dexData[k].pokemon, number: k, form: dexData[k].forms.indexOf(form) + 1 });
+            }
+
+        }
+
+
+
+    }
+
+    // console.log("Candidates:", candidates, "\nRandom selection:", res);
+
+    return candidates;
+}
+
+//Generating
+function randomPokemon(filter) {
+
+    var dex;
+    var form;
+
+    if (!filter || filter instanceof MouseEvent) {
+        dex = Math.floor(Math.random() * 1011);
+    } else {
+        var candidates = filteredCandidates(filter);
+        var res = arrayRandom(candidates);
+        dex = res.number;
+        form = res.form;
+
+        console.log(candidates);
+    }
+
+
+    setPokemon(dex, form, /*true*/ false);
+}
+
+qs(".filtered-random-menu button#filter-submit").addEventListener("click", e => {
+
+    let rules = {};
+    var typeInput1 = qs("#type-filter-1");
+    var typeInput2 = qs("#type-filter-2");
+    var tagInput = qs("#tag-filter");
+    var multipleInput = qs("#multiple-filter");
+
+
+    var typeFilter = [];
+
+    if (typeInput1.selectedIndex) {
+        typeFilter.push(typeInput1.querySelectorAll("option")[typeInput1.selectedIndex].value);
+    }
+
+    if (typeInput2.selectedIndex) {
+        typeFilter.push(typeInput2.querySelectorAll("option")[typeInput2.selectedIndex].value);
+    }
+
+    typeFilter.length && (rules.type = typeFilter);
+
+    if (tagInput.selectedIndex) {
+        rules.tags = [tagInput.querySelectorAll("option")[tagInput.selectedIndex].value];
+    }
+
+    console.log("Rules:", rules);
+
+    if (!multipleInput.checked) {
+        randomPokemon(rules);
+
+    } else {
+        // randomPokemon(rules);
+        randomMultiple(3, rules);
+    }
+
+    typeInput1.selectedIndex = 0;
+    typeInput2.selectedIndex = 0;
+    tagInput.selectedIndex = 0;
+    multipleInput.checked = false;
+    
+    qs(".filtered-random-menu button").click(); // Close menu
+})
