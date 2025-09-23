@@ -455,7 +455,7 @@ a:has(.logo) {
 }
 
 .center div#sidebar {
-    margin-top: 8vh;
+    margin-top: 0vh;
 }
 
 .center div#sidebar * {
@@ -508,10 +508,58 @@ a:has(.logo) {
     resize: none;
 }
 
-.team-display button.function.msr {
+.team-display button.function.msr,
+.filtered-random-menu button.function.msr {
     position: absolute;
     right: 1vw;
     top: 1vw;
     background: red;
     aspect-ratio: 1 / 1;
+    width: fit-content;
+}
+
+.filtered-random-menu {
+    position: absolute;
+    top: 15vh;
+    left: 25vw;
+    width: calc(50vw - 140px);
+    height: calc(80vh - 140px);
+    background-color: rgba(82, 82, 82, 0.5);
+    color: white;
+    opacity: 0;
+    display: none;
+    padding: 70px;
+    text-align: center;
+}
+
+.filtered-random-menu .menu-inner-container {
+    text-align: left;
+    margin: auto;
+    width: fit-content;
+}
+
+.filtered-random-menu input,
+.filtered-random-menu button,
+.filtered-random-menu select {
+    background-color: white;
+    border: solid black 2px;
+    width: 200px;
+}
+
+.filtered-random-menu select,
+.filtered-random-menu button#filter-submit {
+    background: var(--dark-blue);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 3px;
+    color: white;
+    border: solid white 2px;
+    font-size: 1.8vh;
+}
+
+
+
+.filtered-random-menu span {
+    display: inline-block;
+    width: 100px;
 }
