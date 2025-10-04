@@ -297,7 +297,7 @@ div#name-num h1 {
     position: fixed;
     top: 10vh;
     right: 0;
-    width: 200px;
+    width: 300px;
     height: fit-content;
     /* background: rgba(0, 0, 0, 0.2); */
     color: white;
@@ -322,12 +322,12 @@ div#name-num h1 {
     font-family: Afacad Flux;
     font-size: 20px;
     transition: 0.5s;
-    transform: translateX(calc(200px + 20px));
+    transform: translateX(calc(300px + 20px));
     z-index: 100;
     position: relative;
 }
 
-.msg button {
+.msg button#close-msg {
     background: transparent;
     border: none;
     color: white;
@@ -336,6 +336,17 @@ div#name-num h1 {
     position: absolute;
     top: 5px;
     right: 5px;
+}
+
+.msg button {
+    background: transparent;
+    border-radius: 6px;
+    text-align: center;
+    border: solid white 2px;
+    color: white;
+    cursor: pointer;
+    margin: 0px 5px;
+    font-family: Afacad Flux;
 }
 
 .msg span {
