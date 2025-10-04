@@ -401,7 +401,7 @@ function typeChange() {
 }
 
 function help() {
-    var helpWindow = window.open("", "_blank", "width=500, height=500");
+    /* var helpWindow = window.open("", "_blank", "width=500, height=500");
     helpWindow.document.write(`<style src='"+getSeason()+" Theme.css'></style><body 
     style='font-family:cursive;font-size: 15px;' contenteditable='false' spellcheck='false'>
     <b style='font-size:20px;'>Here's a tour of the Pokémon Type Swaps and Team Generator!<br></b>
@@ -429,7 +429,8 @@ function help() {
     <div><b>Nimbus Shadow</b></div></div><br><button style='background-color: red;border-color:
      blueviolet; color:white;font-family:cursive;font-style:bold;font-size:20px;height:35px;
     border-radius: 10px;border-width:3px;text-align: left;margin:5px; position:fixed; right:0; bottom:0;'class='function'>Thanks!</button></body>`);
-    helpWindow.document.getElementsByTagName('button')[0].addEventListener('click', () => helpWindow.close())
+    helpWindow.document.getElementsByTagName('button')[0].addEventListener('click', () => helpWindow.close()) */
+    window.open("help", "_blank", "width=550, height=500");
 }
 //Log
 function showLog(state) {
@@ -913,12 +914,20 @@ function toggleSidebar() {
 }
 
 
-function msg(str, time = 0) {
+function msg(str, time = 0, buttons = []) {
 
     if (str == false) return (qs('.msg').style.transform = "");
 
     qs('.msg').style.transform = "translateX(-20px)";
     qs('.msg span').innerHTML = str;
+
+    if (buttons.length) {
+        for (let b of buttons) {
+            qs(".msg span").innerHTML += "<button class='msg-btn'>" + b.text + "</button>";
+            qsa(".msg span button")[qsa(".msg span button").length - 1].addEventListener("click", b.callback);
+        }
+    }
+
 
     time && setTimeout(() => {
         qs('.msg').style.transform = ""
@@ -1072,7 +1081,7 @@ function infoBox(n, form = 1, set = true) {
         qs(".function.add-btn").addEventListener("click", () => {
             var success = team.addPokemon(dexData[n].pokemon, form);
             if (success) {
-                msg("Added " + capitalize(team.array[team.array.length - 1]) + " to your team!", 1000);
+                msg("Added " + capitalize(team.array[team.array.length - 1]) + " to your team!", 3500, [{ text: "Change Nickname", callback: () => { let nick = prompt("Enter nickname: "); if (nick) { team.setNickname(team.array.length - 1, nick) } } }]);
             } else {
                 msg("Couldn't add " + capitalize(team.array[team.array.length - 1]) + " to your team!<br>Reason: Team is full", 1000);
             }
@@ -1295,6 +1304,6 @@ qs(".filtered-random-menu button#filter-submit").addEventListener("click", e => 
     typeInput2.selectedIndex = 0;
     tagInput.selectedIndex = 0;
     multipleInput.checked = false;
-    
+
     qs(".filtered-random-menu button").click(); // Close menu
 })
